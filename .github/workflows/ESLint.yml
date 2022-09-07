@@ -1,11 +1,11 @@
-name: ESlint
-on: [push]
+name: CI
+on: push
 jobs:
-  ESLint:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Linting...."
-      - name: ESLint checker
-      - uses: ninosaurus/eslint-check@v5.3.1
-
-      
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run ESLint
+      run: eslint . --ext .js,.jsx,.ts,.tsx
