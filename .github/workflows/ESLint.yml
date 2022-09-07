@@ -34,7 +34,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
- 
-      - name: ESLint checker
-        uses: ninosaurus/eslint-check@v5.3.1
 
