@@ -1,9 +1,8 @@
 name: ESlint
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  ESLint:
     runs-on: ubuntu-latest
     steps:
       - run: echo"Linting...."
-      - name: ESLint checker
-        uses: ninosaurus/eslint-check@v5.3.1
+      
