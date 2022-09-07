@@ -4,5 +4,5 @@ jobs:
   ESLint:
     runs-on: ubuntu-latest
     steps:
-      - run: echo"Linting...."
+      - run: echo "Linting...."
       
