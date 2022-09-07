@@ -1,17 +1,8 @@
-name: Lint
-
-on: pull_request
-
+name: ESlint
+on: [push]
 jobs:
-  eslint:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: mrdivyansh/eslint-action@v1.0.7
-        # GITHUB_TOKEN in forked repositories is read-only
-        # https://help.github.com/en/actions/reference/events-that-trigger-workflows#pull-request-event-pull_request
-        if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository }} 
-        with:
-          repo-token: ${{secrets.GITHUB_TOKEN}}
-          eslint-rc: .eslintrc.js
-
+      - name: ESLint checker
+        uses: ninosaurus/eslint-check@v5.3.1
