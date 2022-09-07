@@ -1,6 +1,7 @@
+import style from './index.module.css';
 const LandingPage = () => {
   return (
-    <div>
+    <div className={style.wrapper}>
       <p>test</p>
     </div>
   );
