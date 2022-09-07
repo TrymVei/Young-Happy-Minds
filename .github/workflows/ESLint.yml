@@ -4,5 +4,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: echo"Linting...."
       - name: ESLint checker
         uses: ninosaurus/eslint-check@v5.3.1
