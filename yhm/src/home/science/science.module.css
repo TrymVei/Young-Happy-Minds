@@ -1,0 +1,22 @@
+.science {
+  margin-top: 26.875rem;
+  padding-right: var(--leftRight-padding);
+}
+
+.science {
+  display: flex;
+  gap: 5rem;
+}
+
+.science__wrapper {
+  position: relative;
+}
+
+.science__wrapper h2 {
+  margin-top: 0px;
+}
+
+.science__readMore {
+  position: absolute;
+  bottom: 0px;
+}

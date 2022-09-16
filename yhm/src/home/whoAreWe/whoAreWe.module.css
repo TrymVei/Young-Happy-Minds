@@ -1,0 +1,13 @@
+.whoAreWe {
+  position: relative;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  padding-left: var(--leftRight-padding);
+  padding-right: var(--leftRight-padding);
+  gap: 5rem;
+}
+
+.whoAreWe__readMore {
+  position: absolute;
+  bottom: 0px;
+}

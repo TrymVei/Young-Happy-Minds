@@ -32,6 +32,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/plus-jakarta-sans@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/plus-jakarta-sans/-/plus-jakarta-sans-4.5.9.tgz#2dd784a847c15e7073d54eccc5301da9aaacdff9"
+  integrity sha512-6+o+aSPH1OVNYz1Cpti37SYe8BHHvgihnhcbScZrb7yKv+HSwku20XUDGdvXS0OC95UFvQBBuEDxdnH9zj1lBA==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"

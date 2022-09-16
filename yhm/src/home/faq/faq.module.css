@@ -1,0 +1,5 @@
+.faq {
+  margin-top: var(--section-margin-top);
+  padding-left: var(--leftRight-padding);
+  padding-right: var(--leftRight-padding);
+}

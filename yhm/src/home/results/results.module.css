@@ -1,0 +1,24 @@
+.results {
+  margin-top: var(--section-margin-top);
+  padding-left: var(--leftRight-padding);
+  padding-right: var(--leftRight-padding);
+}
+
+.result__flex {
+  display: flex;
+  gap: 5rem;
+}
+
+.result__flex div {
+  width: 50%;
+}
+
+.result__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: end;
+}
+
+.result__grid div {
+  justify-self: center;
+}

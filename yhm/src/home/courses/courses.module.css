@@ -1,0 +1,28 @@
+.courses {
+  margin-top: var(--section-margin-top);
+  background-color: var(--landingpage-bg-color);
+  padding: 10rem;
+}
+
+.courses__text h2,
+.courses__text p {
+  color: var(--font-white-color);
+  margin: 0;
+}
+
+.courses__text p {
+  line-height: 2rem;
+  margin-left: 7rem;
+  margin-top: 0.8rem;
+  width: 35rem;
+}
+
+.courses__text {
+  display: flex;
+}
+
+.courses__course {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
