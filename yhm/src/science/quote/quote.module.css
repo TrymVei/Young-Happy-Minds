@@ -1,0 +1,5 @@
+.quote {
+  padding-top: var(--leftRight-padding);
+  padding-left: 15rem;
+  width: 60%;
+}

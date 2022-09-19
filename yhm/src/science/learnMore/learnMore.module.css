@@ -1,0 +1,25 @@
+.learnMore {
+  padding: var(--leftRight-padding);
+}
+
+.learnMore a {
+  text-decoration: none;
+  color: var(--courseCard-green-color);
+  font-size: var(--hyperlink-font-size);
+}
+
+.learnMore__green_box {
+  background-color: var(--superLight-green-color);
+  padding: 5rem;
+}
+
+.learnMore__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learnMore__ourSources {
+  margin-top: var(--leftRight-padding);
+  background-color: var(--overall-bg-color);
+  padding: 5rem;
+}

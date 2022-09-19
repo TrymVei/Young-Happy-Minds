@@ -1,0 +1,11 @@
+.ourMethod {
+  padding: var(--leftRight-padding);
+  padding-right: 0;
+  padding-bottom: 0;
+  display: flex;
+  gap: 5rem;
+}
+
+.ourMethod h2 {
+  margin-top: 0;
+}

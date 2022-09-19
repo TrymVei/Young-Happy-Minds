@@ -21,13 +21,13 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           <a href="">Barn og unge</a>
         </p>
         <p>
-          <a href="">Forskning</a>
+          <a href="/science">Forskning</a>
         </p>
         <p>
-          <a href="">Om oss</a>
+          <a href="/about">Om oss</a>
         </p>
         <p>
-          <a href="">Kontakt</a>
+          <a href="/contact">Kontakt</a>
         </p>
       </div>
 
@@ -83,8 +83,11 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
               </p>
             </div>
           </div>
-          <div>
-            <a href="">Til toppen</a>
+          <div className={style.footer__wrapper__logo}>
+            <p>
+              <a href="">Til toppen</a>
+              <img src="/images/upArrow.svg" alt="Pil opp" />
+            </p>
             <img src="/images/logo.svg" alt="" />
           </div>
         </div>

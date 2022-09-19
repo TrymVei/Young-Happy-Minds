@@ -1,0 +1,10 @@
+.about section {
+  padding-top: 10rem;
+}
+
+.about__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10rem;
+  gap: 5rem;
+}

@@ -21,11 +21,12 @@
 
 .footer {
   padding: 10rem;
+  padding-top: 0rem;
   background-color: var(--lightGreen-color);
   color: var(--footer-text-color);
 }
 
-.footer p a,
+.footer a,
 .footer p {
   color: var(--footer-text-color);
   text-decoration: none;
@@ -35,13 +36,22 @@
 .footer h3 {
   font-size: var(--navbar-font-size);
   font-weight: 600;
-}
-
-.footer div div div {
-  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .footer__flex {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__wrapper__logo {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__wrapper__logo a {
+  text-decoration: underline;
+  text-decoration-color: var(--lightYellow-color);
 }

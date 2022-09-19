@@ -1,7 +1,7 @@
 .courses {
   margin-top: var(--section-margin-top);
   background-color: var(--landingpage-bg-color);
-  padding: 10rem;
+  padding: var(--leftRight-padding);
 }
 
 .courses__text h2,

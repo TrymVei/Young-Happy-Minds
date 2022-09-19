@@ -1,0 +1,9 @@
+.smallImage {
+  max-width: min-content;
+}
+
+.smallImage p {
+  text-align: center;
+  margin: 0;
+  font-size: var(--courseCard-description-font-size);
+}

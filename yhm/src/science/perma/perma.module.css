@@ -1,0 +1,34 @@
+.perma {
+  padding-left: var(--leftRight-padding);
+  padding-right: 10rem;
+  padding-top: var(--leftRight-padding);
+  display: flex;
+  gap: 2.5rem;
+}
+
+.perma h2 {
+  margin-top: 0;
+}
+
+.perma div {
+  width: 50%;
+}
+
+.perma__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.perma__quote {
+  margin-top: var(--leftRight-padding);
+  display: flex;
+  padding-right: 15rem;
+}
+
+.perma__quote p {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: var(--quote--font-size);
+}

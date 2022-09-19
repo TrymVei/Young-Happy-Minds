@@ -1,0 +1,35 @@
+.contact {
+  padding: var(--leftRight-padding);
+  background-color: var(--landingpage-bg-color);
+}
+
+.contact h2 {
+  color: var(--font-yellow-color);
+}
+
+.contact p,
+.contact a {
+  color: var(--contact-font-color);
+}
+
+.contact a {
+  text-decoration-color: var(--lightYellow-color);
+  font-weight: var(--logo-font-weight);
+}
+
+.contact__wrapper {
+  margin-top: var(--leftRight-padding);
+  display: flex;
+  gap: 5rem;
+}
+
+.contact__social_media h3 {
+  margin-top: var(--leftRight-padding);
+  color: var(--font-yellow-color);
+}
+
+.contact__social_media a {
+  text-decoration: none;
+  font-size: var(--hyperlink-font-size);
+  font-weight: var(--paragraph-font-weight);
+}
