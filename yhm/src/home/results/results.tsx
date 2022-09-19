@@ -7,10 +7,15 @@ const Results = () => {
         <div>
           <h2>Målte resultater etter 10 uker</h2>
           <p>
-            Disse tallene vil fortsette å øke dersom man forsetter å bruke
-            teknikkene etter fullført kurs. For å måle effekten av kursene har
-            vi utviklet et målingsverktøy som måler livskvalitet før og etter
-            fullført kurs.{' '}
+            Resultatene viser endring etter kun 10 uker med kursing. Basert på
+            annen forskning kan vi anta at denne endringen vil fortsette å øke
+            ved videre kursing og bruk av metodene.
+          </p>
+          <p className="source">
+            *Deltagere på kurset ble målt mot en kontrollgruppe før og etter 10
+            uker med kursing. Målingene ble gjort med måleverktøy for velvære
+            utviklet av New Philanthropy Capital´s Well-being measure. Det var
+            ikke betydelig endring hos kontrollgruppen.
           </p>
         </div>
         <div className={style.result__grid}>

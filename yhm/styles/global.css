@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Plus Jakarta Sans Bold';
+  src: url('/fonts/jakarta/PlusJakartaSans-Bold.woff');
+}
+
+@font-face {
   font-family: 'DM Sans';
   src: url('/fonts/dm/DMSans-Regular.ttf');
 }
@@ -31,6 +36,7 @@
 :root {
   /* Colors */
   --green-l2: #f7fdf5;
+  --green-d1: #0d534f;
   --yellow: #ffd526;
 
   /* Colors */
@@ -112,8 +118,8 @@ h3 {
 }
 
 h2 {
-  font-family: var(--jakarta-regular-font-family);
-  font-size: var(--small-heading-font-size);
+  font-family: var(--jakarta-bold-font-family);
+  font-size: var(--font-size-42);
   color: var(--lightGreen-color);
   font-weight: var(--bold);
 }
@@ -122,6 +128,7 @@ h1 {
   font-family: var(--jakarta-regular-font-family);
   font-size: var(--font-size-60);
   font-weight: var(--bold);
+  color: var(--green-d1);
 }
 
 /* Text Classes */
@@ -177,14 +184,14 @@ h1 {
 
 .menyBold {
   font-family: var(--DM-Sans-regular-font-family);
-  font-size: var(--font-size-26);
+  font-size: var(--font-size-20);
 }
 
 p {
-  font-family: var(--paragraph-font-family);
-  font-size: var(--paragraph-font-size);
-  font-weight: var(--paragraph-font-weight);
+  font-family: var(--DM-Sans-regular-font-family);
+  font-size: var(--font-size-22);
   color: var(--lightGreen-color);
+  margin-top: 0;
 }
 
 a {

@@ -3,7 +3,7 @@ const Percent = (props: { percent: number; text: string }) => {
   return (
     <div className={style.percent}>
       <h1>{props.percent}%</h1>
-      <p>{props.text}</p>
+      <p className="bodyText">{props.text}</p>
     </div>
   );
 };

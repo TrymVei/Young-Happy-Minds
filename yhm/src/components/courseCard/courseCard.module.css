@@ -1,10 +1,12 @@
 .courseCard {
   width: min-content;
   background-color: #ffffff;
+  position: relative;
+  padding-bottom: 5rem;
 }
 
 .courseCard p {
-  font-size: var(--label-font);
+  font-weight: 500;
 }
 
 .courseCard button {
@@ -14,6 +16,8 @@
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  position: absolute;
+  bottom: 3rem;
 }
 
 .courseCard button img {
@@ -44,17 +48,10 @@
   align-self: center;
 }
 
-.courseCard__flex h3 {
-  color: var(--courseCard-green-color);
-  font-size: var(--paragraph-font-size);
-}
-
 .courseCard__container {
   padding: 2.5rem;
 }
 
 .courseCard__description {
   margin-top: 0;
-  margin-bottom: 5rem;
-  font-size: var(--courseCard-description-font-size);
 }

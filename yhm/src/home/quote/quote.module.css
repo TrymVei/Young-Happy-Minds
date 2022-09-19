@@ -6,10 +6,6 @@
   gap: 5rem;
 }
 
-.quote p {
-  font-size: 1.875rem;
-}
-
 .quote p:nth-child(2) {
   position: absolute;
   bottom: 0;

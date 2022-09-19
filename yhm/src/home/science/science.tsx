@@ -6,7 +6,7 @@ const Science = () => {
       <img src="/images/science-image.png" alt="" />
       <div className={style.science__wrapper}>
         <h2>Utviklet med fageksperter</h2>
-        <p>
+        <p className="bodyText">
           Positiv psykologi bygger bro mellom selvhjelp og forskning. Vårt
           materiell er utviklet i samarbeid med annerkjente forskere innen
           feltet, fra blant annet __________ og __________.

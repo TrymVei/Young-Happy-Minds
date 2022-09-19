@@ -4,9 +4,8 @@
 
 .readMore a {
   color: var(--lightGreen-color);
-  font-size: var(--paragraph-font-size);
+  text-decoration: underline;
   text-decoration-color: var(--lightYellow-color);
-  text-decoration-thickness: 0.2rem;
 }
 
 .readMore img {

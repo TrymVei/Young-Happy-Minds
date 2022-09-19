@@ -6,7 +6,11 @@
 
 .result__flex {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
+}
+
+.result__flex h2 {
+  margin: 0;
 }
 
 .result__flex div {

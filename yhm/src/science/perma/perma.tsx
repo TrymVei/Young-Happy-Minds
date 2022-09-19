@@ -61,7 +61,7 @@ const Perma = () => {
       </div>
       <div className={style.perma__quote}>
         <img src="/images/perma/quote-image.svg" alt="" />
-        <p>
+        <p className="bigQuote">
           “Det at fokuset på menneskelige styrker, utholdenhet og optimisme kan
           læres, har en enorm betydning både for samfunnet og enkeltmennesket.”
         </p>
