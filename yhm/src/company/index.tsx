@@ -5,6 +5,7 @@ import Companies from './companies/companies';
 import Future from './future/future';
 import Invest from './invest/invest';
 import PercentSection from './percentSection/percentSection';
+import Quote from './quote/quote';
 
 const course1: Course = {
   title: 'Liten kurspakke',
@@ -43,6 +44,7 @@ const Company = () => {
       <Future />
       <Companies />
       <CoursePrice courses={courses} />
+      <Quote />
     </Layout>
   );
 };

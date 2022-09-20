@@ -1,0 +1,25 @@
+.coursePrice {
+  padding: var(--leftRight-padding);
+}
+
+.coursePrice__course {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
+  background-color: var(--green-l1);
+}
+
+.coursePrice__form {
+  padding: 1rem;
+}
+
+.coursePrice__form__flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.coursePrice__form__flex input {
+  width: 10rem;
+}

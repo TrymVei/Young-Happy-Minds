@@ -5,14 +5,21 @@ const WhatIsPositivePsychology = () => {
       <div className={style.whatIsPositivePsychology__wrapper}>
         <h1>Hva er egentlig positiv psykologi?</h1>
         <p className="ingress">
-          Mange tenker at positiv psykologi bare handler om å “tenke positivt”,
-          og å smile uansett hva. <br /> Positiv psykologi fokuserer på å
-          forebygge, styrke og bygge på det som er bra slik at man øker
-          livsgleden, og er bedre rustet for livets uforutsigbarheter.
+          <strong>Tradisjonell psykologi</strong> fokuserer på å reparere når
+          skaden allerede har skjedd. Positiv
+          <strong>psykologi fokuserer</strong> på å forebygge og bygge videre på
+          det som er bra. De styrkene hver enkelt har.
         </p>
         <p className="ingress">
-          I positiv psykologi brukes kunnskapen fra forskning til å utarbeide
-          konkrete metoder og verktøy. Vi kaller disse metodene “Happy Hacks”.
+          Alle vil før eller siden møte motgang i livet. Vår metode handler ikke
+          om å “tenke positivt” og klistre på et smil. Tvert imot, den gir
+          nyttige verktøy slik at man er bedre rustet til å takle livets
+          uforutsigbarheter.
+        </p>
+        <p className="ingress">
+          Positiv psykologi bygger bro mellom selvhjelp og forskning. Man bruker
+          kunnskapen fra forskningen til å utarbeide konkrete metoder og verktøy
+          man kan bruke. Vi kaller disse metodene “Happy Hacks”.
         </p>
       </div>
       <div className={style.whatIsPositivePsychology__flex}>

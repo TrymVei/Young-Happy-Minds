@@ -35,6 +35,7 @@
 
 :root {
   /* Colors */
+  --green-l1: #e8f3e5;
   --green-l2: #f7fdf5;
   --green-d1: #0d534f;
   --green: #0e645f;
@@ -117,6 +118,7 @@ h3 {
   font-family: var(--jakarta-regular-font-family);
   font-size: var(--font-size-32);
   font-weight: var(--bold);
+  color: var(--green-d1);
 }
 
 h2 {
@@ -187,6 +189,11 @@ h1 {
 .menyBold {
   font-family: var(--DM-Sans-regular-font-family);
   font-size: var(--font-size-20);
+}
+
+.courseBold {
+  font-family: var(--DM-Sans-bold-font-family);
+  font-size: var(--font-size-22);
 }
 
 p {
