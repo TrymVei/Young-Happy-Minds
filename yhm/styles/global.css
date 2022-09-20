@@ -72,14 +72,19 @@
   --font-size-96: 6rem;
   --font-size-72: 4.5rem;
   --font-size-60: 3.75rem;
+  --font-size-52: 3.25rem;
   --font-size-42: 2.625rem;
   --font-size-32: 2rem;
+  --font-size-28: 1.75rem;
   --font-size-26: 1.625rem;
   --font-size-24: 1.5rem;
   --font-size-22: 1.375rem;
   --font-size-20: 1.25rem;
   --font-size-18: 1.125rem;
   --font-size-16: 1rem;
+  --font-size-14: 0.875;
+  --font-size-12: 0.75rem;
+  --font-size-10: 0.625rem;
 
   /* Font Weight */
   --bold: 700;
@@ -106,7 +111,7 @@
 
 body {
   margin: 0;
-  background-color: var(--overall-bg-color);
+  background-color: var(--green-l1);
 }
 
 h4 {
@@ -215,4 +220,87 @@ ul li {
   font-family: var(--DM-Sans-regular-font-family);
   font-size: var(--font-size-22);
   margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  img {
+    height: auto;
+    width: auto;
+  }
+
+  h4 {
+    font-size: var(--font-size-12);
+  }
+
+  h3 {
+    font-size: var(--font-size-18);
+  }
+
+  h2 {
+    font-size: var(--font-size-24);
+  }
+
+  h1 {
+    font-size: var(--font-size-28);
+  }
+
+  .smallesText {
+    font-size: var(--font-size-10);
+  }
+
+  .smallText {
+    font-size: var(--font-size-12);
+  }
+
+  .source {
+    font-size: var(--font-size-10);
+  }
+
+  .menny {
+    font-size: var(--font-size-12);
+  }
+
+  .bodyText {
+    font-size: var(--font-size-14);
+  }
+
+  .navbarLogo {
+    font-size: var(--font-size-14);
+  }
+
+  .graphic {
+    font-size: var(--font-size-42);
+  }
+
+  .bigGraphic {
+    font-size: var(--font-size-52);
+  }
+
+  .bigQuote {
+    font-size: var(--font-size-18);
+  }
+
+  .ingress {
+    font-size: var(--font-size-16);
+  }
+
+  .menyBold {
+    font-size: var(--font-size-12);
+  }
+
+  .courseBold {
+    font-size: var(--font-size-14);
+  }
+
+  p {
+    font-size: var(--font-size-14);
+  }
+
+  a {
+    font-size: var(--font-size-14);
+  }
+
+  ul li {
+    font-size: var(--font-size-14);
+  }
 }

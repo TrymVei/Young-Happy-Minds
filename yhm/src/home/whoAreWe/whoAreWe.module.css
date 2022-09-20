@@ -11,3 +11,10 @@
   position: absolute;
   bottom: 0px;
 }
+
+@media (max-width: 1320px) {
+  .whoAreWe {
+    flex-direction: column;
+    padding: 5%;
+  }
+}

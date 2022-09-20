@@ -26,3 +26,23 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1350px) {
+  .courses {
+    padding: 5%;
+  }
+
+  .courses__course {
+    flex-direction: column;
+  }
+
+  .courses__text {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .courses__text p {
+    margin: 0;
+    width: auto;
+  }
+}

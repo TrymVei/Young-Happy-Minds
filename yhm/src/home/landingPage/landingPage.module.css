@@ -48,3 +48,24 @@
   justify-content: flex-start;
   flex-direction: row;
 }
+
+@media (max-width: 1270px) {
+  .landingpage {
+    height: auto;
+    padding: 5%;
+  }
+
+  .landing__wrapper__flex {
+    flex-direction: column;
+  }
+
+  .landing__wrapper__flex img {
+    width: auto;
+    height: auto;
+    order: 2;
+  }
+
+  .landing__wrapper__flex div {
+    order: 3;
+  }
+}

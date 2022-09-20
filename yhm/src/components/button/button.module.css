@@ -1,15 +1,37 @@
-.button {
-  font-size: 1.5rem;
+.button,
+.buttonSmall {
   border: none;
+  display: flex;
+  border-radius: 3rem;
+}
+
+.button {
+  font-size: var(--font-size-22);
+  font-family: var(--jakarta-regular-font-family);
+  font-weight: 600;
   border-radius: 3rem;
   padding: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  display: flex;
 }
 
 .button img {
   position: relative;
   margin-left: 0.5rem;
   top: 0.2rem;
+}
+
+.buttonSmall {
+  font-family: var(--DM-Sans-regular-font-family);
+  font-size: var(--font-size-20);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  height: 2.5rem;
+}
+
+.buttonSmall img {
+  position: relative;
+  top: 0.3rem;
+  margin-left: 0.2rem;
 }

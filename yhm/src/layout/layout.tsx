@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import style from './layout.module.css';
 
 interface Props {
@@ -5,6 +6,12 @@ interface Props {
 }
 
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
+  const [currentlyActive, setCurrentlyActive] = useState('');
+
+  const handleClick = (page: string) => {
+    setCurrentlyActive(page);
+  };
+
   return (
     <div>
       <div className={style.navbar}>
@@ -15,19 +22,37 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           <a href="">Onlinekurs</a>
         </p>
         <p>
-          <a href="/company">For bedrifter</a>
+          <a
+            style={
+              currentlyActive === 'company'
+                ? { textDecoration: 'underline' }
+                : { textDecoration: 'none' }
+            }
+            onClick={() => handleClick('company')}
+            href="/company"
+          >
+            For bedrifter
+          </a>
         </p>
         <p>
-          <a href="/young">Barn og unge</a>
+          <a onClick={() => handleClick('young')} href="/young">
+            Barn og unge
+          </a>
         </p>
         <p>
-          <a href="/science">Forskning</a>
+          <a onClick={() => handleClick('science')} href="/science">
+            Forskning
+          </a>
         </p>
         <p>
-          <a href="/about">Om oss</a>
+          <a onClick={() => handleClick('about')} href="/about">
+            Om oss
+          </a>
         </p>
         <p>
-          <a href="/contact">Kontakt</a>
+          <a onClick={() => handleClick('contact')} href="/contact">
+            Kontakt
+          </a>
         </p>
       </div>
 
@@ -40,15 +65,6 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
               <h3>kontakt</h3>
               <p>Vi vil gjerne høre fra deg!</p>
               <p>Ta kontakt på</p>
-            </div>
-            <div>
-              <h3>Epost:</h3>
-              <p>
-                <a href="mailto: contact@younghappyminds.com">
-                  {' '}
-                  contact@younghappyminds.com
-                </a>
-              </p>
             </div>
             <div>
               <h3>Sosiale medier</h3>

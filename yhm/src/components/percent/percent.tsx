@@ -7,7 +7,9 @@ const Percent = (props: {
 }) => {
   return (
     <div className={style.percent}>
-      <h1 style={{ color: props.percentColor }}>{props.percent}%</h1>
+      <h1 className="bigGraphic" style={{ color: props.percentColor }}>
+        {props.percent}%
+      </h1>
       <p style={{ color: props.textColor }} className="bodyText">
         {props.text}
       </p>

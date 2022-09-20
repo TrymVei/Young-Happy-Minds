@@ -11,3 +11,10 @@
   bottom: 0;
   margin: 0;
 }
+
+@media (max-width: 1360px) {
+  .quote {
+    flex-direction: column;
+    padding: 5%;
+  }
+}

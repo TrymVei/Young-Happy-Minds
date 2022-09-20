@@ -22,11 +22,13 @@ const LandingPage = () => {
                 bgColor="#FFFFFF"
                 color="#10534F"
                 text="Onlinekurs"
+                big={true}
               ></Button>
               <Button
                 bgColor="#FFFFFF"
                 color="#10534F"
                 text="Bedriftskurs"
+                big={true}
               ></Button>
             </div>
           </div>

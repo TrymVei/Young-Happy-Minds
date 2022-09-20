@@ -19,6 +19,7 @@
 .ingress__flex {
   padding-top: var(--leftRight-padding);
   display: flex;
+  gap: 5rem;
 }
 
 .ingress__flex h2 {
