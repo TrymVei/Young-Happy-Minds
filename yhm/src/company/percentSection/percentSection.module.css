@@ -1,0 +1,25 @@
+.percentSection {
+  padding: var(--leftRight-padding);
+  background-color: var(--green);
+  display: flex;
+}
+
+.percentSection h3 {
+  margin-top: 0;
+  color: var(--green-l2);
+}
+
+.percentSection p {
+  color: var(--white);
+}
+
+.percentSection__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: end;
+  margin-bottom: 5rem;
+}
+
+.percentSection__grid div {
+  justify-self: center;
+}

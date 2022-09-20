@@ -19,10 +19,30 @@ const Results = () => {
           </p>
         </div>
         <div className={style.result__grid}>
-          <Percent percent={20} text="økt livskvalitet etter programmet" />
-          <Percent percent={12} text="bedre emosjonelt velvære" />
-          <Percent percent={14} text="forbedring av selvfølelse" />
-          <Percent percent={12} text="forbedring av utholdenhet" />
+          <Percent
+            percent={20}
+            text="økt livskvalitet etter programmet"
+            percentColor={'#0D534F'}
+            textColor={'#0D534F'}
+          />
+          <Percent
+            percent={12}
+            text="bedre emosjonelt velvære"
+            percentColor={'#0D534F'}
+            textColor={'#0D534F'}
+          />
+          <Percent
+            percent={14}
+            text="forbedring av selvfølelse"
+            percentColor={'#0D534F'}
+            textColor={'#0D534F'}
+          />
+          <Percent
+            percent={12}
+            text="forbedring av utholdenhet"
+            percentColor={'#0D534F'}
+            textColor={'#0D534F'}
+          />
         </div>
       </div>
     </div>

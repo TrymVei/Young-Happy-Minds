@@ -15,7 +15,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           <a href="">Onlinekurs</a>
         </p>
         <p>
-          <a href="">For bedrifter</a>
+          <a href="/company">For bedrifter</a>
         </p>
         <p>
           <a href="">Barn og unge</a>

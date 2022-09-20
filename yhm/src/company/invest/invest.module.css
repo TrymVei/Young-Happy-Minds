@@ -1,0 +1,8 @@
+.invest {
+  padding: var(--leftRight-padding);
+  width: 50%;
+}
+
+.invest p {
+  width: 80%;
+}

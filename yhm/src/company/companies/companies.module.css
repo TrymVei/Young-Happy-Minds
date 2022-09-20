@@ -1,0 +1,9 @@
+.companies {
+  padding: var(--leftRight-padding);
+  padding-bottom: 0;
+}
+
+.companies__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

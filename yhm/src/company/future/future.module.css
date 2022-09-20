@@ -1,0 +1,19 @@
+.future {
+  padding: var(--leftRight-padding);
+  display: flex;
+  gap: 5rem;
+}
+
+.future h2 {
+  margin-top: 0;
+}
+
+.future__wrapper {
+  position: relative;
+}
+
+.future__wrapper p:nth-last-child(1) {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
