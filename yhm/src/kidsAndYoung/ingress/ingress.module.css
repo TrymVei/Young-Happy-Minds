@@ -1,0 +1,26 @@
+.ingress {
+  padding: var(--leftRight-padding);
+  padding-right: 0;
+}
+
+.ingress h1,
+.ingress #ingress {
+  padding-left: 5rem;
+}
+
+.ingress h1 {
+  width: 45rem;
+}
+
+.ingress #ingress {
+  width: 55rem;
+}
+
+.ingress__flex {
+  padding-top: var(--leftRight-padding);
+  display: flex;
+}
+
+.ingress__flex h2 {
+  margin-top: 0;
+}
