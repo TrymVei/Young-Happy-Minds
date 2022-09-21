@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { NavbarDesktop, NavbarMobile } from '../components/navbar/navbar';
 import style from './layout.module.css';
 
 interface Props {
@@ -6,55 +7,30 @@ interface Props {
 }
 
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
-  const [currentlyActive, setCurrentlyActive] = useState('');
+  const [isDesktop, setIsDesktop] = useState(false);
 
-  const handleClick = (page: string) => {
-    setCurrentlyActive(page);
+  const handleResize = () => {
+    if (window.matchMedia('(max-width: 1350px)').matches) {
+      setIsDesktop(false);
+    } else {
+      setIsDesktop(true);
+    }
   };
 
+  useEffect(() => {
+    if (window) {
+      if (window.matchMedia('(max-width: 1350)').matches) {
+        setIsDesktop(false);
+      } else {
+        setIsDesktop(true);
+      }
+      window.addEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
-    <div>
-      <div className={style.navbar}>
-        <p className={style.navbar__logo}>
-          <a href="/">Young Happy Minds</a>
-        </p>
-        <p>
-          <a href="">Onlinekurs</a>
-        </p>
-        <p>
-          <a
-            style={
-              currentlyActive === 'company'
-                ? { textDecoration: 'underline' }
-                : { textDecoration: 'none' }
-            }
-            onClick={() => handleClick('company')}
-            href="/company"
-          >
-            For bedrifter
-          </a>
-        </p>
-        <p>
-          <a onClick={() => handleClick('young')} href="/young">
-            Barn og unge
-          </a>
-        </p>
-        <p>
-          <a onClick={() => handleClick('science')} href="/science">
-            Forskning
-          </a>
-        </p>
-        <p>
-          <a onClick={() => handleClick('about')} href="/about">
-            Om oss
-          </a>
-        </p>
-        <p>
-          <a onClick={() => handleClick('contact')} href="/contact">
-            Kontakt
-          </a>
-        </p>
-      </div>
+    <div id="top">
+      <NavbarMobile />
 
       <main>{props.children}</main>
 
@@ -101,7 +77,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           </div>
           <div className={style.footer__wrapper__logo}>
             <p>
-              <a href="">Til toppen</a>
+              <a href="#top">Til toppen</a>
               <img src="/images/upArrow.svg" alt="Pil opp" />
             </p>
             <img src="/images/logo.svg" alt="" />

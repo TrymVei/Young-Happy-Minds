@@ -69,3 +69,10 @@
     padding: 5%;
   }
 }
+
+@media (min-width: 2000px) {
+  .ingress {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
