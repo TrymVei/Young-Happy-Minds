@@ -3,3 +3,11 @@
   padding-left: 15rem;
   width: 60%;
 }
+
+@media (max-width: 900px) {
+  .quote {
+    padding-left: 5%;
+    display: block;
+    margin: auto;
+  }
+}

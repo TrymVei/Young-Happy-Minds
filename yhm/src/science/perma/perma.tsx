@@ -27,36 +27,46 @@ const Perma = () => {
           </p>
         </div>
         <div className={style.perma__images}>
-          <SmallImage
-            imgSrc="/images/perma/meaning.svg"
-            imgAlt="Blomst holdt i hendene"
-            caption="Mening"
-          />
-          <SmallImage
-            imgSrc="/images/perma/positiveFeelings.svg"
-            imgAlt="Smilende jente"
-            caption="Positive følelser"
-          />
-          <SmallImage
-            imgSrc="/images/perma/engagement.svg"
-            imgAlt="En som mediterer"
-            caption="Engasjement"
-          />
-          <SmallImage
-            imgSrc="/images/perma/relations.svg"
-            imgAlt="To som holder rundt hverandre"
-            caption="Relasjoner"
-          />
-          <SmallImage
-            imgSrc="/images/perma/vitality.svg"
-            imgAlt="En som hopper opp i luften"
-            caption="Vitalitet"
-          />
-          <SmallImage
-            imgSrc="/images/perma/accomplishment.svg"
-            imgAlt="En på toppen av et fjell"
-            caption="Mestring"
-          />
+          <div className={style.perma__images__flex}>
+            <SmallImage
+              imgSrc="/images/perma/meaning.svg"
+              imgAlt="Blomst holdt i hendene"
+              caption="Mening"
+            />
+            <SmallImage
+              imgSrc="/images/perma/positiveFeelings.svg"
+              imgAlt="Smilende jente"
+              caption="Positive følelser"
+            />
+            <SmallImage
+              imgSrc="/images/perma/engagement.svg"
+              imgAlt="En som mediterer"
+              caption="Engasjement"
+            />
+          </div>
+          <div className={style.perma__images__flex}>
+            <SmallImage
+              imgSrc="/images/perma/relations.svg"
+              imgAlt="To som holder rundt hverandre"
+              caption="Relasjoner"
+            />
+            <SmallImage
+              imgSrc="/images/perma/vitality.svg"
+              imgAlt="En som hopper opp i luften"
+              caption="Vitalitet"
+            />
+            <SmallImage
+              imgSrc="/images/perma/accomplishment.svg"
+              imgAlt="En på toppen av et fjell"
+              caption="Mestring"
+            />
+          </div>
+          <p className={style.perma__mobile}>
+            Dersom du har alle disse punktene på plass i livet ditt, opplever du
+            mest sannsynlig tilfredshet. Ved å jobbe med disse elementene kan
+            mennesker oppleve å føle seg gøadere og mer robuste i møte med
+            motgang.
+          </p>
         </div>
       </div>
       <div className={style.perma__quote}>

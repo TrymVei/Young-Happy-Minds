@@ -1,6 +1,5 @@
 .perma {
   padding-left: var(--leftRight-padding);
-  padding-right: 10rem;
   padding-top: var(--leftRight-padding);
   display: flex;
   gap: 2.5rem;
@@ -11,13 +10,23 @@
 }
 
 .perma div {
-  width: 50%;
+  width: 100%;
 }
 
 .perma__images {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.perma__images__flex {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.perma__mobile {
+  display: none;
 }
 
 .perma__quote {
@@ -30,4 +39,40 @@
   margin-left: 5rem;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .perma {
+    flex-direction: column;
+    padding-right: var(--leftRight-padding);
+  }
+
+  .perma__images__flex {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .perma__quote {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .perma__quote img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .perma {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .perma__quote img {
+    width: 335px;
+    height: auto;
+  }
 }

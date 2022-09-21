@@ -9,3 +9,37 @@
 .ourMethod h2 {
   margin-top: 0;
 }
+
+.ourMethod__mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .ourMethod {
+    flex-direction: column;
+  }
+
+  .ourMethod__mobile {
+    display: block;
+  }
+
+  .ourMethod__wrapper__image img {
+    display: block;
+    margin: auto;
+  }
+
+  .ourMethod__wrapper p:nth-last-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .ourMethod {
+    padding: 5%;
+  }
+
+  .ourMethod__wrapper__image img {
+    width: 335px;
+    height: auto;
+  }
+}

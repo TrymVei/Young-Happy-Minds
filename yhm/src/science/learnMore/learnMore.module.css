@@ -13,6 +13,10 @@
   padding: 5rem;
 }
 
+.learnMore__green_box h2 {
+  margin-top: 0;
+}
+
 .learnMore__wrapper {
   display: flex;
   justify-content: space-between;
@@ -22,4 +26,24 @@
   margin-top: var(--leftRight-padding);
   background-color: var(--overall-bg-color);
   padding: 5rem;
+}
+
+@media (max-width: 900px) {
+  .learnMore {
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .learnMore__wrapper {
+    flex-direction: column;
+  }
+
+  .learnMore__green_box {
+    padding: 5%;
+  }
+
+  .learnMore__ourSources {
+    display: none;
+  }
 }
