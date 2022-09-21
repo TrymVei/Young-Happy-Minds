@@ -48,7 +48,12 @@ const CoursePrice = (props: { courses: Course[] }) => {
               className="smallText"
             ></textarea>
           </div>
-          <Button bgColor="#FFD526" color="#10534F" text="Send mail" />
+          <Button
+            bgColor="#FFD526"
+            color="#10534F"
+            text="Send mail"
+            big={true}
+          />
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@
 .footer p {
   color: var(--green-l1);
   text-decoration: none;
-  font-size: var(--navbar-font-size);
+  font-size: var(--font-size-20);
 }
 
 .footer h3 {
@@ -73,5 +73,33 @@
 @media (max-width: 950px) {
   .footer {
     padding: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer a,
+  .footer p {
+    font-size: var(--font-size-12);
+  }
+
+  .footer h3 {
+    font-size: var(--font-size-12);
+  }
+}
+
+@media (max-width: 550px) {
+  .footer__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__flex div:nth-last-child(1) {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+
+  .footer__flex div:nth-last-child(1) p {
+    display: none;
   }
 }

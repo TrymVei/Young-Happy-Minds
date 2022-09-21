@@ -12,7 +12,6 @@
 .courseCard button {
   background-color: var(--moreInfor-button-color);
   border: none;
-  font-size: var(--paragraph-font-size);
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -77,15 +76,20 @@
     padding-bottom: 0;
     padding-top: 0;
   }
-
-  .courseCard button {
-    bottom: 1rem;
-  }
 }
 
 @media (max-width: 700px) {
   .courseCard__image {
     width: 142px;
     height: 118px;
+  }
+
+  .courseCard button {
+    bottom: 1rem;
+    font-size: var(--font-size-12);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3rem;
+    position: static;
   }
 }

@@ -20,6 +20,21 @@
   margin-bottom: 5rem;
 }
 
-.percentSection__grid div {
-  justify-self: center;
+@media (max-width: 1450px) {
+  .percentSection {
+    flex-direction: column;
+  }
+
+  .percentSection div:nth-child(1) {
+    order: 2;
+  }
+
+  .percentSection div:nth-last-child(1) img {
+    display: block;
+    margin: auto;
+  }
+
+  .percentSection div:nth-last-child(1) h3 {
+    display: block;
+  }
 }

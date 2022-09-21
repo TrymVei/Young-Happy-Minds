@@ -55,6 +55,10 @@
     padding: 5%;
   }
 
+  .landingpage__wrapper {
+    padding-top: 0;
+  }
+
   .landing__wrapper__flex {
     flex-direction: column;
   }
@@ -67,5 +71,11 @@
 
   .landing__wrapper__flex div {
     order: 3;
+  }
+}
+
+@media (max-width: 400px) {
+  .landingpage__buttons {
+    gap: 1rem;
   }
 }
