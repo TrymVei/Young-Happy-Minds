@@ -17,3 +17,15 @@
   bottom: 0;
   margin-bottom: 0;
 }
+
+@media (max-width: 1050px) {
+  .future {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .future {
+    padding: 5%;
+  }
+}

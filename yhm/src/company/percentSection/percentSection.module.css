@@ -37,4 +37,26 @@
   .percentSection div:nth-last-child(1) h3 {
     display: block;
   }
+
+  .percentSection div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .percentSection {
+    padding: 5%;
+  }
+
+  .percentSection div:nth-last-child(1) img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .percentSection div:nth-last-child(1) img {
+    width: 335px;
+    height: auto;
+  }
 }

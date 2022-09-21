@@ -6,3 +6,19 @@
 .invest p {
   width: 80%;
 }
+
+@media (max-width: 900px) {
+  .invest {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .invest {
+    width: auto;
+  }
+
+  .invest p {
+    width: 100%;
+  }
+}

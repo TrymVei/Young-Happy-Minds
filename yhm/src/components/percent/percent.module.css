@@ -9,3 +9,7 @@
   color: var(--lightGreen-color);
   /* font-size: 6rem; */
 }
+
+.percent {
+  width: auto;
+}

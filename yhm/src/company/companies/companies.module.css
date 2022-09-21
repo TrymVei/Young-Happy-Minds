@@ -7,3 +7,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+  .companies {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .companies {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .companies__wrapper img {
+    width: 25%;
+    height: auto;
+  }
+}

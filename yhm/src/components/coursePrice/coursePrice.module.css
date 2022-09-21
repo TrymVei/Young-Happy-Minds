@@ -23,3 +23,9 @@
 .coursePrice__form__flex input {
   width: 10rem;
 }
+
+@media (max-width: 900px) {
+  .coursePrice {
+    padding: 5%;
+  }
+}
