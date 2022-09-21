@@ -25,3 +25,47 @@
 .ingress__flex h2 {
   margin-top: 0;
 }
+
+@media (max-width: 1400px) {
+  .ingress__flex div:nth-child(1) {
+    width: 50%;
+  }
+
+  .ingress__flex div:nth-last-child(1) {
+    width: 50%;
+  }
+
+  .ingress__flex div:nth-last-child(1) img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ingress {
+    padding-right: var(--leftRight-padding);
+  }
+
+  .ingress h1,
+  .ingress #ingress {
+    width: auto;
+    padding: 0;
+  }
+
+  .ingress__flex {
+    flex-direction: column;
+  }
+
+  .ingress__flex div:nth-child(1) {
+    width: auto;
+  }
+
+  .ingress__flex div:nth-last-child(1) {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .ingress {
+    padding: 5%;
+  }
+}
