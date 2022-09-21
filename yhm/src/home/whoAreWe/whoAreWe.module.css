@@ -2,8 +2,6 @@
   position: relative;
   margin-top: var(--section-margin-top);
   display: flex;
-  padding-left: var(--leftRight-padding);
-  padding-right: var(--leftRight-padding);
   gap: 5rem;
 }
 
@@ -15,6 +13,5 @@
 @media (max-width: 1320px) {
   .whoAreWe {
     flex-direction: column;
-    padding: 5%;
   }
 }

@@ -1,7 +1,7 @@
 .quote {
   width: 50%;
-  padding-left: 13rem;
-  padding-right: var(--leftRight-padding);
+  display: block;
+  margin: auto;
   margin-bottom: 40rem;
 }
 

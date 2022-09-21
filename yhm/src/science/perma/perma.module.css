@@ -76,3 +76,15 @@
     height: auto;
   }
 }
+
+@media (min-width: 2000px) {
+  .perma {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .perma__quote {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

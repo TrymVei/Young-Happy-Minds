@@ -1,16 +1,11 @@
 .invest {
-  padding: var(--leftRight-padding);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
   width: 50%;
 }
 
 .invest p {
   width: 80%;
-}
-
-@media (max-width: 900px) {
-  .invest {
-    padding: 5%;
-  }
 }
 
 @media (max-width: 800px) {

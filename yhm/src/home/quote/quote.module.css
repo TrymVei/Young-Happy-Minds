@@ -18,3 +18,10 @@
     padding: 5%;
   }
 }
+
+@media (min-width: 2000px) {
+  .quote {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

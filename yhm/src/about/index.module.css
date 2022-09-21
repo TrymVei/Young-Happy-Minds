@@ -46,3 +46,10 @@
     height: 436px;
   }
 }
+
+@media (min-width: 2000px) {
+  .about {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

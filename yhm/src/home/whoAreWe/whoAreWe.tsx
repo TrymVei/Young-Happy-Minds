@@ -3,7 +3,7 @@ import style from './whoAreWe.module.css';
 
 const WhoAreWe = () => {
   return (
-    <div className={style.whoAreWe}>
+    <div id="section" className={style.whoAreWe}>
       <div>
         <h2>Hvem er vi?</h2>
         <p>

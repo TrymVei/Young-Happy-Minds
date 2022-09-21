@@ -3,7 +3,7 @@ import style from './faq.module.css';
 
 const FAQ = () => {
   return (
-    <div className={style.faq}>
+    <div id="section" className={style.faq}>
       <h2>Vanlige spørsmål</h2>
       <Accordion
         question={'Er dette kurset for meg?'}

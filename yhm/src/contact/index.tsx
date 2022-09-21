@@ -4,7 +4,7 @@ import style from './index.module.css';
 const Contact = () => {
   return (
     <Layout>
-      <div className={style.contact}>
+      <div id="section" className={style.contact}>
         <h2>Kontakt oss</h2>
         <div className={style.contact__wrapper}>
           <div>

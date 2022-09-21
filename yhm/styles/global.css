@@ -114,6 +114,25 @@ body {
   background-color: var(--green-l2);
 }
 
+#section {
+  padding-left: var(--leftRight-padding);
+  padding-right: var(--leftRight-padding);
+}
+
+@media (max-width: 900px) {
+  #section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (min-width: 2000px) {
+  #section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
 h4 {
   font-family: var(--DM-Sans-regular-font-family);
   font-size: var(--courseCard-label-font-size);

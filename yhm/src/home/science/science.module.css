@@ -32,3 +32,10 @@
     order: 0;
   }
 }
+
+@media (min-width: 2000px) {
+  .science {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

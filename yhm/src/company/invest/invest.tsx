@@ -1,7 +1,7 @@
 import style from './invest.module.css';
 const Invest = () => {
   return (
-    <div className={style.invest}>
+    <div id="section" className={style.invest}>
       <h1>Invester i bedriftens viktigste ressurs</h1>
 
       <p className="ingress">

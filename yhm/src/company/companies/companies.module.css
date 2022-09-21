@@ -1,5 +1,6 @@
 .companies {
-  padding: var(--leftRight-padding);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
   padding-bottom: 0;
 }
 

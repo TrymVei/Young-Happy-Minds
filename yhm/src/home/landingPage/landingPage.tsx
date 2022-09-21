@@ -2,7 +2,7 @@ import Button from '../../components/button/button';
 import style from './landingPage.module.css';
 const LandingPage = () => {
   return (
-    <section className={style.landingpage}>
+    <section id="section" className={style.landingpage}>
       <div className={style.landingpage__wrapper}>
         <h3 className=".">VI ER YOUNG HAPPY MINDS</h3>
         <h1>

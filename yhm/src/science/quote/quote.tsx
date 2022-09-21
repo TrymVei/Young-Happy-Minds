@@ -1,7 +1,7 @@
 import style from './quote.module.css';
 const Quote = () => {
   return (
-    <div className={style.quote}>
+    <div id="section" className={style.quote}>
       <p className="bigQuote">
         “Det jeg personlig liker så godt med positiv psykologi er at det er
         forskningsbasert, samtidig som det er så enkelt og lett forståelig at

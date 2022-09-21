@@ -1,5 +1,6 @@
 .future {
-  padding: var(--leftRight-padding);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
   display: flex;
   gap: 5rem;
 }
@@ -21,11 +22,5 @@
 @media (max-width: 1050px) {
   .future {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 900px) {
-  .future {
-    padding: 5%;
   }
 }

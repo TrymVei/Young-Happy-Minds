@@ -1,7 +1,7 @@
 import style from './future.module.css';
 const Future = () => {
   return (
-    <div className={style.future}>
+    <div id="section" className={style.future}>
       <img src="/images/company-image-2.svg" alt="" />
       <div className={style.future__wrapper}>
         <h2>Fremtidens ferdigheter</h2>

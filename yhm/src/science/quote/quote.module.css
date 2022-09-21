@@ -1,12 +1,12 @@
 .quote {
   padding-top: var(--leftRight-padding);
-  padding-left: 15rem;
   width: 60%;
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 900px) {
   .quote {
-    padding-left: 5%;
     display: block;
     margin: auto;
   }

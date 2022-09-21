@@ -4,7 +4,7 @@ import Button from '../../components/button/button';
 
 const CoursePrice = (props: { courses: Course[] }) => {
   return (
-    <div className={style.coursePrice}>
+    <div id="section" className={style.coursePrice}>
       <h2>Våre kurs</h2>
       {props.courses.map((course) => {
         return (

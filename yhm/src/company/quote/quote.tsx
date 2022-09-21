@@ -1,7 +1,7 @@
 import style from './quote.module.css';
 const Quote = () => {
   return (
-    <div className={style.quote}>
+    <div id="section" className={style.quote}>
       <p className="bigQuote">
         “Folk flest tror at lykke oppnås med sukksess, og at suksess kommer
         etter hardt arbeid. Men dette stemmer ikke: lykke er ikke et resultat av

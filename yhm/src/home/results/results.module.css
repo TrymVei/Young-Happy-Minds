@@ -1,7 +1,5 @@
 .results {
   margin-top: var(--section-margin-top);
-  padding-left: var(--leftRight-padding);
-  padding-right: var(--leftRight-padding);
 }
 
 .result__flex {
@@ -28,10 +26,6 @@
 }
 
 @media (max-width: 1400px) {
-  .results {
-    padding: 5%;
-  }
-
   .result__flex {
     flex-direction: column;
   }

@@ -1,5 +1,6 @@
 .percentSection {
-  padding: var(--leftRight-padding);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
   background-color: var(--green);
   display: flex;
 }
@@ -44,10 +45,6 @@
 }
 
 @media (max-width: 900px) {
-  .percentSection {
-    padding: 5%;
-  }
-
   .percentSection div:nth-last-child(1) img {
     width: auto;
     height: auto;

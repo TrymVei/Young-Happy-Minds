@@ -1,7 +1,5 @@
 .landingpage {
   background-color: var(--landingpage-bg-color);
-  padding-left: var(--leftRight-padding);
-  padding-right: var(--leftRight-padding);
   height: 55rem;
 }
 
@@ -52,7 +50,6 @@
 @media (max-width: 1270px) {
   .landingpage {
     height: auto;
-    padding: 5%;
   }
 
   .landingpage__wrapper {

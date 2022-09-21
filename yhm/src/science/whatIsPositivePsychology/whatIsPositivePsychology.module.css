@@ -1,6 +1,4 @@
 .whatIsPositivePsychology {
-  padding-left: var(--leftRight-padding);
-  padding-right: var(--leftRight-padding);
   padding-top: var(--leftRight-padding);
 }
 
@@ -39,12 +37,6 @@
   .whatIsPositivePsychology__flex img {
     display: block;
     margin: auto;
-  }
-}
-
-@media (max-width: 900px) {
-  .whatIsPositivePsychology {
-    padding: 5%;
   }
 }
 

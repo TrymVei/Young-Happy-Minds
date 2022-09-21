@@ -33,3 +33,25 @@
   font-size: var(--hyperlink-font-size);
   font-weight: var(--paragraph-font-weight);
 }
+
+@media (max-width: 1100px) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
+
+  .contact__wrapper div:nth-child(1) {
+    order: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__wrapper div:nth-child(1) img {
+    width: 335px;
+  }
+}

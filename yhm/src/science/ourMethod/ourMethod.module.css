@@ -43,3 +43,10 @@
     height: auto;
   }
 }
+
+@media (min-width: 2000px) {
+  .ourMethod {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

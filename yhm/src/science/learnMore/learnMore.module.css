@@ -32,6 +32,10 @@
   .learnMore {
     padding: 0;
   }
+
+  .learnMore__ourSources {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
@@ -42,8 +46,11 @@
   .learnMore__green_box {
     padding: 5%;
   }
+}
 
-  .learnMore__ourSources {
-    display: none;
+@media (min-width: 2000px) {
+  .learnMore {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }

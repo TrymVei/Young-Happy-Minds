@@ -3,7 +3,7 @@ import style from './courses.module.css';
 
 const Courses = () => {
   return (
-    <section className={style.courses}>
+    <section id="section" className={style.courses}>
       <div>
         <div className={style.courses__text}>
           <h2>Våre kurs</h2>

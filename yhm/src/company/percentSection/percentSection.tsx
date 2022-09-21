@@ -2,7 +2,7 @@ import Percent from '../../components/percent/percent';
 import style from './percentSection.module.css';
 const PercentSection = () => {
   return (
-    <div className={style.percentSection}>
+    <div id="section" className={style.percentSection}>
       <div>
         <h3>De ansatte som føler mest glede er...</h3>
         <div className={style.percentSection__grid}>

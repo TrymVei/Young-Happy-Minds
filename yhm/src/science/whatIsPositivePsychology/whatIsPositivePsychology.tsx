@@ -1,7 +1,7 @@
 import style from './whatIsPositivePsychology.module.css';
 const WhatIsPositivePsychology = () => {
   return (
-    <div className={style.whatIsPositivePsychology}>
+    <div id="section" className={style.whatIsPositivePsychology}>
       <div className={style.whatIsPositivePsychology__wrapper}>
         <h1>Hva er egentlig positiv psykologi?</h1>
         <p className="ingress">
