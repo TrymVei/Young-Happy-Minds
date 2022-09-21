@@ -1,5 +1,5 @@
 import { Course } from '../../utils/types';
-import style from './CoursePrice.module.css';
+import style from './coursePrice.module.css';
 import Button from '../../components/button/button';
 
 const CoursePrice = (props: { courses: Course[] }) => {
