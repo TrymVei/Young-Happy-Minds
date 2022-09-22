@@ -1,1 +1,1 @@
-export { default } from '../src/science/index';
+export { default } from '../src/srcPages/science/index';

@@ -44,6 +44,7 @@
   position: absolute;
   width: 100%;
   box-sizing: border-box;
+  display: none;
 }
 
 .expanded p a {
@@ -65,5 +66,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .expanded {
+    display: block;
   }
 }

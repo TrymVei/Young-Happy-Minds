@@ -120,9 +120,15 @@ body {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --section-margin-top: 2rem;
+  }
+
   #section {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 

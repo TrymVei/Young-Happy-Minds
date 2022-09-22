@@ -1,1 +1,1 @@
-export { default } from '../src/kidsAndYoung/index';
+export { default } from '../src/srcPages/kidsAndYoung/index';

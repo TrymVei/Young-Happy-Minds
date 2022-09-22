@@ -1,6 +1,7 @@
 import { Course } from '../../utils/types';
 import style from './coursePrice.module.css';
 import Button from '../../components/button/button';
+import ReadMore from '../readMore/readMore';
 
 const CoursePrice = (props: { courses: Course[] }) => {
   return (
@@ -20,11 +21,14 @@ const CoursePrice = (props: { courses: Course[] }) => {
                 Pris fra {course.priceRange[0]} til {course.priceRange[1]},-
               </p>
             </div>
-            <div>
-              <p>
-                <a href="">Les mer</a>
-              </p>
-              <button>Bestill kurs</button>
+            <div className={style.coursePrice__course__order}>
+              <ReadMore />
+              <Button
+                color={'#10534F'}
+                bgColor={'#FFD526'}
+                text={'Bestill kurs'}
+                big={false}
+              />
             </div>
           </div>
         );

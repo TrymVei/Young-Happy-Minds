@@ -1,0 +1,20 @@
+.invest {
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+  width: 50%;
+}
+
+.invest p {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .invest {
+    width: auto;
+    padding-top: 1rem;
+  }
+
+  .invest p {
+    width: 100%;
+  }
+}

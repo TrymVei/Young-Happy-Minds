@@ -10,6 +10,12 @@
   background-color: var(--green-l1);
 }
 
+.coursePrice__course__order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .coursePrice__form {
   padding: 1rem;
 }

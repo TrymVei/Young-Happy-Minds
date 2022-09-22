@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { NavbarDesktop, NavbarMobile } from '../components/navbar/navbar';
+import Navbar from '../components/navbar/navbar';
 import style from './layout.module.css';
 
 interface Props {
@@ -7,30 +6,9 @@ interface Props {
 }
 
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  const handleResize = () => {
-    if (window.matchMedia('(max-width: 1350px)').matches) {
-      setIsDesktop(false);
-    } else {
-      setIsDesktop(true);
-    }
-  };
-
-  useEffect(() => {
-    if (window) {
-      if (window.matchMedia('(max-width: 1350)').matches) {
-        setIsDesktop(false);
-      } else {
-        setIsDesktop(true);
-      }
-      window.addEventListener('resize', handleResize);
-    }
-  }, []);
-
   return (
     <div id="top">
-      <NavbarMobile />
+      <Navbar />
 
       <main>{props.children}</main>
 

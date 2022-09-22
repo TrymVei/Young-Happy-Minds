@@ -1,0 +1,86 @@
+.ingress {
+  padding: var(--leftRight-padding);
+  padding-right: 0;
+}
+
+.ingress h1,
+.ingress #ingress {
+  padding-left: 5rem;
+}
+
+.ingress h1 {
+  width: 45rem;
+}
+
+.ingress #ingress {
+  width: 55rem;
+}
+
+.ingress__flex {
+  padding-top: var(--leftRight-padding);
+  display: flex;
+  gap: 5rem;
+}
+
+.ingress__flex h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 1400px) {
+  .ingress__flex div:nth-child(1) {
+    width: 50%;
+  }
+
+  .ingress__flex div:nth-last-child(1) {
+    width: 50%;
+  }
+
+  .ingress__flex div:nth-last-child(1) img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ingress {
+    padding-right: var(--leftRight-padding);
+  }
+
+  .ingress h1,
+  .ingress #ingress {
+    width: auto;
+    padding: 0;
+  }
+
+  .ingress__flex {
+    flex-direction: column;
+  }
+
+  .ingress__flex div:nth-child(1) {
+    width: auto;
+  }
+
+  .ingress__flex div:nth-last-child(1) {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .ingress {
+    padding: 5%;
+  }
+
+  .ingress__flex {
+    gap: 1rem;
+  }
+
+  .ingress__flex div:nth-child(1) {
+    order: 2;
+  }
+}
+
+@media (min-width: 2000px) {
+  .ingress {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
