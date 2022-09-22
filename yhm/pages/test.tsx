@@ -9,15 +9,15 @@ const Test = () => {
     if (hidde) {
       anime({
         targets: '#test',
-        translateX: -500,
+        translateX: -1000,
         easing: 'easeInOutQuad',
         direction: 'alternate',
         loop: false,
       });
     } else {
       anime({
-        targets: '.test',
-        translateX: 500,
+        targets: '#test',
+        translateX: 1000,
         easing: 'easeInOutQuad',
         direction: 'alternate',
         loop: false,
@@ -27,13 +27,13 @@ const Test = () => {
   };
 
   return (
-    <div>
+    <div style={{ position: 'relative', overflow: 'hidden' }}>
       <div
         id="test"
         className={style.test}
         style={{
           position: 'relative',
-          right: '-500px',
+          right: '-1000px',
           backgroundColor: 'red',
           width: '100%',
           height: '300px',
