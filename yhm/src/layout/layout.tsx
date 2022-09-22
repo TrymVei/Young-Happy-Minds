@@ -40,16 +40,16 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
                 <a href="">For enkeltpersoner</a>
               </p>
               <p>
-                <a href="">For bedrifter</a>
+                <a href="/company">For bedrifter</a>
               </p>
               <p>
-                <a href="">For barn og unge</a>
+                <a href="/young">For barn og unge</a>
               </p>
             </div>
             <div>
               <h3>Om oss</h3>
               <p>
-                <a href="">Om Young Happy Minds</a>
+                <a href="/about">Om Young Happy Minds</a>
               </p>
             </div>
           </div>

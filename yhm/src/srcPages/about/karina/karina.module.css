@@ -1,0 +1,23 @@
+.karina {
+  display: flex;
+  gap: 5rem;
+  margin-top: 10rem;
+}
+
+.karina img {
+  order: -1;
+}
+
+@media (max-width: 1250px) {
+  .karina {
+    flex-direction: column;
+  }
+
+  .karina img {
+    display: block;
+    margin: auto;
+    width: 335px;
+    height: auto;
+    order: 2;
+  }
+}

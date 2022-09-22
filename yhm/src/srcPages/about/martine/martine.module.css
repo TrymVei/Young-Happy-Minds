@@ -1,0 +1,18 @@
+.martine {
+  display: flex;
+  gap: 5rem;
+  margin-top: var(--section-margin-top);
+}
+
+@media (max-width: 1250px) {
+  .martine {
+    flex-direction: column;
+  }
+
+  .martine img {
+    display: block;
+    margin: auto;
+    width: 335px;
+    height: auto;
+  }
+}
