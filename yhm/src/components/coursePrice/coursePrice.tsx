@@ -1,13 +1,11 @@
 import { Course } from '../../utils/types';
 import style from './coursePrice.module.css';
 import Button from '../../components/button/button';
-import ReadMore from '../readMore/readMore';
+import { ReadMoreFunction } from '../readMore/readMore';
 import CourseAcordion from '../accordion/courseAccordion/courseAccordion';
 import { useState } from 'react';
 
 const CoursePrice = (props: { courses: Course[] }) => {
-  const [state, setState] = useState(false);
-
   return (
     <div id="section" className={style.coursePrice}>
       <h2>Våre kurs</h2>
@@ -70,7 +68,7 @@ const SingleCourse = (course: Course) => {
         </p>
       </div>
       <div className={style.coursePrice__course__order}>
-        <ReadMore onClick={() => setState(!state)} />
+        <ReadMoreFunction onClick={() => setState(!state)} />
         <Button
           color={'#10534F'}
           bgColor={'#FFD526'}
