@@ -1,0 +1,15 @@
+.accordion h4 {
+  color: var(--green-d1);
+  font-size: var(--font-size-18);
+  font-family: var(--jakarta-bold-font-family);
+}
+
+.accordion p,
+.accordion li ul {
+  font-size: var(--font-size-18);
+}
+
+.accordion__text,
+.accordion__list {
+  margin-bottom: 5rem;
+}

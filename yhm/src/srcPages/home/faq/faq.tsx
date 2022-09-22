@@ -1,4 +1,4 @@
-import Accordion from '../../../components/accordion/accordion';
+import Accordion from '../../../components/accordion/questionAccordion/accordion';
 import style from './faq.module.css';
 
 const FAQ = () => {

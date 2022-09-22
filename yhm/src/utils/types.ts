@@ -3,5 +3,20 @@ export type Course = {
   time: string;
   priceRange: number[];
   shortDescription: string;
-  description: string;
+  description: CourseText;
+};
+
+export type CourseText = {
+  sections: CourseSection[];
+  listItems: CourseList[];
+};
+
+export type CourseSection = {
+  heading: string;
+  paragraph: string[];
+};
+
+export type CourseList = {
+  heading: string;
+  listItems: string[];
 };
