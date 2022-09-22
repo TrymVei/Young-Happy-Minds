@@ -4,7 +4,18 @@ import style from './navbar.module.css';
 import anime from 'animejs';
 
 export const Navbar = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  useEffect(() => {
+    anime({
+      targets: '#animate',
+      translateX: 1350,
+      easing: 'easeInOutQuad',
+      direction: 'normal',
+      loop: false,
+    });
+  }, []);
+
   const burgermenu = () => {
     if (isExpanded)
       anime({
@@ -12,6 +23,8 @@ export const Navbar = () => {
         translateX: 0,
         easing: 'easeInOutQuad',
         direction: 'normal',
+        duration: 500,
+
         loop: false,
       });
     else {
@@ -20,7 +33,6 @@ export const Navbar = () => {
         translateX: 1350,
         easing: 'easeInOutQuad',
         direction: 'normal',
-        duration: 1000,
         loop: false,
       });
     }
