@@ -17,9 +17,10 @@ export const Navbar = () => {
     else {
       anime({
         targets: '#animate',
-        translateX: 13500,
+        translateX: 1350,
         easing: 'easeInOutQuad',
         direction: 'normal',
+        duration: 1000,
         loop: false,
       });
     }
@@ -30,7 +31,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div>
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
         <div className={style.navbar}>
           <p className={style.navbar__logo}>
             <a href="/">Young Happy Minds</a>
@@ -126,7 +127,9 @@ export const Navbar = () => {
         <div
           className={style.expanded}
           id="animate"
-          style={{ position: 'absolute' }}
+          style={
+            isExpanded ? { position: 'absolute' } : { position: 'relative' }
+          }
         >
           <p>
             <a href="">Onlinekurs</a>
