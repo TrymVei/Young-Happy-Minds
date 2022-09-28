@@ -1,5 +1,5 @@
 .science {
-  margin-top: 26.875rem;
+  margin-top: var(--section-margin-top);
   padding-right: var(--leftRight-padding);
 }
 

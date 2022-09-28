@@ -11,11 +11,13 @@ const LandingPage = () => {
         <div className={style.landing__wrapper__flex}>
           <div>
             <p className="ingress">
-              Vårt mål er å dele kunnskap om positiv psykologi, så du og dine
-              kan ha det bedre, og være bedre rustet til å takle livets
-              ufordringer. Våre kurs er utviklet i samarbeid med fagmiljøer
-              verden over, og har
-              <a href=""> dokumentert effekt.</a>{' '}
+              Vi deler kunnskap om positiv psykologi, så du og dine kan prestere
+              bedre, ha det bedre, og være bedre rustet til å takle livets
+              ufordringer.
+            </p>
+            <p className="ingress">
+              Våre kurs er utviklet i samarbeid med fagmiljøer verden over, og
+              har dokumentert effekt.
             </p>
             <div className={style.landingpage__buttons}>
               <Button

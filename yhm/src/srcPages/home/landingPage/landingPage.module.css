@@ -4,7 +4,7 @@
 }
 
 .landingpage__wrapper {
-  padding-top: 10rem;
+  padding-top: 7.5rem;
 }
 
 .landingpage__wrapper h3 {
@@ -40,7 +40,7 @@
 }
 
 .landingpage__buttons {
-  margin-top: 5rem;
+  margin-top: 8.125rem;
   display: flex;
   gap: 4rem;
   justify-content: flex-start;

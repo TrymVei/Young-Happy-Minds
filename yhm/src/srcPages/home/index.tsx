@@ -15,7 +15,6 @@ const Home = () => {
         <Science />
         <Results />
         <Quote />
-        <WhoAreWe />
         <Courses />
         <FAQ />
       </Layout>

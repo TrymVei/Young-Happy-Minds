@@ -9,6 +9,7 @@
 
 .result__flex h2 {
   margin: 0;
+  margin-bottom: var(--margin-bottom-30);
 }
 
 .result__flex div {

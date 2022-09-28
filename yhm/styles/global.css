@@ -98,9 +98,10 @@
   /* Quotes */
 
   /* Section Margin */
-  --section-margin-top: 18.75rem;
+  --section-margin-top: 17.5rem;
+  --margin-bottom-30: 1.875rem;
 
-  --leftRight-padding: 9.375rem;
+  --leftRight-padding: 8.125rem;
 
   /* Navbar */
   --logo-font-weight: 700;
@@ -156,6 +157,7 @@ h2 {
   font-size: var(--font-size-42);
   color: var(--lightGreen-color);
   font-weight: var(--bold);
+  margin-bottom: var(--margin-bottom-30);
 }
 
 h1 {
