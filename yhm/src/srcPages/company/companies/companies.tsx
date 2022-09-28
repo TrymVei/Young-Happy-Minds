@@ -1,5 +1,4 @@
 import anime from 'animejs';
-import { useEffect } from 'react';
 import style from './companies.module.css';
 const Companies = () => {
   const animate = () => {
@@ -24,13 +23,13 @@ const Companies = () => {
         <img src="/images/companies/companies-3.svg" alt="" />
         <img src="/images/companies/companies-4.svg" alt="" />
         <img src="/images/companies/companies-4.svg" alt="" />
+        <img src="/images/companies/companies-1.svg" alt="" />
+        <img src="/images/companies/companies-2.svg" alt="" />
+        <img src="/images/companies/companies-3.svg" alt="" />
         <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
-        <img src="/images/companies/companies-4.svg" alt="" />
+        <img src="/images/companies/companies-1.svg" alt="" />
+        <img src="/images/companies/companies-2.svg" alt="" />
+        <img src="/images/companies/companies-3.svg" alt="" />
       </div>
     </div>
   );
