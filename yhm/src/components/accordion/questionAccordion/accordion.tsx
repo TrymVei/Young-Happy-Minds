@@ -21,12 +21,9 @@ const Accordion = (props: { question: string; answer: string; id: string }) => {
   };
 
   return (
-    <div className={style.accordion} onClick={() => setIsOpen(!isOpen)}>
+    <div className={style.accordion}>
       <div className={style.accordion__flex}>
-        <p
-          className={style.accordion__question}
-          style={{ transition: 'all 0.3s ease-in-out' }}
-        >
+        <p id="boldJakarta22" style={{ transition: 'all 0.3s ease-in-out' }}>
           {props.question}
         </p>
         <img
@@ -36,7 +33,11 @@ const Accordion = (props: { question: string; answer: string; id: string }) => {
           alt="open"
         />
       </div>
-      {isOpen ? <p>{props.answer}</p> : <></>}
+      {isOpen ? (
+        <p className={style.accordion__answer}>{props.answer}</p>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

@@ -1,9 +1,15 @@
 .accordion {
   width: 100%;
+  margin-top: var(--margin-60);
+  margin-bottom: var(--margin-60);
 }
 
 .accordion__flex {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--green-d1);
+}
+
+.accordion__answer {
+  margin-top: var(--margin-bottom-30);
 }

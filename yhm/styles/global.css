@@ -100,6 +100,7 @@
   /* Section Margin */
   --section-margin-top: 17.5rem;
   --margin-bottom-30: 1.875rem;
+  --margin-60: 3.75rem;
 
   --leftRight-padding: 8.125rem;
 
@@ -226,6 +227,11 @@ h1 {
 
 .courseBold {
   font-family: var(--DM-Sans-bold-font-family);
+  font-size: var(--font-size-22);
+}
+
+#boldJakarta22 {
+  font-family: var(--jakarta-bold-font-family);
   font-size: var(--font-size-22);
 }
 
