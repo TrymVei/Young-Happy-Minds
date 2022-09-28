@@ -6,7 +6,15 @@
 
 .companies__wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.companies__wrapper img {
+  position: relative;
+  left: -1000px;
 }
 
 @media (max-width: 1000px) {

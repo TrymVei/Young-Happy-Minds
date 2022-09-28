@@ -2,6 +2,7 @@
   display: flex;
   gap: 5rem;
   margin-top: var(--section-margin-top);
+  margin-bottom: var(--section-margin-top);
 }
 
 @media (max-width: 1250px) {
