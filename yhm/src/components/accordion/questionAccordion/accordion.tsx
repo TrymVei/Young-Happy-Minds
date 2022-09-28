@@ -8,12 +8,12 @@ const Accordion = (props: { question: string; answer: string; id: string }) => {
   const handleOnClick = () => {
     setIsOpen(!isOpen);
     if (!isOpen)
-      var animation = anime({
+      anime({
         targets: '#open' + props.id,
         rotate: '0.625turn',
       });
     else {
-      var animation = anime({
+      anime({
         targets: '#open' + props.id,
         rotate: '0',
       });
