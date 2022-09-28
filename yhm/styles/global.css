@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: 'Plus Jakarta Sans Medium';
+  src: url('/fonts/jakarta/PlusJakartaSans-medium.woff');
+}
+
+@font-face {
   font-family: 'DM Sans';
   src: url('/fonts/dm/DMSans-Regular.ttf');
 }
@@ -92,10 +97,6 @@
   /* Paragraph */
   --paragraph-font-weight: 400;
   --paragraph-font-family: 'DM Sans';
-
-  /* hyperlink */
-
-  /* Quotes */
 
   /* Section Margin */
   --section-margin-top: 17.5rem;

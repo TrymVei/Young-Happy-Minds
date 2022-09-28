@@ -32,6 +32,7 @@ const LandingPage = () => {
                 text="Bedriftskurs"
                 big={true}
               ></Button>
+              <img src="/images/downArrow.svg" alt="pil som peker ned" />
             </div>
           </div>
           <img src="/images/girl1.png" alt="Glad jente" />
