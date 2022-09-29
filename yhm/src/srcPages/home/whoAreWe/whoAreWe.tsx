@@ -14,7 +14,7 @@ const WhoAreWe = () => {
           forfatter, foredragsholder og TV-personlighet.
         </p>
         <div className={style.whoAreWe__readMore}>
-          <ReadMore />
+          <ReadMore href={'/about'} />
         </div>
       </div>
       <img src="/images/whoAreWe-image.png" alt="Bilde av Karina og Martine" />

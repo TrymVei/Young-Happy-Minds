@@ -23,6 +23,7 @@ const Courses = () => {
           description={
             'Få innsikt i den forskningsbaserte teorien, og få en rekke øvelser/hacks som er nyttige for deg, partnere, barn og på jobb.'
           }
+          href={'/noe'}
         />
         <CourseCard
           imgName={'course-2'}
@@ -32,6 +33,7 @@ const Courses = () => {
           description={
             'De som har det bra mentalt, presterer også bedre på jobb. Vi holder kurs og workshops tilpasset din arbeidsplass eller gruppe.'
           }
+          href={'/noe'}
         />
         <CourseCard
           imgName={'course-3'}
@@ -41,6 +43,7 @@ const Courses = () => {
           description={
             'Unge som har det bra med seg selv gjør det bedre på alle arenaer; på skolen, sosialt og i idrett. Vi lærer bort teknikker som kan hjelpe og styrke dem gjennom resten av livet.'
           }
+          href={'/noe'}
         />
       </div>
     </section>

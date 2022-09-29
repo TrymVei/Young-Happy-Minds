@@ -8,10 +8,12 @@ const Button = (props: {
 }) => {
   return (
     <button
-      style={{ backgroundColor: props.bgColor, color: props.color }}
+      style={{ backgroundColor: props.bgColor }}
       className={props.big ? style.button : style.buttonSmall}
     >
-      <a href={props.href}>{props.text}</a>
+      <a style={{ color: props.color }} href={props.href}>
+        {props.text}
+      </a>
       {props.big ? (
         <img src="/images/arrow.svg" alt="arrow" />
       ) : (

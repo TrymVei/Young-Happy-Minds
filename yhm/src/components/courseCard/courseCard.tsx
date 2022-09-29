@@ -7,6 +7,7 @@ const CourseCard = (props: {
   heading: string;
   label: string;
   description: string;
+  href?: string;
 }) => {
   const [isDesktop, setIsDesktop] = useState(true);
 
@@ -46,6 +47,7 @@ const CourseCard = (props: {
             bgColor={'#ffd526'}
             text={'Mer info'}
             big={false}
+            href={props.href}
           />
         </div>
       </div>
@@ -70,6 +72,7 @@ const CourseCard = (props: {
               bgColor={'#ffd526'}
               text={'Mer info'}
               big={false}
+              href={props.href}
             />
           </div>
         </div>
