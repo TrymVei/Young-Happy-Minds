@@ -4,13 +4,14 @@ const Button = (props: {
   bgColor: string;
   text: string;
   big: boolean;
+  href?: string;
 }) => {
   return (
     <button
       style={{ backgroundColor: props.bgColor, color: props.color }}
       className={props.big ? style.button : style.buttonSmall}
     >
-      {props.text}
+      <a href={props.href}>{props.text}</a>
       {props.big ? (
         <img src="/images/arrow.svg" alt="arrow" />
       ) : (

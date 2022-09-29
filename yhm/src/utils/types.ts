@@ -4,6 +4,7 @@ export type Course = {
   priceRange: number[];
   shortDescription: string;
   description: CourseText;
+  href: string;
 };
 
 export type CourseText = {

@@ -17,6 +17,7 @@ const CoursePrice = (props: { courses: Course[] }) => {
             priceRange={course.priceRange}
             shortDescription={course.shortDescription}
             description={course.description}
+            href={course.href}
           />
         );
       })}
@@ -74,6 +75,7 @@ const SingleCourse = (course: Course) => {
           bgColor={'#FFD526'}
           text={'Bestill kurs'}
           big={false}
+          href={course.href}
         />
       </div>
     </div>

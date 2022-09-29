@@ -27,6 +27,7 @@ const course1: Course = {
     sections: [courseSection1],
     listItems: [courseList1],
   },
+  href: '/Liten',
 };
 
 const course2: Course = {
@@ -39,6 +40,7 @@ const course2: Course = {
     sections: [courseSection1],
     listItems: [courseList1],
   },
+  href: '/stor',
 };
 
 const course3: Course = {
@@ -51,6 +53,7 @@ const course3: Course = {
     sections: [courseSection1],
     listItems: [courseList1],
   },
+  href: '/Fleksibel',
 };
 
 const courses = [course1, course2, course3];
@@ -59,9 +62,9 @@ const Company = () => {
   return (
     <Layout>
       <Invest />
+      <Companies />
       <PercentSection />
       <Future />
-      <Companies />
       <CoursePrice courses={courses} />
       <Quote />
     </Layout>

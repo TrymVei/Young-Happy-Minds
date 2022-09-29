@@ -1,7 +1,5 @@
 .companies {
   padding-top: var(--leftRight-padding);
-  padding-bottom: var(--leftRight-padding);
-  padding-bottom: 0;
 }
 
 .companies__wrapper {
@@ -12,9 +10,13 @@
   overflow: hidden;
 }
 
+.companies p {
+  margin-left: var(--leftRight-padding);
+}
+
 .companies__wrapper img {
   position: relative;
-  left: -1000px;
+  left: 1000;
 }
 
 @media (max-width: 1000px) {

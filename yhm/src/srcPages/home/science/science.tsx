@@ -12,7 +12,7 @@ const Science = () => {
           feltet, fra blant annet __________ og __________.
         </p>
         <div className={style.science__readMore}>
-          <ReadMore />
+          <ReadMore href={'/science'} />
         </div>
       </div>
     </div>

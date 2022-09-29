@@ -10,11 +10,13 @@ export const ReadMoreFunction = (props: { onClick: Function }) => {
   );
 };
 
-const ReadMore = () => {
+const ReadMore = (props: { href: string }) => {
   return (
     <div className={style.readMore}>
       <p>
-        <a className="menyBold">Les mer</a>
+        <a href={props.href} className="menyBold">
+          Les mer
+        </a>
         <img src="/images/arrow.svg" alt="Les mer pil" />
       </p>
     </div>

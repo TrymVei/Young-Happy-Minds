@@ -24,6 +24,7 @@ const KidsAndYoung = () => {
       sections: [courseSection1],
       listItems: [courseList1],
     },
+    href: '/noe',
   };
   const course2: Course = {
     title: 'For deg som jobber med barn og unge',
@@ -35,6 +36,7 @@ const KidsAndYoung = () => {
       sections: [courseSection1],
       listItems: [courseList1],
     },
+    href: '/noe',
   };
   const course3: Course = {
     title: 'Foreldre',
@@ -46,6 +48,7 @@ const KidsAndYoung = () => {
       sections: [courseSection1],
       listItems: [courseList1],
     },
+    href: '/noe',
   };
 
   const courses = [course1, course2, course3];
