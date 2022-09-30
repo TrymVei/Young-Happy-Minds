@@ -29,18 +29,6 @@
   display: none;
 }
 
-.perma__quote {
-  margin-top: var(--leftRight-padding);
-  display: flex;
-  padding-right: 15rem;
-}
-
-.perma__quote p {
-  margin-left: 5rem;
-  display: flex;
-  align-items: center;
-}
-
 @media (max-width: 1250px) {
   .perma {
     flex-direction: column;
@@ -52,38 +40,14 @@
   }
 }
 
-@media (max-width: 1050px) {
-  .perma__quote {
-    flex-direction: column;
-    padding: 5%;
-  }
-
-  .perma__quote img {
-    display: block;
-    margin: auto;
-  }
-}
-
 @media (max-width: 900px) {
   .perma {
     padding: 5%;
   }
 }
 
-@media (max-width: 700px) {
-  .perma__quote img {
-    width: 335px;
-    height: auto;
-  }
-}
-
 @media (min-width: 2000px) {
   .perma {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  .perma__quote {
     padding-left: 20%;
     padding-right: 20%;
   }

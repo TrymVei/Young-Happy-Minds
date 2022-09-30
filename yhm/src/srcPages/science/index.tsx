@@ -1,4 +1,5 @@
 import Layout from '../../layout/layout';
+import Quote2 from '../kidsAndYoung/quote2/quote2';
 import LearnMore from './learnMore/learnMore';
 import OurMethod from './ourMethod/ourMethod';
 import Perma from './perma/perma';
@@ -9,8 +10,9 @@ const Science = () => {
   return (
     <Layout>
       <WhatIsPositivePsychology />
-      <Perma />
       <OurMethod />
+      <Quote2 />
+      <Perma />
       <Quote />
       <LearnMore />
     </Layout>

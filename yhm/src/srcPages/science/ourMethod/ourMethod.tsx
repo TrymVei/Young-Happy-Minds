@@ -2,7 +2,7 @@ import style from './ourMethod.module.css';
 
 const OurMethod = () => {
   return (
-    <div className={style.ourMethod}>
+    <div id="section" className={style.ourMethod}>
       <div className={style.ourMethod__wrapper}>
         <h2>Vår metode - Happy Hacks</h2>
         <p>

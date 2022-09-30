@@ -1,9 +1,12 @@
 .ourMethod {
+  margin-top: var(--section-margin-top);
   padding: var(--leftRight-padding);
   padding-right: 0;
   padding-bottom: 0;
   display: flex;
   gap: 5rem;
+  background-color: var(--green-l1);
+  padding-bottom: var(--leftRight-padding);
 }
 
 .ourMethod h2 {
