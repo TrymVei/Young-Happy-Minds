@@ -24,24 +24,28 @@ const Results = () => {
             text="økt livskvalitet etter programmet"
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
+            id="1"
           />
           <Percent
             percent={12}
             text="bedre emosjonelt velvære"
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
+            id="2"
           />
           <Percent
             percent={14}
             text="forbedring av selvfølelse"
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
+            id="3"
           />
           <Percent
             percent={12}
             text="forbedring av utholdenhet"
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
+            id="4"
           />
         </div>
         <div className={style.mobile}>

@@ -1,14 +1,56 @@
+import anime from 'animejs';
+import { useEffect, useState } from 'react';
 import style from './percent.module.css';
 const Percent = (props: {
   percent: number;
   text: string;
   percentColor: string;
   textColor: string;
+  id: string;
 }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  console.log(scrollPosition);
+
+  const animation = () => {
+    anime({
+      targets: '#percent' + props.id,
+      innerText: [0, props.percent],
+      easing: 'linear',
+      round: true,
+    });
+  };
+
+  useEffect(() => {
+    if (scrollPosition < 2356 && scrollPosition > 1350 && !loaded) {
+      animation();
+      console.log('ja');
+      setLoaded(true);
+    }
+  }, [scrollPosition]);
+
   return (
-    <div className={style.percent}>
-      <h1 className="bigGraphic" style={{ color: props.percentColor }}>
-        {props.percent}%
+    <div onClick={animation} className={style.percent}>
+      <h1
+        id={'percent' + props.id}
+        className="bigGraphic"
+        style={{ color: props.percentColor }}
+      >
+        {0}%
       </h1>
       <p style={{ color: props.textColor }} className="bodyText">
         {props.text}
