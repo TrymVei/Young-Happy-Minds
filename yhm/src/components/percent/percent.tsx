@@ -30,7 +30,7 @@ const Percent = (props: {
     anime({
       targets: '#percent' + props.id,
       innerText: [0, props.percent],
-      easing: 'linear',
+      easing: 'easeInOutExpo',
       round: true,
     });
   };
