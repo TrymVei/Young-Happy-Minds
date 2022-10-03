@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react';
 import Percent from '../../../components/percent/percent';
 import style from './results.module.css';
 const Results = () => {
+  const [animationStart, setAnimationStart] = useState(900);
+
+  useEffect(() => {
+    if (window) {
+      if (window.innerWidth < 900) {
+        setAnimationStart(1400);
+      }
+    }
+  });
   return (
     <div id="section" className={style.results}>
       <div className={style.result__flex}>
@@ -25,6 +35,7 @@ const Results = () => {
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
             id="1"
+            animationStart={animationStart}
           />
           <Percent
             percent={12}
@@ -32,6 +43,7 @@ const Results = () => {
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
             id="2"
+            animationStart={animationStart}
           />
           <Percent
             percent={14}
@@ -39,6 +51,7 @@ const Results = () => {
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
             id="3"
+            animationStart={animationStart}
           />
           <Percent
             percent={12}
@@ -46,6 +59,7 @@ const Results = () => {
             percentColor={'#0D534F'}
             textColor={'#0D534F'}
             id="4"
+            animationStart={animationStart}
           />
         </div>
         <div className={style.mobile}>

@@ -1,6 +1,18 @@
+import { useEffect, useState } from 'react';
 import Percent from '../../../components/percent/percent';
 import style from './percentSection.module.css';
+
 const PercentSection = () => {
+  const [animationStart, setAnimationStart] = useState(900);
+
+  useEffect(() => {
+    if (window) {
+      if (window.innerWidth < 900) {
+        setAnimationStart(300);
+      }
+    }
+  });
+
   return (
     <div id="section" className={style.percentSection}>
       <div>
@@ -11,24 +23,32 @@ const PercentSection = () => {
             text={'mer motivert enn sine kollegaer'}
             percentColor={'#FFD526'}
             textColor={'#F7FDF5'}
+            id="1"
+            animationStart={animationStart}
           />
           <Percent
             percent={155}
             text={'mer fornøyd med jobben sin'}
             percentColor={'#FFD526'}
             textColor={'#F7FDF5'}
+            id="2"
+            animationStart={animationStart}
           />
           <Percent
             percent={50}
             text={'mer produktive'}
             percentColor={'#FFD526'}
             textColor={'#F7FDF5'}
+            id="3"
+            animationStart={animationStart}
           />
           <Percent
             percent={108}
             text={'mer engasjerte'}
             percentColor={'#FFD526'}
             textColor={'#F7FDF5'}
+            id="4"
+            animationStart={animationStart}
           />
         </div>
         <p className="source">

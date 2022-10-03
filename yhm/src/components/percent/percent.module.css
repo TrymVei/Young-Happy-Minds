@@ -1,15 +1,5 @@
-.percent {
-  width: 400px;
-  display: block;
-  margin: auto;
-}
-
 .percent h1 {
   margin: 0;
   color: var(--lightGreen-color);
   /* font-size: 6rem; */
-}
-
-.percent {
-  width: auto;
 }

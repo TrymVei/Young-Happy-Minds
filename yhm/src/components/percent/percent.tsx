@@ -7,6 +7,7 @@ const Percent = (props: {
   percentColor: string;
   textColor: string;
   id: string;
+  animationStart: number;
 }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -36,7 +37,7 @@ const Percent = (props: {
   };
 
   useEffect(() => {
-    if (scrollPosition < 2356 && scrollPosition > 1350 && !loaded) {
+    if (scrollPosition > props.animationStart && !loaded) {
       animation();
       console.log('ja');
       setLoaded(true);
