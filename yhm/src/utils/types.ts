@@ -1,10 +1,13 @@
 export type Course = {
   title: string;
   time: string;
-  priceRange: number[];
+  price: string;
   shortDescription: string;
   description: CourseText;
   href: string;
+  imgUrl: string;
+  id: string;
+  buttonText: string;
 };
 
 export type CourseText = {
@@ -21,3 +24,7 @@ export type CourseList = {
   heading: string;
   listItems: string[];
 };
+
+export interface Props {
+  children: React.ReactNode;
+}

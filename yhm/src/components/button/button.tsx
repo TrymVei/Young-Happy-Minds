@@ -5,6 +5,7 @@ const Button = (props: {
   text: string;
   big: boolean;
   href?: string;
+  img: boolean;
 }) => {
   return (
     <button
@@ -14,10 +15,15 @@ const Button = (props: {
       <a style={{ color: props.color }} href={props.href}>
         {props.text}
       </a>
-      {props.big ? (
+      {props.big && props.img ? (
         <img src="/images/arrow.svg" alt="arrow" />
       ) : (
+        <></>
+      )}
+      {!props.big && props.img ? (
         <img src="/images/smallArrow.svg" alt="arrow" />
+      ) : (
+        <></>
       )}
     </button>
   );

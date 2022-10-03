@@ -11,7 +11,7 @@ const PercentSection = () => {
         setAnimationStart(300);
       }
     }
-  });
+  }, []);
 
   return (
     <div id="section" className={style.percentSection}>

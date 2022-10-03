@@ -1,9 +1,6 @@
 import Navbar from '../components/navbar/navbar';
+import { Props } from '../utils/types';
 import style from './layout.module.css';
-
-interface Props {
-  children: React.ReactNode;
-}
 
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
   return (

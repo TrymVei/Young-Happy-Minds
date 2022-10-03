@@ -5,7 +5,6 @@ const CourseCard = (props: {
   imgName: string;
   imgAlt: string;
   heading: string;
-  label: string;
   description: string;
   href?: string;
 }) => {
@@ -39,7 +38,6 @@ const CourseCard = (props: {
         <div className={style.courseCard__container}>
           <div className={style.courseCard__flex}>
             <p>{props.heading}</p>
-            <p className={style.corseCard__label}>{props.label}</p>
           </div>
           <p className="smallText">{props.description}</p>
           <Button
@@ -48,6 +46,7 @@ const CourseCard = (props: {
             text={'Mer info'}
             big={false}
             href={props.href}
+            img={true}
           />
         </div>
       </div>
@@ -57,7 +56,6 @@ const CourseCard = (props: {
       <div className={style.courseCard}>
         <div className={style.courseCard__flex}>
           <p>{props.heading}</p>
-          <p className={style.corseCard__label}>{props.label}</p>
         </div>
         <div className={style.courseCard__wrapper}>
           <img
@@ -73,6 +71,7 @@ const CourseCard = (props: {
               text={'Mer info'}
               big={false}
               href={props.href}
+              img={true}
             />
           </div>
         </div>

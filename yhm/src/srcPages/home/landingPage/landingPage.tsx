@@ -25,12 +25,14 @@ const LandingPage = () => {
                 color="#10534F"
                 text="Onlinekurs"
                 big={true}
+                img={true}
               ></Button>
               <Button
                 bgColor="#FFFFFF"
                 color="#10534F"
                 text="Bedriftskurs"
                 big={true}
+                img={true}
               ></Button>
               <img src="/images/downArrow.svg" alt="pil som peker ned" />
             </div>

@@ -19,7 +19,6 @@ const Courses = () => {
           imgName={'course-1'}
           imgAlt={'Dame med laptop'}
           heading={'For enkeltpersoner'}
-          label={'Online'}
           description={
             'Få innsikt i den forskningsbaserte teorien, og få en rekke øvelser/hacks som er nyttige for deg, partnere, barn og på jobb.'
           }
@@ -29,7 +28,6 @@ const Courses = () => {
           imgName={'course-2'}
           imgAlt={'Foredragsholder'}
           heading={'For bedrift'}
-          label={'fysisk/digitalt'}
           description={
             'De som har det bra mentalt, presterer også bedre på jobb. Vi holder kurs og workshops tilpasset din arbeidsplass eller gruppe.'
           }
@@ -39,7 +37,6 @@ const Courses = () => {
           imgName={'course-3'}
           imgAlt={'3 som holder rundt seg'}
           heading={'For barn og unge'}
-          label={'fysisk'}
           description={
             'Unge som har det bra med seg selv gjør det bedre på alle arenaer; på skolen, sosialt og i idrett. Vi lærer bort teknikker som kan hjelpe og styrke dem gjennom resten av livet.'
           }

@@ -41,21 +41,24 @@ const courseList2: CourseList = {
 
 const KidsAndYoung = () => {
   const course1: Course = {
-    title: 'For barn og unge',
-    time: 'Dagskurs, 4 timer',
-    priceRange: [0, 0],
+    title: 'Digitalt kurs for foreldre',
+    time: '30 timer over 10 uker',
+    price: 'Pris 5900,-',
     shortDescription:
-      'Dette er et engasjerende og interaktivt kurs som gir effektive verktøy og metoder for å oppnå økt trivsel, velvære og mer glede. Vi gir en introduksjon i vitenskapen bak lykke, med positiv psykologi som teoretisk rammeverk - på en leken, lærerik måte.',
+      'Har du lyst til å gå fra passasjer til sjåfør i ditt eget liv? Invester i deg selv og lær hvordan du kan bli mer robust, mestre stress og oppleve mer livsglede i hverdagen. Dette kurset er for deg som ønsker verktøy for å snu ditt og dine barns negative tankemønstre, få mer energi og overskudd, bedre relasjoner, en tydeligere retning, mer mening, mestring og glede. Les mer',
     description: {
       sections: [courseSection1],
       listItems: [courseList1],
     },
     href: '/noe',
+    imgUrl: '/images/course-young-1.png',
+    id: '1',
+    buttonText: 'Bestill kurs',
   };
   const course2: Course = {
     title: 'For barn og unge',
     time: 'Dagskurs, 4 timer',
-    priceRange: [0, 0],
+    price: 'Ta kontakt  for mer onformasjon om priser',
     shortDescription:
       'Gjennom våre kurs blir barn og unge utstyrt med enkle, forskningsbaserte teknikker som fremmer glede og sosial og emosjonell kompetanse, som et fundament for øvrig læring. Teknikkene hjelper til med å styrke deres opplevelse av tilhørighet, trygghet, mestring, optimisme og hvordan man kan forholde seg til sine relasjoner på en positiv måte.',
     description: {
@@ -63,18 +66,24 @@ const KidsAndYoung = () => {
       listItems: [courseList2],
     },
     href: '/noe',
+    imgUrl: '/images/course-young-2.png',
+    id: '2',
+    buttonText: 'Ta kontakt',
   };
   const course3: Course = {
-    title: 'Foreldre',
-    time: '30 timer over 10 uker',
-    priceRange: [0, 0],
+    title: 'For deg som jobber med barn og unge',
+    time: '',
+    price: 'Pris fra 7900,- inkludert alt forarbeid (vi skreddersyr)',
     shortDescription:
-      'Kurset gir en grundig gjennomgang av positiv psykologi, og tar for seg bruk og effekten av positiv psykologi i en arbeidskontekst. Deltakerne får flere verktøy de kan ta i bruk, samt personlig oppfølging underveis.',
+      'Glad og Robust i skoler, på idrettsarenaen og SFO. Hvordan kan du som jobber med barn og unge stå mer stødig i møte med motgang? Og hvilke konkrete teknikker kan du bruke for å gi barna støtte til å mestre motgang og håndtere utfordringer?',
     description: {
       sections: [courseSection1],
       listItems: [courseList1],
     },
     href: '/noe',
+    imgUrl: '/images/course-young-3.png',
+    id: '3',
+    buttonText: 'Ta kontakt',
   };
 
   const courses = [course1, course2, course3];

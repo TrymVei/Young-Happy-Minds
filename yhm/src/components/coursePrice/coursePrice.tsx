@@ -14,10 +14,13 @@ const CoursePrice = (props: { courses: Course[] }) => {
           <SingleCourse
             title={course.title}
             time={course.time}
-            priceRange={course.priceRange}
+            price={course.price}
             shortDescription={course.shortDescription}
             description={course.description}
             href={course.href}
+            imgUrl={course.imgUrl}
+            id={course.id}
+            buttonText={course.buttonText}
           />
         );
       })}
@@ -45,6 +48,7 @@ const CoursePrice = (props: { courses: Course[] }) => {
             color="#10534F"
             text="Send mail"
             big={true}
+            img={false}
           />
         </div>
       </div>
@@ -56,26 +60,23 @@ const SingleCourse = (course: Course) => {
   const [state, setState] = useState(false);
   return (
     <div key={course.title} className={style.coursePrice__course}>
-      <div
-        style={{ width: '70%' }}
-        className={style.coursePrice__course__wrapper}
-      >
+      <img src={course.imgUrl} alt="" />
+      <div className={style.coursePrice__course__wrapper}>
         <p className="courseBold">{course.title}</p>
-        <p className="smallestText">{course.time}</p>
+        <p className="smallesText">{course.time}</p>
         <p className="smallText">{course.shortDescription}</p>
         <CourseAcordion courseText={course.description} isOpen={state} />
-        <p className="courseBold">
-          Pris fra {course.priceRange[0]} til {course.priceRange[1]},-
-        </p>
+        <p className="courseBold">{course.price}</p>
       </div>
       <div className={style.coursePrice__course__order}>
-        <ReadMoreFunction onClick={() => setState(!state)} />
+        <ReadMoreFunction onClick={() => setState(!state)} id={course.id} />
         <Button
           color={'#10534F'}
           bgColor={'#FFD526'}
-          text={'Bestill kurs'}
+          text={course.buttonText}
           big={false}
           href={course.href}
+          img={false}
         />
       </div>
     </div>

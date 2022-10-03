@@ -10,7 +10,7 @@ const Results = () => {
         setAnimationStart(1400);
       }
     }
-  });
+  }, []);
   return (
     <div id="section" className={style.results}>
       <div className={style.result__flex}>

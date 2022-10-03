@@ -23,11 +23,10 @@
 
 .buttonSmall {
   font-family: var(--DM-Sans-regular-font-family);
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-16);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
-  height: 2.5rem;
 }
 
 .buttonSmall img {
