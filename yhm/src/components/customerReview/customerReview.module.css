@@ -1,0 +1,13 @@
+.review {
+  background-color: var(--green-l1);
+  margin: 2rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.review__wrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}

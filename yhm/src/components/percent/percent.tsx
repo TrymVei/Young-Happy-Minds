@@ -25,8 +25,6 @@ const Percent = (props: {
     };
   }, []);
 
-  console.log(scrollPosition);
-
   const animation = () => {
     anime({
       targets: '#percent' + props.id,

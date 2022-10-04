@@ -28,3 +28,11 @@ export type CourseList = {
 export interface Props {
   children: React.ReactNode;
 }
+
+export interface Review {
+  name: string;
+  age: number;
+  review: string;
+  stars: number;
+  date: string;
+}
