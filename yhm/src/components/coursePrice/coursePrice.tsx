@@ -1,11 +1,37 @@
-import { Course } from '../../utils/types';
+import { Course, Mail } from '../../utils/types';
 import style from './coursePrice.module.css';
-import Button from '../../components/button/button';
+import Button, { ButtonFunction } from '../../components/button/button';
 import { ReadMoreFunction } from '../readMore/readMore';
 import CourseAcordion from '../accordion/courseAccordion/courseAccordion';
 import { useState } from 'react';
+import anime from 'animejs';
+import emailjs from 'emailjs-com';
 
 const CoursePrice = (props: { courses: Course[] }) => {
+  const [sender, setSender] = useState('');
+  const [description, setDescription] = useState('');
+
+  const sendMail = () => {
+    emailjs
+      .send(
+        'service_m5bquz6',
+        'template_sk5al8h',
+        {
+          senderEmail: sender,
+          description: description,
+        },
+        'v4ZMra2XPpL6GFzlD'
+      )
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+  };
+
   return (
     <div id="section" className={style.coursePrice}>
       <h2>Våre kurs</h2>
@@ -32,7 +58,13 @@ const CoursePrice = (props: { courses: Course[] }) => {
         </p>
         <div>
           <div className={style.coursePrice__form__flex}>
-            <input className="smallText" type="email" placeholder="Email" />
+            <input
+              name="from"
+              className="smallText"
+              type="email"
+              placeholder="Email"
+              onChange={(e) => setSender(e.target.value)}
+            />
             <br />
             <textarea
               name="description"
@@ -41,14 +73,16 @@ const CoursePrice = (props: { courses: Course[] }) => {
               cols={70}
               rows={5}
               className="smallText"
+              onChange={(e) => setDescription(e.target.value)}
             ></textarea>
           </div>
-          <Button
-            bgColor="#FFD526"
-            color="#10534F"
-            text="Send mail"
+          <ButtonFunction
+            color={'#0D534F'}
+            bgColor={'#FFD526'}
+            text={'Send mail'}
             big={true}
             img={false}
+            onClick={() => sendMail()}
           />
         </div>
       </div>
@@ -58,8 +92,27 @@ const CoursePrice = (props: { courses: Course[] }) => {
 
 const SingleCourse = (course: Course) => {
   const [state, setState] = useState(false);
+
+  const handleClick = () => {
+    setState(!state);
+    if (!state)
+      anime({
+        targets: '#open' + course.id,
+        rotate: '0.625turn',
+      });
+    else {
+      anime({
+        targets: '#open' + course.id,
+        rotate: '0',
+      });
+    }
+  };
   return (
-    <div key={course.title} className={style.coursePrice__course}>
+    <div
+      onClick={handleClick}
+      key={course.title}
+      className={style.coursePrice__course}
+    >
       <img src={course.imgUrl} alt="" />
       <div className={style.coursePrice__course__wrapper}>
         <div className={style.coursePrice__course__wrapper__flex}>
@@ -67,7 +120,9 @@ const SingleCourse = (course: Course) => {
           <ReadMoreFunction onClick={() => setState(!state)} id={course.id} />
         </div>
         <p className="smallesText">{course.time}</p>
-        <p className="smallText">{course.shortDescription}</p>
+        {course.shortDescription.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
         <CourseAcordion courseText={course.description} isOpen={state} />
         <div className={style.coursePrice__course__wrapper__flex}>
           <p className="courseBold">{course.price}</p>

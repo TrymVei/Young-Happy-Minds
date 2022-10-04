@@ -2,7 +2,7 @@ export type Course = {
   title: string;
   time: string;
   price: string;
-  shortDescription: string;
+  shortDescription: string[];
   description: CourseText;
   href: string;
   imgUrl: string;
@@ -36,3 +36,8 @@ export interface Review {
   stars: number;
   date: string;
 }
+
+export type Mail = {
+  senderEmail: string;
+  description: string;
+};

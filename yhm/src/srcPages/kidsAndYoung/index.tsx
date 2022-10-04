@@ -1,5 +1,6 @@
 import CoursePrice from '../../components/coursePrice/coursePrice';
 import Layout from '../../layout/layout';
+import { YoungCourses } from '../../utils/courses';
 import { Course, CourseList, CourseSection } from '../../utils/types';
 import Ingress from './ingress/ingress';
 
@@ -40,53 +41,7 @@ const courseList2: CourseList = {
 };
 
 const KidsAndYoung = () => {
-  const course1: Course = {
-    title: 'Digitalt kurs for foreldre',
-    time: '30 timer over 10 uker',
-    price: 'Pris 5900,-',
-    shortDescription:
-      'Har du lyst til å gå fra passasjer til sjåfør i ditt eget liv? Invester i deg selv og lær hvordan du kan bli mer robust, mestre stress og oppleve mer livsglede i hverdagen. Dette kurset er for deg som ønsker verktøy for å snu ditt og dine barns negative tankemønstre, få mer energi og overskudd, bedre relasjoner, en tydeligere retning, mer mening, mestring og glede. Les mer',
-    description: {
-      sections: [courseSection1],
-      listItems: [courseList1],
-    },
-    href: '/noe',
-    imgUrl: '/images/course-young-1.png',
-    id: '1',
-    buttonText: 'Bestill kurs',
-  };
-  const course2: Course = {
-    title: 'For barn og unge',
-    time: 'Dagskurs, 4 timer',
-    price: 'Ta kontakt  for mer onformasjon om priser',
-    shortDescription:
-      'Gjennom våre kurs blir barn og unge utstyrt med enkle, forskningsbaserte teknikker som fremmer glede og sosial og emosjonell kompetanse, som et fundament for øvrig læring. Teknikkene hjelper til med å styrke deres opplevelse av tilhørighet, trygghet, mestring, optimisme og hvordan man kan forholde seg til sine relasjoner på en positiv måte.',
-    description: {
-      sections: [courseSection2],
-      listItems: [courseList2],
-    },
-    href: '/noe',
-    imgUrl: '/images/course-young-2.png',
-    id: '2',
-    buttonText: 'Ta kontakt',
-  };
-  const course3: Course = {
-    title: 'For deg som jobber med barn og unge',
-    time: '',
-    price: 'Pris fra 7900,- inkludert alt forarbeid (vi skreddersyr)',
-    shortDescription:
-      'Glad og Robust i skoler, på idrettsarenaen og SFO. Hvordan kan du som jobber med barn og unge stå mer stødig i møte med motgang? Og hvilke konkrete teknikker kan du bruke for å gi barna støtte til å mestre motgang og håndtere utfordringer?',
-    description: {
-      sections: [courseSection1],
-      listItems: [courseList1],
-    },
-    href: '/noe',
-    imgUrl: '/images/course-young-3.png',
-    id: '3',
-    buttonText: 'Ta kontakt',
-  };
-
-  const courses = [course1, course2, course3];
+  const courses = YoungCourses();
 
   return (
     <Layout>

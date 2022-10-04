@@ -4,23 +4,8 @@ import style from './readMore.module.css';
 export const ReadMoreFunction = (props: { onClick: Function; id: string }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-    if (!isOpen)
-      anime({
-        targets: '#open' + props.id,
-        rotate: '0.625turn',
-      });
-    else {
-      anime({
-        targets: '#open' + props.id,
-        rotate: '0',
-      });
-    }
-  };
-
   return (
-    <div onClick={handleClick} className={style.readMore}>
+    <div className={style.readMore}>
       <p
         onClick={(e) => {
           props.onClick(e);

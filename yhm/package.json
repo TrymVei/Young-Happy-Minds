@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^4.5.9",
     "animejs": "^3.2.1",
+    "emailjs-com": "^3.2.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"

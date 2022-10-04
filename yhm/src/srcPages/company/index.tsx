@@ -18,11 +18,16 @@ const courseList1: CourseList = {
 };
 
 const course1: Course = {
-  title: 'Liten kurspakke',
-  time: '6 timer over 2 kursdager',
-  price: '0',
-  shortDescription:
-    'Kurset gir en introduksjon til positiv psykologi, og tar for seg de viktigste aspektene ved positiv psykologi i en arbeidskontekst. Deltagerene får verktøy de kan ',
+  title: 'Bedriftskurs for ledere og medarbeidere',
+  time: 'Varighet: tilpasses etter ønske',
+  price:
+    'Vi skreddersyr ulike pakker - Ta kontakt for mer informasjon og priser ',
+  shortDescription: [
+    'Optimaliser effekten av å bygge på det som er bra, i stedet for å fikse det som er feil.',
+    'Hvordan bygger man organisatorisk og individuell glede, robusthet og utholdenhet? Og hva er er sammenhengen mellom medarbeiderengasjement, glede og prestasjon?',
+    'Gjennom kurset og våre interaktive foredrag får ledere og medarbeidere en introduksjon i teori og praksis innen moderne positiv psykologi. Hensikten er å styrke den emosjonelle utholdenheten og få innsikt og verktøy som kan gjøre oss mer robuste i møte med motgang, slik at vi også kan prestere bedre i samspill med andre.',
+  ],
+
   description: {
     sections: [courseSection1],
     listItems: [courseList1],
@@ -30,42 +35,10 @@ const course1: Course = {
   href: '/Liten',
   id: '1',
   buttonText: 'bestill kurs',
-  imgUrl: '',
+  imgUrl: '/images/course-4.png',
 };
 
-const course2: Course = {
-  title: 'Stor Kurspakke',
-  time: '30 timer over 10 uker',
-  price: '0',
-  shortDescription:
-    'Kurset gir en grundig gjennomgang av positiv psykologi, og tar for seg bruk og effekten av positiv psykologi i en arbeidskontekst. Deltakerne får flere verktøy de kan ta i bruk, samt personlig oppfølging underveis.',
-  description: {
-    sections: [courseSection1],
-    listItems: [courseList1],
-  },
-  href: '/stor',
-  id: '2',
-  buttonText: 'bestill kurs',
-  imgUrl: '',
-};
-
-const course3: Course = {
-  title: 'Fleksibel kurspakke',
-  time: '',
-  price: '0',
-  shortDescription:
-    'Vi tilpasser en kursplan basert på din bedrifts behov.  Lengde og antall moduler kan vi diskutere sammen.',
-  description: {
-    sections: [courseSection1],
-    listItems: [courseList1],
-  },
-  href: '/Fleksibel',
-  id: '3',
-  buttonText: 'bestill kurs',
-  imgUrl: '',
-};
-
-const courses = [course1, course2, course3];
+const courses = [course1];
 
 const Company = () => {
   return (

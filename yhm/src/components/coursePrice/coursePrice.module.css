@@ -26,12 +26,6 @@
   gap: 1rem;
 }
 
-.coursePrice__course__wrapper__flex:nth-last-child(1) {
-  position: absolute;
-  bottom: 1rem;
-  width: 95%;
-}
-
 .coursePrice__course__order {
   display: flex;
   flex-direction: column;
@@ -52,13 +46,6 @@
 
 .coursePrice__form__flex input {
   width: 10rem;
-}
-
-@media (max-width: 1340px) {
-  .coursePrice__course__wrapper__flex:nth-last-child(1) {
-    position: static;
-    width: 100%;
-  }
 }
 
 @media (max-width: 1100px) {
