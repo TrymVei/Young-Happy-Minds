@@ -6,7 +6,7 @@
 .about__flex {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 10rem;
 }
 
 @media (max-width: 1250px) {

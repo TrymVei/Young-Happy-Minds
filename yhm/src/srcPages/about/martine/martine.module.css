@@ -8,6 +8,7 @@
 @media (max-width: 1250px) {
   .martine {
     flex-direction: column;
+    gap: 1rem;
   }
 
   .martine img {
@@ -15,5 +16,6 @@
     margin: auto;
     width: 335px;
     height: auto;
+    order: -1;
   }
 }
