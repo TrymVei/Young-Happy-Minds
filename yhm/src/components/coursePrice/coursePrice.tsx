@@ -62,22 +62,25 @@ const SingleCourse = (course: Course) => {
     <div key={course.title} className={style.coursePrice__course}>
       <img src={course.imgUrl} alt="" />
       <div className={style.coursePrice__course__wrapper}>
-        <p className="courseBold">{course.title}</p>
+        <div className={style.coursePrice__course__wrapper__flex}>
+          <p className="courseBold">{course.title}</p>
+          <ReadMoreFunction onClick={() => setState(!state)} id={course.id} />
+        </div>
         <p className="smallesText">{course.time}</p>
         <p className="smallText">{course.shortDescription}</p>
         <CourseAcordion courseText={course.description} isOpen={state} />
-        <p className="courseBold">{course.price}</p>
-      </div>
-      <div className={style.coursePrice__course__order}>
-        <ReadMoreFunction onClick={() => setState(!state)} id={course.id} />
-        <Button
-          color={'#10534F'}
-          bgColor={'#FFD526'}
-          text={course.buttonText}
-          big={false}
-          href={course.href}
-          img={false}
-        />
+        <div className={style.coursePrice__course__wrapper__flex}>
+          <p className="courseBold">{course.price}</p>
+
+          <Button
+            color={'#10534F'}
+            bgColor={'#FFD526'}
+            text={course.buttonText}
+            big={false}
+            href={course.href}
+            img={false}
+          />
+        </div>
       </div>
     </div>
   );
