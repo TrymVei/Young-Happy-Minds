@@ -34,7 +34,7 @@ export interface Review {
   age: number;
   review: string;
   stars: number;
-  date: string;
+  imgUrl: string;
 }
 
 export type Mail = {
