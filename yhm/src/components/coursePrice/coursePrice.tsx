@@ -12,6 +12,7 @@ const CoursePrice = (props: { courses: Course[] }) => {
   const [description, setDescription] = useState('');
 
   const sendMail = () => {
+    //CREATE SERVICE AND CHANGE SERVICE CODE FOR IT TO WORK
     emailjs
       .send(
         'service_m5bquz6',
