@@ -1,3 +1,10 @@
+.carousel {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -34,10 +41,9 @@
 }
 
 .slide__track {
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
   display: flex;
-  gap: 20rem;
-  width: calc(250px * 7);
+  width: calc(250px * 14);
 }
 
 .slide {

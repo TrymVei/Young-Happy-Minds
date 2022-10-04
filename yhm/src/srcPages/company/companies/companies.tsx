@@ -23,7 +23,13 @@ const Companies = () => {
               <img src="/images/companies/companies-4.svg" alt="" />
             </div>
             <div className={style.slide}>
-              <img src="/images/companies/companies-4.svg" alt="" />
+              <img src="/images/companies/companies-5.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-6.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-7.svg" alt="" />
             </div>
             <div className={style.slide}>
               <img src="/images/companies/companies-1.svg" alt="" />
@@ -33,6 +39,18 @@ const Companies = () => {
             </div>
             <div className={style.slide}>
               <img src="/images/companies/companies-3.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-4.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-5.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-6.svg" alt="" />
+            </div>
+            <div className={style.slide}>
+              <img src="/images/companies/companies-7.svg" alt="" />
             </div>
           </div>
         </div>
