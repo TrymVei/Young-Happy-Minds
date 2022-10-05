@@ -9,7 +9,7 @@
 
 .contact p,
 .contact a {
-  color: var(--contact-font-color);
+  color: var(--green-l2);
 }
 
 .contact a {
@@ -18,7 +18,6 @@
 }
 
 .contact__wrapper {
-  margin-top: var(--leftRight-padding);
   display: flex;
   gap: 5rem;
 }
@@ -29,7 +28,7 @@
 }
 
 .contact__social_media a {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: var(--hyperlink-font-size);
   font-weight: var(--paragraph-font-weight);
 }

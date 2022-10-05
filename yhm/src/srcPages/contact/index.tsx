@@ -8,7 +8,7 @@ const Contact = () => {
         <h2>Kontakt oss</h2>
         <div className={style.contact__wrapper}>
           <div>
-            <img src="/images/contact-image.svg" alt="middlertidig bilde" />
+            <img src="/images/contact-image.png" alt="middlertidig bilde" />
           </div>
           <div>
             <p>
@@ -20,21 +20,25 @@ const Contact = () => {
                 contact@younghappyminds.com
               </a>
             </p>
+            <div className={style.contact__social_media}>
+              <p style={{ color: '#FFD526' }} id="boldJakarta22">
+                Sosiale medier
+              </p>
+              <p>
+                <a href="https://www.instagram.com/younghappyminds/?hl=en">
+                  Instagram
+                </a>
+              </p>
+              <p>
+                <a href="/https://www.facebook.com/younghappyminds/">
+                  Facebook
+                </a>
+              </p>
+              <p>
+                <a href="https://vimeo.com/179206874">Vimeo</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className={style.contact__social_media}>
-          <h3>Sosiale medier</h3>
-          <p>
-            <a href="https://www.instagram.com/younghappyminds/?hl=en">
-              Instagram
-            </a>
-          </p>
-          <p>
-            <a href="/https://www.facebook.com/younghappyminds/">Facebook</a>
-          </p>
-          <p>
-            <a href="https://vimeo.com/179206874">Vimeo</a>
-          </p>
         </div>
       </div>
     </Layout>
