@@ -16,7 +16,7 @@ const Martine = () => {
           både som kollega, individ, partner og mamma.
         </p>
       </div>
-      <img src="/images/about-martine.svg" alt="" />
+      <img src="/images/about-martine.png" alt="" />
     </div>
   );
 };

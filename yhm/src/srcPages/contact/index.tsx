@@ -25,16 +25,15 @@ const Contact = () => {
         <div className={style.contact__social_media}>
           <h3>Sosiale medier</h3>
           <p>
-            <a href="">Instagram</a>
+            <a href="https://www.instagram.com/younghappyminds/?hl=en">
+              Instagram
+            </a>
           </p>
           <p>
-            <a href="">Facebook</a>
+            <a href="/https://www.facebook.com/younghappyminds/">Facebook</a>
           </p>
           <p>
-            <a href="">Vimeo</a>
-          </p>
-          <p>
-            <a href="">Youtube</a>
+            <a href="https://vimeo.com/179206874">Vimeo</a>
           </p>
         </div>
       </div>

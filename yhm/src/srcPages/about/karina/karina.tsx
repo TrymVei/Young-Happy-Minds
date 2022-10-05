@@ -16,7 +16,7 @@ const Karina = () => {
           brenner for å dele av sine erfaringer til barn og voksne.
         </p>
       </div>
-      <img src="/images/about-karina.svg" alt="" />
+      <img src="/images/about-karina.png" alt="" />
     </div>
   );
 };

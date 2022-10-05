@@ -1,4 +1,5 @@
 import Button from '../../../components/button/button';
+import Underline from '../../../components/underline/underline';
 import style from './landingPage.module.css';
 const LandingPage = () => {
   return (
@@ -6,7 +7,8 @@ const LandingPage = () => {
       <div className={style.landingpage__wrapper}>
         <h3 className=".">VI ER YOUNG HAPPY MINDS</h3>
         <h1>
-          Fordi mental helse handler om mer enn fravær av mentale lidelser.
+          Fordi g<u style={{ textDecorationColor: 'white' }}>lede</u> og
+          robusthet <u style={{ textDecorationColor: 'white' }}>kan læres</u>
         </h1>
         <div className={style.landing__wrapper__flex}>
           <div>

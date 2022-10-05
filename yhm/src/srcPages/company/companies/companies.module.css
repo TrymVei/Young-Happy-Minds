@@ -1,3 +1,7 @@
+.companies p {
+  margin-left: var(--leftRight-padding);
+}
+
 .carousel {
   align-items: center;
   background: #e3e3e3;
