@@ -51,7 +51,7 @@ export const Navbar = () => {
 
           <div className={style.navbarDesktop}>
             <p>
-              <a href="">Onlinekurs</a>
+              <a href="/onlineCourse">Onlinekurs</a>
             </p>
             <p>
               <a
@@ -144,7 +144,7 @@ export const Navbar = () => {
           }
         >
           <p>
-            <a href="">Onlinekurs</a>
+            <a href="/onlineCourse">Onlinekurs</a>
           </p>
           <p>
             <a href="/company">For bedrifter</a>

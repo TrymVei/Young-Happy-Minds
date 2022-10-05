@@ -32,9 +32,10 @@ export interface Props {
 export interface Review {
   name: string;
   age: number;
-  review: string;
+  review: string[];
   stars: number;
   imgUrl: string;
+  date: string;
 }
 
 export type Mail = {

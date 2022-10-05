@@ -1,0 +1,32 @@
+.reviewSection {
+  display: flex;
+  gap: 3rem;
+}
+
+.reviewSection__review {
+  width: 50%;
+}
+
+@media (max-width: 1450px) {
+  .reviewSection__review {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .reviewSection {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .reviewSection {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .reviewSection {
+    flex-direction: column;
+  }
+}
