@@ -58,7 +58,13 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1445px) {
+  .navbarDesktop {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1285px) {
   .navbarDesktop {
     display: none;
   }

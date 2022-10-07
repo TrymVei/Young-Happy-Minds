@@ -92,4 +92,9 @@
     height: 3rem;
     position: static;
   }
+
+  .courseCard button img {
+    width: auto;
+    height: auto;
+  }
 }

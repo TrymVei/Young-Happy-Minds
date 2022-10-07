@@ -70,6 +70,10 @@
     flex-direction: column;
   }
 
+  .coursePrice__course__wrapper {
+    width: auto;
+  }
+
   .coursePrice__course img:nth-child(1) {
     width: 342px;
     height: 324px;
