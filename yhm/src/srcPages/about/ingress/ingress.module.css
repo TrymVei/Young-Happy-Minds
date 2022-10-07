@@ -27,6 +27,7 @@
 
   .about__flex {
     flex-direction: column;
+    gap: 2rem;
   }
   .about__flex img {
     width: auto;
