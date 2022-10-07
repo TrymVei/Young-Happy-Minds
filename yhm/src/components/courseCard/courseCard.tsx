@@ -54,9 +54,7 @@ const CourseCard = (props: {
   } else {
     return (
       <div className={style.courseCard}>
-        <div className={style.courseCard__flex}>
-          <p>{props.heading}</p>
-        </div>
+        <div className={style.courseCard__flex}></div>
         <div className={style.courseCard__wrapper}>
           <img
             className={style.courseCard__image}
@@ -64,6 +62,7 @@ const CourseCard = (props: {
             alt={props.imgAlt}
           />
           <div className={style.courseCard__container}>
+            <p>{props.heading}</p>
             <p className="smallText">{props.description}</p>
             <Button
               color={'#10534F'}

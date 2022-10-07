@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Percent from '../../../components/percent/percent';
 import style from './results.module.css';
 const Results = () => {
-  const [animationStart, setAnimationStart] = useState(900);
+  const [animationStart, setAnimationStart] = useState(3600);
 
   useEffect(() => {
     if (window) {
@@ -11,6 +11,11 @@ const Results = () => {
       }
     }
   }, []);
+
+  useEffect(() => {
+    console.log(animationStart);
+  }, [animationStart]);
+
   return (
     <div id="section" className={style.results}>
       <div className={style.result__flex}>
@@ -32,32 +37,32 @@ const Results = () => {
           <Percent
             percent={20}
             text="økt livskvalitet etter programmet"
-            percentColor={'#0D534F'}
-            textColor={'#0D534F'}
+            percentColor={'#D1EACA'}
+            textColor={'#F7FDF5'}
             id="1"
             animationStart={animationStart}
           />
           <Percent
             percent={12}
             text="bedre emosjonelt velvære"
-            percentColor={'#0D534F'}
-            textColor={'#0D534F'}
+            percentColor={'#D1EACA'}
+            textColor={'#F7FDF5'}
             id="2"
             animationStart={animationStart}
           />
           <Percent
             percent={14}
             text="forbedring av selvfølelse"
-            percentColor={'#0D534F'}
-            textColor={'#0D534F'}
+            percentColor={'#D1EACA'}
+            textColor={'#F7FDF5'}
             id="3"
             animationStart={animationStart}
           />
           <Percent
             percent={12}
             text="forbedring av utholdenhet"
-            percentColor={'#0D534F'}
-            textColor={'#0D534F'}
+            percentColor={'#D1EACA'}
+            textColor={'#F7FDF5'}
             id="4"
             animationStart={animationStart}
           />

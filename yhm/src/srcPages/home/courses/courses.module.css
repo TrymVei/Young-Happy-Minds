@@ -1,6 +1,5 @@
 .courses {
-  margin-top: var(--section-margin-top);
-  background-color: var(--landingpage-bg-color);
+  background-color: var(--green);
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -23,7 +22,7 @@
 }
 
 .courses__course {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -34,11 +33,21 @@
   }
 
   .courses__text {
-    flex-direction: column;
+    gap: 2rem;
     margin: 0;
   }
 
   .courses__text p {
     width: auto;
+    margin: 0;
+    margin-top: 0.825rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .courses__text {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 0;
   }
 }

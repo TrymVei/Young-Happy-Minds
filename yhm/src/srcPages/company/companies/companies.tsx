@@ -5,8 +5,6 @@ import style from './companies.module.css';
 const Companies = () => {
   return (
     <div className={style.companies}>
-      <p>Noen av firmaene vi har kurset:</p>
-
       <div className={style.carousel}>
         <div id="carousell" className={style.slider}>
           <div className={style.slide__track}>

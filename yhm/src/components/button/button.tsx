@@ -16,12 +16,12 @@ const Button = (props: {
         {props.text}
       </a>
       {props.big && props.img ? (
-        <img src="/images/arrow.svg" alt="arrow" />
+        <img src="/images/arrows/arrow.svg" alt="arrow" />
       ) : (
         <></>
       )}
       {!props.big && props.img ? (
-        <img src="/images/smallArrow.svg" alt="arrow" />
+        <img src="/images/arrows/smallArrow.svg" alt="arrow" />
       ) : (
         <></>
       )}
@@ -68,6 +68,7 @@ export const FakeButton = (props: {
   bgColor: string;
   text: string;
   big: boolean;
+  img?: string;
 }) => {
   return (
     <button
@@ -75,11 +76,7 @@ export const FakeButton = (props: {
       className={props.big ? style.button : style.buttonSmall}
     >
       <a style={{ color: props.color }}>{props.text}</a>
-      <img
-        style={{ marginTop: '2px' }}
-        src="/images/smallDownArrow.svg"
-        alt="Pil som peker ned"
-      />
+      <img style={{ marginTop: '2px' }} src={props.img} alt="Pil" />
     </button>
   );
 };

@@ -1,0 +1,42 @@
+.jan {
+  padding-top: var(--section-margin-top);
+  padding-bottom: var(--section-margin-top);
+  background-color: var(--green);
+}
+
+.jan__img {
+  width: 334px;
+  height: 309px;
+}
+
+.jan__flex {
+  display: flex;
+  background-color: white;
+}
+
+.jan__wrapper {
+  padding: 3.125rem;
+}
+
+.jan__rating_name {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .jan__flex {
+    flex-direction: column;
+  }
+
+  .jan__img {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .jan__img {
+    margin: 0;
+  }
+}

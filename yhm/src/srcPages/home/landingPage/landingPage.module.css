@@ -1,6 +1,11 @@
 .landingpage {
   background-color: var(--landingpage-bg-color);
-  height: 55rem;
+  padding-left: var(--leftRight-padding);
+}
+
+.platform {
+  width: 729px;
+  height: auto;
 }
 
 .landingpage__wrapper {
@@ -16,12 +21,13 @@
 .landingpage__wrapper h1 {
   margin-top: 0;
   color: var(--yellow);
+  font-weight: 400;
 }
 
 .landing__wrapper__flex {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .landing__wrapper__flex p,
@@ -42,18 +48,15 @@
 .landingpage__buttons {
   margin-top: 8.125rem;
   display: flex;
-  gap: 4rem;
+  gap: 2.188rem;
   justify-content: flex-start;
   flex-direction: row;
 }
 
-.landingpage__buttons img {
-  margin-left: 2rem;
-}
-
-@media (max-width: 1270px) {
+@media (max-width: 1400px) {
   .landingpage {
     height: auto;
+    padding-right: var(--leftRight-padding);
   }
 
   .landingpage__wrapper {
@@ -74,6 +77,12 @@
 
   .landing__wrapper__flex div {
     order: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .landingpage {
+    padding: 5%;
   }
 }
 

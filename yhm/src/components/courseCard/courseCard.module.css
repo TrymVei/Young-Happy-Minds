@@ -84,6 +84,15 @@
     height: 118px;
   }
 
+  .courseCard__container {
+    padding: 0;
+    padding-left: 5%;
+  }
+
+  .courseCard__container p:nth-last-child(1) {
+    font-size: var(--font-size-10);
+  }
+
   .courseCard button {
     bottom: 1rem;
     font-size: var(--font-size-12);

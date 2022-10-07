@@ -29,7 +29,7 @@ const ReadMore = (props: { href: string }) => {
         <a href={props.href} className="menyBold">
           Les mer
         </a>
-        <img src="/images/arrow.svg" alt="Les mer pil" />
+        <img src="/images/arrows/arrow.svg" alt="Les mer pil" />
       </p>
     </div>
   );

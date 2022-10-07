@@ -57,7 +57,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           <div className={style.footer__wrapper__logo}>
             <p>
               <a href="#top">Til toppen</a>
-              <img src="/images/upArrow.svg" alt="Pil opp" />
+              <img src="/images/arrows/upArrow.svg" alt="Pil opp" />
             </p>
             <img src="/images/logo.svg" alt="" />
           </div>

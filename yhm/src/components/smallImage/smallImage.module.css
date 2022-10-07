@@ -1,5 +1,6 @@
-.smallImage {
-  max-width: min-content;
+.smallImage img {
+  display: block;
+  margin: auto;
 }
 
 .smallImage p {

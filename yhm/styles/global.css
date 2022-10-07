@@ -38,11 +38,18 @@
   src: url('/fonts/dm/DMSans-Italic.ttf');
 }
 
+@font-face {
+  font-family: 'PoliteType regular';
+  src: url('/fonts/thePoliteType/PoliteType-Regular.ttf');
+}
+
 :root {
   /* Colors */
   --green-l1: #e8f3e5;
   --green-l2: #f7fdf5;
+  --green-l3: #d1eaca;
   --green-d1: #0d534f;
+  --green-d2: #0e514d;
   --green: #0e645f;
   --yellow: #ffd526;
   --white: #ffffff;
@@ -72,6 +79,9 @@
   --DM-Sans-bold-font-family: 'DM Sans Bold';
   --DM-Sans-italic-font-family: 'DM Sans Italic';
   --DM-Sans-medium-font-family: 'DM Sans Medium';
+
+  /* Polite */
+  --Polite-type-regular: 'PoliteType regular';
 
   /* Font size*/
   --font-size-96: 6rem;
@@ -103,6 +113,8 @@
   --margin-bottom-30: 1.875rem;
   --margin-60: 3.75rem;
 
+  /* Padding*/
+  --padding-top-140: 8.75rem;
   --leftRight-padding: 8.125rem;
 
   /* Navbar */
@@ -148,14 +160,14 @@ h4 {
 }
 
 h3 {
-  font-family: var(--jakarta-regular-font-family);
+  font-family: var(--Polite-type-regular);
   font-size: var(--font-size-32);
   font-weight: var(--bold);
   color: var(--green-d1);
 }
 
 h2 {
-  font-family: var(--jakarta-bold-font-family);
+  font-family: var(--Polite-type-regular);
   font-size: var(--font-size-42);
   color: var(--lightGreen-color);
   font-weight: var(--bold);
@@ -163,7 +175,7 @@ h2 {
 }
 
 h1 {
-  font-family: var(--jakarta-regular-font-family);
+  font-family: var(--Polite-type-regular);
   font-size: var(--font-size-60);
   font-weight: var(--bold);
   color: var(--green-d1);
@@ -207,8 +219,9 @@ h1 {
 }
 
 .bigGraphic {
-  font-family: var(--jakarta-bold-font-family);
+  font-family: var(--Polite-type-regular);
   font-size: var(--font-size-96);
+  font-weight: 400;
 }
 
 .bigQuote {

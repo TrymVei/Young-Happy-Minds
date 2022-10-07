@@ -1,6 +1,8 @@
 .science {
-  margin-top: var(--section-margin-top);
+  padding-top: var(--padding-top-140);
+  padding-bottom: var(--padding-top-140);
   padding-right: var(--leftRight-padding);
+  background-color: var(--green);
 }
 
 .science {
@@ -12,13 +14,11 @@
   position: relative;
 }
 
-.science__wrapper h2 {
+.science__wrapper h2,
+.science__wrapper p,
+.science__wrapper a {
   margin-top: 0px;
-}
-
-.science__readMore {
-  position: absolute;
-  bottom: 0px;
+  color: var(--green-l2);
 }
 
 @media (max-width: 1150px) {

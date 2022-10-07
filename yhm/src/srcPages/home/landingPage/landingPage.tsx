@@ -1,9 +1,9 @@
-import Button from '../../../components/button/button';
+import Button, { FakeButton } from '../../../components/button/button';
 import Underline from '../../../components/underline/underline';
 import style from './landingPage.module.css';
 const LandingPage = () => {
   return (
-    <section id="section" className={style.landingpage}>
+    <section className={style.landingpage}>
       <div className={style.landingpage__wrapper}>
         <h3 className=".">VI ER YOUNG HAPPY MINDS</h3>
         <h1>
@@ -25,21 +25,24 @@ const LandingPage = () => {
               <Button
                 bgColor="#FFFFFF"
                 color="#10534F"
-                text="Onlinekurs"
+                text="For enkeltperson"
                 big={true}
                 img={true}
               ></Button>
-              <Button
-                bgColor="#FFFFFF"
-                color="#10534F"
-                text="Bedriftskurs"
+              <FakeButton
+                bgColor="#0e645f"
+                color="white"
+                text="For bedrift"
                 big={true}
-                img={true}
-              ></Button>
-              <img src="/images/downArrow.svg" alt="pil som peker ned" />
+                img={'/images/arrows/whiteArrowRight.svg'}
+              ></FakeButton>
             </div>
           </div>
-          <img src="/images/girl1.png" alt="Glad jente" />
+          <img
+            className={style.platform}
+            src="/images/platform.svg"
+            alt="Glad jente"
+          />
         </div>
       </div>
     </section>

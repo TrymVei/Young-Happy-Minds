@@ -9,7 +9,8 @@ const Science = () => {
         <p className="bodyText">
           Positiv psykologi bygger bro mellom selvhjelp og forskning. Vårt
           materiell er utviklet i samarbeid med annerkjente forskere innen
-          feltet, fra blant annet __________ og __________.
+          feltet, fra blant annet Oxford University, University of Pennsylvainia
+          og the US Wholebeing institute.
         </p>
         <div className={style.science__readMore}>
           <ReadMore href={'/science'} />

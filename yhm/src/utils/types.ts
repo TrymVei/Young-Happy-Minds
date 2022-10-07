@@ -42,3 +42,8 @@ export type Mail = {
   senderEmail: string;
   description: string;
 };
+
+export type FontStyle = {
+  fontFamily: string;
+  fontSize: string;
+};

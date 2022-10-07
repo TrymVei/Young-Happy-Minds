@@ -22,6 +22,8 @@
   background-color: white;
   overflow: hidden;
   position: relative;
+  background-color: var(--green-l2);
+  padding-top: 1rem;
 }
 
 .slider::before,

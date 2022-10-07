@@ -7,11 +7,7 @@ const Courses = () => {
       <div>
         <div className={style.courses__text}>
           <h2>Våre kurs</h2>
-          <p>
-            Vi tilbyr workshops og nettkurs for å gjøre deg gladere og mer
-            robust i hverdagen. Kursene kan gjennomføres fysisk, eller digitalt
-            i ditt eget tempo.
-          </p>
+          <p>Vi tilbyr onlinekurs, workshops og digitale seminar</p>
         </div>
       </div>
       <div className={style.courses__course}>
@@ -25,7 +21,7 @@ const Courses = () => {
           href={'/noe'}
         />
         <CourseCard
-          imgName={'course-2'}
+          imgName={'course-5'}
           imgAlt={'Foredragsholder'}
           heading={'For bedrift'}
           description={

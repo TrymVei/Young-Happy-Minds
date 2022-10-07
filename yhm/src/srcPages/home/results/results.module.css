@@ -1,10 +1,17 @@
 .results {
-  margin-top: var(--section-margin-top);
+  padding-top: var(--padding-top-140);
+  padding-bottom: var(--padding-top-140);
+  background-color: var(--green-d2);
 }
 
 .result__flex {
   display: flex;
   gap: 3rem;
+}
+
+.result__flex h2,
+.result__flex p {
+  color: var(--green-l2);
 }
 
 .result__flex h2 {
