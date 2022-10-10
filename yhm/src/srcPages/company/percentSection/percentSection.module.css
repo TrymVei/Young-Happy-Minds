@@ -1,7 +1,7 @@
 .percentSection {
   padding-top: var(--leftRight-padding);
   padding-bottom: var(--leftRight-padding);
-  background-color: var(--green);
+  background-color: var(--green-d2);
   display: flex;
 }
 

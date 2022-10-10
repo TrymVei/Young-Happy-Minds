@@ -1,0 +1,37 @@
+.aboutCourse {
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+}
+
+.aboutCourse h3 {
+  margin: 0;
+}
+
+.aboutCourse__wrapper {
+  display: flex;
+  gap: 5.375rem;
+  margin-bottom: 8.875rem;
+}
+
+.aboutCourse__wrapper img {
+  width: 445px;
+  height: 554px;
+}
+
+@media (max-width: 1150px) {
+  .aboutCourse__wrapper {
+    flex-direction: column;
+  }
+
+  .aboutCourse__wrapper img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutCourse__wrapper img {
+    width: 370px;
+    height: auto;
+  }
+}

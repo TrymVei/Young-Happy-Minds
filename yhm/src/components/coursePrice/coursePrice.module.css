@@ -34,20 +34,6 @@
   padding-left: 0;
 }
 
-.coursePrice__form {
-  padding: 1rem;
-}
-
-.coursePrice__form__flex {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-
-.coursePrice__form__flex input {
-  width: 10rem;
-}
-
 @media (max-width: 1100px) {
   .coursePrice__course__wrapper__flex:nth-last-child(1) {
     flex-direction: column;

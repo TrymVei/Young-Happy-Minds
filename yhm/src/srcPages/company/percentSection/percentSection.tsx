@@ -3,12 +3,12 @@ import Percent from '../../../components/percent/percent';
 import style from './percentSection.module.css';
 
 const PercentSection = () => {
-  const [animationStart, setAnimationStart] = useState(900);
+  const [animationStart, setAnimationStart] = useState(214);
 
   useEffect(() => {
     if (window) {
       if (window.innerWidth < 900) {
-        setAnimationStart(300);
+        setAnimationStart(156);
       }
     }
   }, []);
@@ -21,7 +21,7 @@ const PercentSection = () => {
           <Percent
             percent={50}
             text={'mer motivert enn sine kollegaer'}
-            percentColor={'#FFD526'}
+            percentColor={'#D1EACA'}
             textColor={'#F7FDF5'}
             id="1"
             animationStart={animationStart}
@@ -29,7 +29,7 @@ const PercentSection = () => {
           <Percent
             percent={155}
             text={'mer fornøyd med jobben sin'}
-            percentColor={'#FFD526'}
+            percentColor={'#D1EACA'}
             textColor={'#F7FDF5'}
             id="2"
             animationStart={animationStart}
@@ -37,7 +37,7 @@ const PercentSection = () => {
           <Percent
             percent={50}
             text={'mer produktive'}
-            percentColor={'#FFD526'}
+            percentColor={'#D1EACA'}
             textColor={'#F7FDF5'}
             id="3"
             animationStart={animationStart}
@@ -45,7 +45,7 @@ const PercentSection = () => {
           <Percent
             percent={108}
             text={'mer engasjerte'}
-            percentColor={'#FFD526'}
+            percentColor={'#D1EACA'}
             textColor={'#F7FDF5'}
             id="4"
             animationStart={animationStart}

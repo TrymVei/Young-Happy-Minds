@@ -10,13 +10,7 @@ const Invest = () => {
         sjeldnere ut sykemelding, og blir lenger i jobben sin. Vinn-vinn for
         arbeidstaker og arbeidsgiver.
       </p>
-      <p className="ingress">
-        Kurs med Young Happy Minds gir en grundig introduksjon til positiv
-        psykologi, samt konkrete teknikker og verktøy for å anvende teorien. Vi
-        fokuserer på den enkeltes styrker, på å øke robusthet og på generell
-        lykke. Fordi gladere folk gir økt trivsel og effektivitet på
-        arbeidsplassen.
-      </p>
+      <p className={style.courses}>Noen av firmaene vi har kurset:</p>
     </div>
   );
 };

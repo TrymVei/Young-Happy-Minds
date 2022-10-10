@@ -1,0 +1,25 @@
+.sun {
+  background-color: var(--green);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+}
+
+.sun__wrapper {
+  display: flex;
+  gap: 6.938rem;
+}
+
+.sun__wrapper p {
+  color: var(--green-l1);
+  line-height: 39px;
+}
+
+@media (max-width: 600px) {
+  .sun__wrapper {
+    flex-direction: column;
+  }
+  .sun__wrapper img {
+    display: block;
+    margin: auto;
+  }
+}
