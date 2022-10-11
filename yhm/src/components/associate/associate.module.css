@@ -31,9 +31,12 @@
 }
 
 @media (max-width: 500px) {
+  .associate {
+    flex-direction: column;
+  }
+
   .associate img {
-    margin-top: 2rem;
-    width: 100px;
-    height: 100px;
+    width: 158px;
+    height: 158px;
   }
 }

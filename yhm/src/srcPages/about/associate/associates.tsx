@@ -7,6 +7,18 @@ const Associates = () => {
       <div className={style.associates__wrapper}>
         <h3>Våre støttespillere</h3>
         <Associate
+          name={'Karina Hollekim'}
+          text={
+            'Karina var tidligere en av verdens beste frikjørere på ski og en anerkjent basehopper, men så ble alt snudd på hodet når fallskjermen tvinner seg og hun i fritt fall traff bakken. Hun overlevde fallet på mirakuløst vis, og selv om hun ble «dømt» til et liv i rullestol har hun kommet tilbake mot alle odds gjennom systematisk bruk av teknikkene i positiv psykologi som hun brenner for å dele videre. Karina er utdannet innen Neuro Linguistic Programming, Acceptance and Commitment Therapy og CTI coaching. Hun har i tillegg skrevet bok og brenner for å dele av sine erfaringer til barn og voksne.'
+          }
+        />
+        <Associate
+          name={'Martine Kveim'}
+          text={
+            'Martine har utdannelse innen psykologi fra University of San Francisco og kommunikasjon og ledelse fra University of Westminister og fra THNK School of Creative Leadership i Amsterdam. Hun elsker å formidle teori og konkrete verktøy som fremmer engasjement, glede og robusthet og det store kunnskapsgapet mellom forskning og samfunnet, var en av hovedmotivasjonene for at Young Happy Minds ble stiftet av Martine Kveim og Yvonne Biggins. Martine bruker selv teknikkene daglig både som kollega, individ, partner og mamma.'
+          }
+        />
+        <Associate
           name={'Yvonne Biggins'}
           text={
             'Sammen med Martine Kveim startet Yvonne Young Happy Minds i England og ledet den opprinnelige utviklingen av organisasjonen. Hun er utdannet lærer, jobbet med utdanning for Apple og har også fullført sin mastergrad i “Applied Positive Psychology” fra University of Pennsylvania hvor hun ble undervist av de fremste forskerne innen positive psykologi, inkludert Martin Seligman og Angela Duckworth.'

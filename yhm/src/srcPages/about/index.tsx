@@ -8,8 +8,7 @@ const About = () => {
   return (
     <Layout>
       <Ingress />
-      <Karina />
-      <Martine />
+
       <Associates />
     </Layout>
   );
