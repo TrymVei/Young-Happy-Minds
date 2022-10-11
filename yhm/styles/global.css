@@ -163,7 +163,7 @@ h4 {
 h3 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-32);
-  font-weight: var(--bold);
+
   color: var(--green-d1);
 }
 
@@ -171,14 +171,14 @@ h2 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-42);
   color: var(--lightGreen-color);
-  font-weight: var(--bold);
+
   margin-bottom: var(--margin-bottom-30);
 }
 
 h1 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-60);
-  font-weight: var(--bold);
+
   color: var(--green-d1);
 }
 

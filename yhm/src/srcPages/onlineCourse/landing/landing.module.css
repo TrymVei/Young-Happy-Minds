@@ -1,3 +1,12 @@
+.overflow {
+  overflow: hidden;
+}
+
+.sun {
+  float: right;
+  transform: rotate(-30deg);
+}
+
 .landing {
   padding-top: 7.5rem;
   padding-left: var(--leftRight-padding);
@@ -10,6 +19,12 @@
 
 .landing__wrapper {
   display: flex;
+  gap: 1rem;
+}
+
+.landing__wrapper_image {
+  position: relative;
+  left: 120px;
 }
 
 .landing__wrapper h1 {
@@ -19,7 +34,7 @@
 
 .button__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 @media (max-width: 1250px) {

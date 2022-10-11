@@ -1,6 +1,6 @@
 .imgSection {
   display: flex;
-  margin-top: var(--section-margin-top);
+  margin-top: calc(var(--section-margin-top) / 2);
   gap: 5rem;
 }
 
