@@ -22,24 +22,40 @@
   gap: 5rem;
 }
 
-.contact__social_media h3 {
+.contact__social_media_mobile h3,
+.contact__social_media_desktop h3 {
   margin-top: var(--leftRight-padding);
   color: var(--font-yellow-color);
 }
 
-.contact__social_media a {
+.contact__social_media_mobile a,
+.contact__social_media_desktop a {
   text-decoration: underline;
   font-size: var(--hyperlink-font-size);
   font-weight: var(--paragraph-font-weight);
 }
 
+.contact__social_media_mobile {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .contact__wrapper {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .contact__wrapper div:nth-child(1) {
     order: 2;
+  }
+
+  .contact__social_media_mobile {
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .contact__social_media_desktop {
+    display: none;
   }
 }
 
