@@ -1,3 +1,14 @@
+.sunAnimation {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  overflow: hidden;
+}
+
+.sunAnimation svg {
+  margin: auto;
+}
+
 @media (max-width: 600px) {
   .sunAnimation {
     display: block;
