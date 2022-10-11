@@ -27,7 +27,7 @@ const CoursePrice = (props: { courses: Course[] }) => {
           />
         );
       })}
-      <MailForm />
+      <MailForm textColor={'white'} />
     </div>
   );
 };
@@ -63,7 +63,7 @@ const SingleCourse = (course: Course) => {
         </div>
         <p className="smallesText">{course.time}</p>
         {course.shortDescription.map((paragraph) => (
-          <p>{paragraph}</p>
+          <p className={style.shortDescription}>{paragraph}</p>
         ))}
         <CourseAcordion courseText={course.description} isOpen={state} />
         <div className={style.coursePrice__course__wrapper__flex}>

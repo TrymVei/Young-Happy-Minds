@@ -1,12 +1,19 @@
 .perma {
   padding-left: var(--leftRight-padding);
   padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
   display: flex;
   gap: 2.5rem;
+  background-color: var(--green-d2);
 }
 
 .perma h2 {
   margin-top: 0;
+  color: var(--green-l3);
+}
+
+.perma p {
+  color: var(--green-l2);
 }
 
 .perma div {
@@ -17,6 +24,10 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+#imagesMobile {
+  display: none;
 }
 
 .perma__images__flex {
@@ -37,6 +48,14 @@
 
   .perma__images__flex {
     justify-content: center;
+  }
+
+  .perma__mobile {
+    display: block;
+  }
+
+  .perma__desktop {
+    display: none;
   }
 }
 

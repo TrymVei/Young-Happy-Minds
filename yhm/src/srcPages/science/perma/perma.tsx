@@ -19,12 +19,17 @@ const Perma = () => {
             Kjernelementene i modellen består av: positive følelser,
             engasjement, relasjoner, mening, mestring og vitalitet.
           </p>
-          <p>
-            Dersom du har alle disse punktene på plass i livet ditt, opplever du
-            mest sannsynlig tilfredshet. Ved å jobbe med disse elementene kan
-            mennesker oppleve å føle seg gøadere og mer robuste i møte med
-            motgang.
-          </p>
+          <div className={style.perma__desktop}>
+            <p>
+              Dersom du har alle disse punktene på plass i livet ditt, opplever
+              du mest sannsynlig tilfredshet. Ved å jobbe med disse elementene
+              kan mennesker oppleve å føle seg gøadere og mer robuste i møte med
+              motgang.
+            </p>
+            <p className="source">
+              * Kilde: perma model, positivepsychology.com
+            </p>
+          </div>
         </div>
         <div className={style.perma__images}>
           <div className={style.perma__images__flex}>
@@ -61,12 +66,17 @@ const Perma = () => {
               caption="Mestring"
             />
           </div>
-          <p className={style.perma__mobile}>
-            Dersom du har alle disse punktene på plass i livet ditt, opplever du
-            mest sannsynlig tilfredshet. Ved å jobbe med disse elementene kan
-            mennesker oppleve å føle seg gøadere og mer robuste i møte med
-            motgang.
-          </p>
+          <div className={style.perma__mobile}>
+            <p>
+              Dersom du har alle disse punktene på plass i livet ditt, opplever
+              du mest sannsynlig tilfredshet. Ved å jobbe med disse elementene
+              kan mennesker oppleve å føle seg gøadere og mer robuste i møte med
+              motgang.
+            </p>
+            <p className="source">
+              * Kilde: perma model, positivepsychology.com
+            </p>
+          </div>
         </div>
       </div>
     </>

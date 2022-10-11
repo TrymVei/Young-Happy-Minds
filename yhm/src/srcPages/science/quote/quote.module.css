@@ -1,8 +1,19 @@
 .quote {
   padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+  background-color: var(--green);
+}
+
+.quote p {
   width: 60%;
   display: block;
   margin: auto;
+  justify-content: center;
+  color: var(--green-l2);
+}
+
+.quote p:nth-child(1) {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 900px) {

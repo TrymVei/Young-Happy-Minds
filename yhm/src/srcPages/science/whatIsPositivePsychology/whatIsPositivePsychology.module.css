@@ -1,11 +1,22 @@
 .whatIsPositivePsychology {
   padding-top: var(--leftRight-padding);
+  background-color: var(--green);
+  padding-bottom: calc(var(--leftRight-padding) * 2);
+}
+
+.whatIsPositivePsychology h1 {
+  color: var(--yellow);
+  font-weight: 400;
+}
+
+.whatIsPositivePsychology p {
+  color: var(--green-l2);
 }
 
 .whatIsPositivePsychology__wrapper {
   padding-left: var(--leftRight-padding);
   padding-right: 20rem;
-  margin-bottom: var(--section-margin-top);
+  margin-bottom: var(--margin-top-150);
 }
 
 .whatIsPositivePsychology__flex {
@@ -41,8 +52,16 @@
 }
 
 @media (max-width: 500px) {
+  .whatIsPositivePsychology__wrapper {
+    margin-bottom: 0;
+  }
+
   .whatIsPositivePsychology__flex img {
     width: 335px;
     height: auto;
+  }
+
+  .whatIsPositivePsychology__flex p {
+    padding: 0;
   }
 }

@@ -3,7 +3,6 @@ import Layout from '../../layout/layout';
 import CourseCompany from '../../utils/courseCompany';
 import AboutCourse from './aboutCourse/aboutCourse';
 import Companies from './companies/companies';
-import Future from './future/future';
 import Invest from './invest/invest';
 import PercentSection from './percentSection/percentSection';
 import Quote from './quote/quote';

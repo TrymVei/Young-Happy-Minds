@@ -1,13 +1,20 @@
 .quote2 {
-  margin-top: var(--leftRight-padding);
+  padding-top: calc(var(--margin-top-150) * 2);
+  padding-bottom: calc(var(--margin-top-150) * 2);
   display: flex;
+  gap: 7.5rem;
   padding-right: 15rem;
+  background-color: var(--green);
 }
 
-.quote2 p {
-  margin-left: 5rem;
+.quote2__text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote2__text p {
+  color: var(--green-l2);
 }
 
 @media (max-width: 1050px) {
@@ -23,6 +30,10 @@
 }
 
 @media (max-width: 700px) {
+  .quote2 {
+    gap: 3rem;
+  }
+
   .quote2 img {
     width: 335px;
     height: auto;

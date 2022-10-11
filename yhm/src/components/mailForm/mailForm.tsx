@@ -4,7 +4,7 @@ import CoursePrice from '../coursePrice/coursePrice';
 import emailjs from 'emailjs-com';
 import style from './mailForm.module.css';
 
-const MailForm = () => {
+const MailForm = (props?: { textColor: string }) => {
   const [sender, setSender] = useState('');
   const [description, setDescription] = useState('');
 
@@ -31,8 +31,10 @@ const MailForm = () => {
   };
   return (
     <div className={style.coursePrice__form}>
-      <h3>Kontakt oss for å bestille kurs</h3>
-      <p className="bodyText">
+      <h3 style={{ color: props?.textColor }}>
+        Kontakt oss for å bestille kurs
+      </h3>
+      <p style={{ color: props?.textColor }} className="bodyText">
         Send oss en melding om du er interessert i kurs, positiv psykologi,
         eller om du bare vil slå av en prat!
       </p>

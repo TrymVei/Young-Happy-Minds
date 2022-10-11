@@ -1,16 +1,20 @@
 .ourMethod {
-  margin-top: var(--section-margin-top);
   padding: var(--leftRight-padding);
   padding-right: 0;
   padding-bottom: 0;
   display: flex;
   gap: 5rem;
-  background-color: var(--green-l1);
+  background-color: var(--green-d2);
   padding-bottom: var(--leftRight-padding);
 }
 
 .ourMethod h2 {
   margin-top: 0;
+  color: var(--green-l3);
+}
+
+.ourMethod p {
+  color: var(--green-l2);
 }
 
 .ourMethod__mobile {
@@ -39,7 +43,7 @@
 @media (max-width: 900px) {
   .ourMethod {
     padding: 5%;
-    background-color: var(--green-l1);
+    gap: 0;
   }
 
   .ourMethod__wrapper__image img {

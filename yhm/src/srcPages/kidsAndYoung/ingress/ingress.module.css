@@ -1,6 +1,7 @@
 .ingress {
   padding: var(--leftRight-padding);
   padding-right: 0;
+  background-color: var(--green);
 }
 
 .ingress h1,
@@ -10,34 +11,18 @@
 
 .ingress h1 {
   width: 45rem;
+  color: var(--yellow);
 }
 
 .ingress #ingress {
   width: 55rem;
+  color: var(--green-l2);
 }
 
-.ingress__flex {
-  padding-top: var(--leftRight-padding);
+.ingress__wrapper {
   display: flex;
-  gap: 5rem;
-}
-
-.ingress__flex h2 {
-  margin-top: 0;
-}
-
-@media (max-width: 1400px) {
-  .ingress__flex div:nth-child(1) {
-    width: 50%;
-  }
-
-  .ingress__flex div:nth-last-child(1) {
-    width: 50%;
-  }
-
-  .ingress__flex div:nth-last-child(1) img {
-    width: 100%;
-  }
+  justify-content: space-between;
+  padding-right: var(--leftRight-padding);
 }
 
 @media (max-width: 1200px) {
@@ -50,31 +35,11 @@
     width: auto;
     padding: 0;
   }
-
-  .ingress__flex {
-    flex-direction: column;
-  }
-
-  .ingress__flex div:nth-child(1) {
-    width: auto;
-  }
-
-  .ingress__flex div:nth-last-child(1) {
-    width: auto;
-  }
 }
 
 @media (max-width: 900px) {
   .ingress {
     padding: 5%;
-  }
-
-  .ingress__flex {
-    gap: 1rem;
-  }
-
-  .ingress__flex div:nth-child(1) {
-    order: 2;
   }
 }
 

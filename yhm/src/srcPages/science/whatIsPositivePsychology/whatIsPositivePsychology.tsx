@@ -26,7 +26,7 @@ const WhatIsPositivePsychology = () => {
         <img src="/images/martin-seligman.svg" alt="Dr martin seligman" />
         <div>
           <p className="bigQuote">
-            “What makes life worth living is much more than the absence of the
+            “Det som gjør livet verdt å leve er mye mer enn fraværet av det
             negative.”
           </p>
           <p className="source">
