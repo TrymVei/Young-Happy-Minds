@@ -13,7 +13,10 @@ const Science = () => {
           og the US Wholebeing institute.
         </p>
         <div className={style.science__readMore}>
-          <ReadMore href={'/science'} />
+          <ReadMore
+            href={'/science'}
+            img={'/images/arrows/whiteArrowRight.svg'}
+          />
         </div>
       </div>
     </div>

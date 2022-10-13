@@ -8,7 +8,7 @@ const CourseCard = (props: {
   description: string;
   href?: string;
 }) => {
-  const [isDesktop, setIsDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const handleResize = () => {
     if (window.matchMedia('(max-width: 1350px)').matches) {

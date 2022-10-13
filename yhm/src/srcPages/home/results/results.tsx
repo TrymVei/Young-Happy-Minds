@@ -1,8 +1,56 @@
+import anime from 'animejs';
 import { useEffect, useState } from 'react';
 import Percent from '../../../components/percent/percent';
 import style from './results.module.css';
 const Results = () => {
   const [animationStart, setAnimationStart] = useState(3600);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    if (position > animationStart && position < animationStart + 50) {
+      animation();
+    }
+    console.log(position > animationStart && position < animationStart + 10);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const animation = () => {
+    const tl = anime.timeline({
+      easing: 'linear',
+      round: true,
+      duration: 500,
+    });
+
+    tl.add({
+      targets: '#percent1',
+      innerText: [0, 20],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent2',
+      innerText: [0, 12],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent3',
+      innerText: [0, 14],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent4',
+      innerText: [0, 12],
+      offset: '-=500',
+    });
+  };
 
   useEffect(() => {
     if (window) {
@@ -33,7 +81,7 @@ const Results = () => {
             ikke betydelig endring hos kontrollgruppen.
           </p>
         </div>
-        <div className={style.result__grid}>
+        <div id="percents" className={style.result__grid}>
           <Percent
             percent={20}
             text="økt livskvalitet etter programmet"

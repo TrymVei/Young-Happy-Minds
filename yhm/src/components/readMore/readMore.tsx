@@ -22,14 +22,18 @@ export const ReadMoreFunction = (props: { onClick: Function; id: string }) => {
   );
 };
 
-const ReadMore = (props: { href: string }) => {
+const ReadMore = (props: { href: string; img?: string }) => {
   return (
     <div className={style.readMore}>
       <p>
         <a href={props.href} className="menyBold">
           Les mer
         </a>
-        <img src="/images/arrows/arrow.svg" alt="Les mer pil" />
+        {props.img != null ? (
+          <img src={props.img}></img>
+        ) : (
+          <img src="/images/arrows/arrow.svg" alt="Les mer pil" />
+        )}
       </p>
     </div>
   );

@@ -9,41 +9,8 @@ const Percent = (props: {
   id: string;
   animationStart: number;
 }) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [loaded, setLoaded] = useState(false);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const animation = () => {
-    anime({
-      targets: '#percent' + props.id,
-      innerText: [0, props.percent],
-      easing: 'easeInOutExpo',
-      round: true,
-    });
-  };
-
-  useEffect(() => {
-    if (scrollPosition > props.animationStart && !loaded) {
-      animation();
-      console.log('ja');
-      setLoaded(true);
-    }
-  }, [scrollPosition]);
-
   return (
-    <div onClick={animation} className={style.percent}>
+    <div className={style.percent}>
       <h1
         id={'percent' + props.id}
         className="bigGraphic"
