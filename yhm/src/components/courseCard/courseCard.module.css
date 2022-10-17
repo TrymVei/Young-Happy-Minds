@@ -9,6 +9,10 @@
   font-weight: 500;
 }
 
+.courseCard_heading {
+  font-size: var(--font-size-28);
+}
+
 .courseCard button {
   background-color: var(--moreInfor-button-color);
   border: none;
@@ -48,6 +52,7 @@
 
 .courseCard__container {
   padding: 2.5rem;
+  padding-top: 1rem;
 }
 
 .courseCard__description {

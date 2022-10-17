@@ -37,7 +37,7 @@ const CourseCard = (props: {
         />
         <div className={style.courseCard__container}>
           <div className={style.courseCard__flex}>
-            <p>{props.heading}</p>
+            <p className={style.courseCard_heading}>{props.heading}</p>
           </div>
           <p className="smallText">{props.description}</p>
           <Button

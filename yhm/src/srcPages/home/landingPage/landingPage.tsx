@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <section className={style.landingpage}>
       <div className={style.landingpage__wrapper}>
-        <h3 className=".">VI ER YOUNG HAPPY MINDS</h3>
+        <h3 className=".">KURS I POSITIV PSYKOLOGI</h3>
         <h1>
           Fordi g<u style={{ textDecorationColor: 'white' }}>lede</u> og
           robusthet <u style={{ textDecorationColor: 'white' }}>kan læres</u>

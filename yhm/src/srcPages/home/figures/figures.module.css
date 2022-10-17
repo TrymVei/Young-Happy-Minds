@@ -17,6 +17,7 @@
   padding-left: var(--leftRight-padding);
   padding-right: var(--leftRight-padding);
   justify-content: center;
+  grid-template-columns: repeat(auto-fill, 290px);
 }
 
 .figures__grid div {
@@ -28,9 +29,9 @@
   display: flex;
 }
 
-@media (max-width: 1700px) {
+@media (min-width: 1700px) {
   .figures__grid {
-    grid-template-columns: repeat(auto-fill, 290px);
+    gap: 4rem;
   }
 }
 

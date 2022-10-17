@@ -158,12 +158,13 @@ body {
 h4 {
   font-family: var(--DM-Sans-regular-font-family);
   font-size: var(--courseCard-label-font-size);
+  font-weight: 400;
 }
 
 h3 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-32);
-
+  font-weight: 400;
   color: var(--green-d1);
 }
 
@@ -171,14 +172,14 @@ h2 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-42);
   color: var(--lightGreen-color);
-
+  font-weight: 400;
   margin-bottom: var(--margin-bottom-30);
 }
 
 h1 {
   font-family: var(--Polite-type-regular);
   font-size: var(--font-size-60);
-
+  font-weight: 400;
   color: var(--green-d1);
 }
 

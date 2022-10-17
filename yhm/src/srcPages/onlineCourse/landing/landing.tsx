@@ -1,12 +1,13 @@
+import anime from 'animejs';
+import Sun from '../../../../public/images/Sun';
 import Button, { FakeButton } from '../../../components/button/button';
-import SunAnimation from '../../../utils/sun/sunAnimation';
 import style from './landing.module.css';
 
 const Landing = () => {
   return (
     <div className={style.overflow}>
       <div className={style.sun}>
-        <img src="/images/sun.svg" alt="" />
+        <Sun />
       </div>
       <div className={style.landing}>
         <p className="navbarLogo">Young Happy Minds onlinekurs:</p>

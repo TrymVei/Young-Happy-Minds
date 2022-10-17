@@ -4,7 +4,9 @@
 
 .sun {
   float: right;
-  transform: rotate(-30deg);
+  position: relative;
+  left: 75px;
+  bottom: 75px;
 }
 
 .landing {
@@ -24,7 +26,7 @@
 
 .landing__wrapper_image {
   position: relative;
-  left: 120px;
+  left: 220px;
 }
 
 .landing__wrapper h1 {

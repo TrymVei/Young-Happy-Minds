@@ -34,7 +34,10 @@ const PositivePsychology = () => {
             siden møte motgang og utfordringer i livet, og med verktøyene og
             metodene man får gjennom PP er man bedre rustet til å takle dem.
           </p>
-          <ReadMore href={'/science'} />
+          <ReadMore
+            href={'/science'}
+            img={'/images/arrows/whiteArrowRight.svg'}
+          />
         </div>
       </div>
       <div className={style.circularText}>
