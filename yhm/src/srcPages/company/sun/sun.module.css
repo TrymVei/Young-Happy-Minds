@@ -17,6 +17,7 @@
 @media (max-width: 600px) {
   .sun__wrapper {
     flex-direction: column;
+    gap: 1rem;
   }
   .sun__wrapper img {
     display: block;

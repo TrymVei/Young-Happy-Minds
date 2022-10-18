@@ -1,9 +1,11 @@
+import anime from 'animejs';
 import { useEffect, useState } from 'react';
 import Percent from '../../../components/percent/percent';
 import style from './percentSection.module.css';
 
 const PercentSection = () => {
   const [animationStart, setAnimationStart] = useState(214);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     if (window) {
@@ -12,6 +14,56 @@ const PercentSection = () => {
       }
     }
   }, []);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    if (
+      position > animationStart &&
+      position < animationStart + 50 &&
+      !loaded
+    ) {
+      animation();
+      setLoaded(true);
+    }
+    console.log(position > animationStart && position < animationStart + 10);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const animation = () => {
+    const tl = anime.timeline({
+      easing: 'linear',
+      round: true,
+      duration: 500,
+    });
+
+    tl.add({
+      targets: '#percent1',
+      innerText: [0, 20],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent2',
+      innerText: [0, 12],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent3',
+      innerText: [0, 14],
+      offset: '-=500',
+    });
+    tl.add({
+      targets: '#percent4',
+      innerText: [0, 12],
+      offset: '-=500',
+    });
+  };
 
   return (
     <div id="section" className={style.percentSection}>

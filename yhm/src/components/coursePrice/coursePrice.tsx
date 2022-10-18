@@ -27,7 +27,7 @@ const CoursePrice = (props: { courses: Course[] }) => {
           />
         );
       })}
-      <MailForm textColor={'white'} />
+      <MailForm textColor={'white'} margingTop={'8.125rem'} />
     </div>
   );
 };

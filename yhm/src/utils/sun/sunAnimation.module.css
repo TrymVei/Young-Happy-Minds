@@ -5,13 +5,12 @@
   overflow: hidden;
 }
 
-.sunAnimation svg {
-  margin: auto;
+.sunAnimation div {
+  width: fit-content;
 }
 
 @media (max-width: 600px) {
   .sunAnimation {
-    display: block;
-    margin: auto;
+    width: auto;
   }
 }

@@ -12,7 +12,7 @@ const SunAnimation = () => {
           value: ['M116 30.3473V23', 'M116 30V20'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 400,
@@ -25,7 +25,7 @@ const SunAnimation = () => {
           value: ['M179.333 56.7978L183.652 50.9199', 'M179 57L192 40'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 1400,
@@ -38,7 +38,7 @@ const SunAnimation = () => {
           value: ['M203.803 119.985H211 120', 'M203.803 119.985L215 120'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 700,
@@ -51,7 +51,7 @@ const SunAnimation = () => {
           value: ['M179.333 183.172L183.652 189.05', 'M179 183L193 201'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 1000,
@@ -64,7 +64,7 @@ const SunAnimation = () => {
           value: ['M116 209.622V216.97', 'M116 210V220'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 2000,
@@ -77,10 +77,10 @@ const SunAnimation = () => {
           value: ['M54.1062 183.172L48.3486 189.05', 'M54 183L41 196'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
-      duration: 300,
+      duration: 1300,
     });
     anime({
       targets: '#sunLight7',
@@ -90,7 +90,7 @@ const SunAnimation = () => {
           value: ['M28.197 119.985H21 120', 'M28.197 119.985L10 120'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
       duration: 1200,
@@ -103,10 +103,10 @@ const SunAnimation = () => {
           value: ['M54.1062 56.7978L48.3486 50.9199', 'M54 57L38 40'],
         },
       ],
-      easing: 'cubicBezier(.5, .05, .1, .3)',
+      easing: 'linear',
       loop: true,
       direction: 'alternate',
-      duration: 500,
+      duration: 1500,
     });
     anime({
       targets: '#sun',
@@ -122,9 +122,9 @@ const SunAnimation = () => {
   }, []);
 
   return (
-    <div id="sun" className={style.sunAnimation}>
+    <div className={style.sunAnimation}>
       <svg
-        id="sunLight"
+        id="sun"
         xmlns="http://www.w3.org/2000/svg"
         width="232"
         height="232"

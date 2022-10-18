@@ -4,13 +4,17 @@ import Percent from '../../../components/percent/percent';
 import style from './results.module.css';
 const Results = () => {
   const [animationStart, setAnimationStart] = useState(3600);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position > animationStart && position < animationStart + 50) {
+    if (
+      position > animationStart &&
+      position < animationStart + 50 &&
+      !loaded
+    ) {
       animation();
+      setLoaded(true);
     }
     console.log(position > animationStart && position < animationStart + 10);
   };

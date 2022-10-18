@@ -21,6 +21,7 @@
 @media (max-width: 1150px) {
   .aboutCourse__wrapper {
     flex-direction: column;
+    gap: 2.813rem;
   }
 
   .aboutCourse__wrapper img {
@@ -31,7 +32,7 @@
 
 @media (max-width: 500px) {
   .aboutCourse__wrapper img {
-    width: 370px;
+    width: 335px;
     height: auto;
   }
 }
