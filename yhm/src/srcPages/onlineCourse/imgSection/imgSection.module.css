@@ -18,6 +18,7 @@
   .imgSection img {
     display: block;
     margin: auto;
+    order: -1;
   }
 }
 

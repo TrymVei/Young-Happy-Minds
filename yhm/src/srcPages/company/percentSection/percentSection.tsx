@@ -45,22 +45,22 @@ const PercentSection = () => {
 
     tl.add({
       targets: '#percent1',
-      innerText: [0, 20],
+      innerText: [0, 50],
       offset: '-=500',
     });
     tl.add({
       targets: '#percent2',
-      innerText: [0, 12],
+      innerText: [0, 155],
       offset: '-=500',
     });
     tl.add({
       targets: '#percent3',
-      innerText: [0, 14],
+      innerText: [0, 50],
       offset: '-=500',
     });
     tl.add({
       targets: '#percent4',
-      innerText: [0, 12],
+      innerText: [0, 108],
       offset: '-=500',
     });
   };

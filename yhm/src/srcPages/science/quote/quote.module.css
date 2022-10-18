@@ -19,6 +19,17 @@
 @media (max-width: 900px) {
   .quote {
     display: block;
-    margin: auto;
+  }
+
+  .quote p {
+    width: 100%;
+  }
+
+  .quote p:nth-child(1) {
+    margin-top: 3.75rem;
+  }
+
+  .quote p:nth-last-child(1) {
+    margin-bottom: 3.75rem;
   }
 }

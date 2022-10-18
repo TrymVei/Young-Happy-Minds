@@ -20,6 +20,10 @@
   color: var(--green-l1);
 }
 
+.landing__image_mobile {
+  display: none;
+}
+
 .landing__wrapper {
   display: flex;
   gap: 1rem;
@@ -71,6 +75,25 @@
 
   .landing__wrapper div:nth-child(1) {
     padding-right: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .sun {
+    display: none;
+  }
+
+  .landing__wrapper_image {
+    display: none;
+  }
+
+  .landing__image_mobile {
+    display: block;
+    position: relative;
+    left: 40%;
+    /* width: 200px;
+    position: relative;
+    left: 220px; */
   }
 }
 

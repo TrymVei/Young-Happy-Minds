@@ -89,6 +89,11 @@
     height: 118px;
   }
 
+  .courseCard__flex {
+    padding-top: 0;
+    display: none;
+  }
+
   .courseCard__container {
     padding: 0;
     padding-left: 5%;

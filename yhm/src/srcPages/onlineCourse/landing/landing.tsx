@@ -14,6 +14,11 @@ const Landing = () => {
         <div className={style.landing__wrapper}>
           <div>
             <h1>Et interaktivt kurs for å bli mer robust og glad</h1>
+            <img
+              className={style.landing__image_mobile}
+              src="/images/product-image-1.svg"
+              alt="Bilde av kurs platformen"
+            />
             <p className="navbarLogo">
               Har du lyst til å gå fra passasjer til sjåfør i ditt eget liv?
             </p>

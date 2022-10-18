@@ -42,4 +42,8 @@
   .reviewSection {
     flex-direction: column;
   }
+
+  .reviewSection div:nth-child(1) {
+    margin-top: 0rem;
+  }
 }

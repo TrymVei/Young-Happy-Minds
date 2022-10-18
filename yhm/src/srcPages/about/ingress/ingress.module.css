@@ -67,6 +67,10 @@
     gap: 2rem;
   }
 
+  .about__flex div p:nth-child(2) {
+    margin-bottom: 0rem;
+  }
+
   .about__flex img {
     width: auto;
     height: auto;
