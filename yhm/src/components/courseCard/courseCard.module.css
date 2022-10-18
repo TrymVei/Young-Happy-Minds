@@ -55,6 +55,15 @@
   padding-top: 1rem;
 }
 
+.courseCard__container ul {
+  margin: 0;
+  padding-left: 0.75rem;
+}
+
+.courseCard__container ul li {
+  margin: 0;
+}
+
 .courseCard__description {
   margin-top: 0;
 }

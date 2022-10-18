@@ -33,10 +33,13 @@ const Courses = () => {
           imgName={'course-3'}
           imgAlt={'3 som holder rundt seg'}
           heading={'For barn og unge'}
-          description={
-            'Unge som har det bra med seg selv gjør det bedre på alle arenaer; på skolen, sosialt og i idrett. Vi lærer bort teknikker som kan hjelpe og styrke dem gjennom resten av livet.'
-          }
+          description={'Tre ulike kurs:'}
           href={'/noe'}
+          liItems={[
+            'For foreldre',
+            'For barn og unge',
+            'For deg som jobber med barn/unge',
+          ]}
         />
       </div>
     </section>

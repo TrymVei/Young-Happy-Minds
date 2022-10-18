@@ -7,6 +7,7 @@ const CourseCard = (props: {
   heading: string;
   description: string;
   href?: string;
+  liItems?: string[];
 }) => {
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -40,6 +41,11 @@ const CourseCard = (props: {
             <p className={style.courseCard_heading}>{props.heading}</p>
           </div>
           <p className="smallText">{props.description}</p>
+          <ul>
+            {props.liItems?.map((item) => {
+              return <li className="smallText">{item}</li>;
+            })}
+          </ul>
           <Button
             color={'#10534F'}
             bgColor={'#ffd526'}
@@ -64,6 +70,11 @@ const CourseCard = (props: {
           <div className={style.courseCard__container}>
             <p>{props.heading}</p>
             <p className="smallText">{props.description}</p>
+            <ul>
+              {props.liItems?.map((item) => {
+                return <li className="smallText">{item}</li>;
+              })}
+            </ul>
             <Button
               color={'#10534F'}
               bgColor={'#ffd526'}
