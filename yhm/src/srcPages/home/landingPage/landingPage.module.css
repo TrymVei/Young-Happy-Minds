@@ -102,3 +102,10 @@
     gap: 1rem;
   }
 }
+
+@media (min-width: 2000px) {
+  .landingpage {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

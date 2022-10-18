@@ -1,4 +1,4 @@
-.about section {
+.about {
   padding-top: 10rem;
   padding-left: var(--leftRight-padding);
   padding-bottom: var(--leftRight-padding);
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 900px) {
-  .about section {
+  .about {
     padding: 5%;
   }
 

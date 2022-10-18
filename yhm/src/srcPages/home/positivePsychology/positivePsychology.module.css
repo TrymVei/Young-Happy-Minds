@@ -79,3 +79,10 @@
     width: 90%;
   }
 }
+
+@media (min-width: 2000px) {
+  .positivePsychology {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

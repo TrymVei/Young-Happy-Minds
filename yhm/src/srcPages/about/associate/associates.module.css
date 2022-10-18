@@ -18,3 +18,10 @@
     margin-right: 0rem;
   }
 }
+
+@media (min-width: 2000px) {
+  .associates {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

@@ -56,3 +56,10 @@
     order: 2;
   }
 }
+
+@media (min-width: 2000px) {
+  .future {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

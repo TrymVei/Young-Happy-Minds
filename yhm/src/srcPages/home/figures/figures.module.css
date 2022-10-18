@@ -68,3 +68,10 @@
     align-items: center;
   }
 }
+
+@media (min-width: 2000px) {
+  .figures {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
