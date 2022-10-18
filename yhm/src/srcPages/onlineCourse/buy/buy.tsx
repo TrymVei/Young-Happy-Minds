@@ -10,7 +10,9 @@ const Buy = () => {
         text={'Kjøp kurs'}
         big={true}
         img={false}
-        href={'/noe'}
+        href={
+          'https://kurs.younghappyminds.no/purchase/119420-Young-Happy-Minds-et-interaktivt-kurs-i'
+        }
       />
     </div>
   );

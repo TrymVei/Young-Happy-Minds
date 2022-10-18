@@ -33,13 +33,17 @@ const Landing = () => {
                 text={'Kjøp kurs'}
                 big={true}
                 img={true}
+                href={
+                  'https://kurs.younghappyminds.no/purchase/119420-Young-Happy-Minds-et-interaktivt-kurs-i'
+                }
               />
               <FakeButton
                 color={'white'}
                 bgColor={'#0E645F'}
                 text={'Mer om kurset'}
                 big={true}
-                img={'/images/arrows/whiteArrowRight.svg'}
+                img={'/images/arrows/smallDownArrow.svg'}
+                href={'#about'}
               />
             </div>
           </div>

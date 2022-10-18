@@ -28,6 +28,7 @@ const LandingPage = () => {
                 text="For enkeltperson"
                 big={true}
                 img={true}
+                href={'/young'}
               ></Button>
               <FakeButton
                 bgColor="#0e645f"
@@ -35,6 +36,7 @@ const LandingPage = () => {
                 text="For bedrift"
                 big={true}
                 img={'/images/arrows/whiteArrowRight.svg'}
+                href={'/company'}
               ></FakeButton>
             </div>
           </div>

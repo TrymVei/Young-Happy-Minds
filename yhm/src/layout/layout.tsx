@@ -25,9 +25,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
                 </a>
               </p>
               <p>
-                <a href="/https://www.facebook.com/younghappyminds/">
-                  Facebook
-                </a>
+                <a href="https://www.facebook.com/younghappyminds/">Facebook</a>
               </p>
               <p>
                 <a href="https://vimeo.com/179206874">Vimeo</a>
@@ -38,13 +36,13 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
             <div>
               <h3>Kurs</h3>
               <p>
-                <a href="">For enkeltpersoner</a>
+                <a href="/young#1">For enkeltpersoner</a>
               </p>
               <p>
-                <a href="/company">For bedrifter</a>
+                <a href="/company#1">For bedrifter</a>
               </p>
               <p>
-                <a href="/young">For barn og unge</a>
+                <a href="/young#2">For barn og unge</a>
               </p>
             </div>
             <div>

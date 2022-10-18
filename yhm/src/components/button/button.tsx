@@ -69,13 +69,16 @@ export const FakeButton = (props: {
   text: string;
   big: boolean;
   img?: string;
+  href?: string;
 }) => {
   return (
     <button
       style={{ backgroundColor: props.bgColor, outline: '3px solid white' }}
       className={props.big ? style.button : style.buttonSmall}
     >
-      <a style={{ color: props.color }}>{props.text}</a>
+      <a style={{ color: props.color }} href={props.href}>
+        {props.text}
+      </a>
       <img style={{ marginTop: '2px' }} src={props.img} alt="Pil" />
     </button>
   );

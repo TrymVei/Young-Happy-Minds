@@ -18,7 +18,7 @@ const Courses = () => {
           description={
             'Få innsikt i den forskningsbaserte teorien, og få en rekke øvelser/hacks som er nyttige for deg, partnere, barn og på jobb.'
           }
-          href={'/noe'}
+          href={'/young/#1'}
         />
         <CourseCard
           imgName={'course-5'}
@@ -27,14 +27,14 @@ const Courses = () => {
           description={
             'De som har det bra mentalt, presterer også bedre på jobb. Vi holder kurs og workshops tilpasset din arbeidsplass eller gruppe.'
           }
-          href={'/noe'}
+          href={'/company/#1'}
         />
         <CourseCard
           imgName={'course-3'}
           imgAlt={'3 som holder rundt seg'}
           heading={'For barn og unge'}
           description={'Tre ulike kurs:'}
-          href={'/noe'}
+          href={'/young/#2'}
           liItems={[
             'For foreldre',
             'For barn og unge',

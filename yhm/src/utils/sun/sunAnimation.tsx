@@ -3,6 +3,16 @@ import { useEffect } from 'react';
 import style from './sunAnimation.module.css';
 
 const SunAnimation = () => {
+  // const easterEgg = () => {
+  //   anime({
+  //     targets: '#sun',
+  //     duration: 200,
+  //     loop: true,
+  //     rotate: '2000000deg',
+  //     easing: 'linear',
+  //   });
+  // };
+
   const animation = () => {
     anime({
       targets: '#sunLight1',
@@ -124,6 +134,7 @@ const SunAnimation = () => {
   return (
     <div className={style.sunAnimation}>
       <svg
+        // onClick={easterEgg}
         id="sun"
         xmlns="http://www.w3.org/2000/svg"
         width="232"

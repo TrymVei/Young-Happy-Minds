@@ -19,9 +19,7 @@ const Contact = () => {
                 </a>
               </p>
               <p>
-                <a href="/https://www.facebook.com/younghappyminds/">
-                  Facebook
-                </a>
+                <a href="https://www.facebook.com/younghappyminds/">Facebook</a>
               </p>
               <p>
                 <a href="https://vimeo.com/179206874">Vimeo</a>
@@ -48,9 +46,7 @@ const Contact = () => {
                 </a>
               </p>
               <p>
-                <a href="/https://www.facebook.com/younghappyminds/">
-                  Facebook
-                </a>
+                <a href="https://www.facebook.com/younghappyminds/">Facebook</a>
               </p>
               <p>
                 <a href="https://vimeo.com/179206874">Vimeo</a>

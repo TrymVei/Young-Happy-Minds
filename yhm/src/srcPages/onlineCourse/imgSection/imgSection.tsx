@@ -2,7 +2,7 @@ import style from './imgSection.module.css';
 const ImgSection = () => {
   return (
     <div id="section" className={style.imgSection}>
-      <div>
+      <div id="about">
         <p>
           Dette kurset er for deg som ønsker verktøy for å snu negative
           tankemønstre, få mer energi og overskudd, bedre relasjoner, en

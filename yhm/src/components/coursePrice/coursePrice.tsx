@@ -51,6 +51,7 @@ const SingleCourse = (course: Course) => {
   };
   return (
     <div
+      id={course.id}
       onClick={handleClick}
       key={course.title}
       className={style.coursePrice__course}

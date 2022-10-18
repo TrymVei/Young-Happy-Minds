@@ -3,7 +3,7 @@ import style from './aboutCourse.module.css';
 const AboutCourse = () => {
   return (
     <div id="section" className={style.aboutCourse}>
-      <h2>Om kurset</h2>
+      <h2 id="1">Om kurset</h2>
       <div className={style.aboutCourse__wrapper}>
         <img src="/images/course-company-1.png" alt="4 personer i et møte" />
         <div>
