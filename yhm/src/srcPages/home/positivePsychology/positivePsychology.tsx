@@ -7,7 +7,7 @@ const PositivePsychology = () => {
   const animate = () => {
     anime({
       targets: '#circularText',
-      rotate: 360,
+      rotate: -360,
       easing: 'linear',
       loop: true,
       duration: 10000,
