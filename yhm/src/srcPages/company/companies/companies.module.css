@@ -56,3 +56,11 @@
   height: 100px;
   width: 250px;
 }
+
+@media (min-width: 2000px) {
+  .carousel {
+    background-color: var(--green-l2);
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
