@@ -5,7 +5,7 @@ const Associates = () => {
   return (
     <div className={style.associates}>
       <div className={style.associates__wrapper}>
-        <h3>Våre støttespillere</h3>
+        <h3>Dette er oss</h3>
         <Associate
           name={'Karina Hollekim'}
           text={
