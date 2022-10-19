@@ -17,6 +17,8 @@
 .result__flex h2 {
   margin: 0;
   margin-bottom: var(--margin-bottom-30);
+  font-size: var(--font-size-48);
+  width: 110%;
 }
 
 .result__flex div {
@@ -50,6 +52,11 @@
 @media (max-width: 900px) {
   .results {
     margin-top: 0;
+  }
+
+  .result__flex h2 {
+    width: auto;
+    font-size: var(--font-size-24);
   }
 
   .mobile {

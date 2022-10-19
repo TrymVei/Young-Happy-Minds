@@ -6,6 +6,7 @@
   color: var(--lightGreen-color);
   text-decoration: underline;
   text-decoration-color: var(--lightYellow-color);
+  font-size: var(--font-size-24);
 }
 
 .readMore img {

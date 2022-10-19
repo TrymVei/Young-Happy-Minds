@@ -5,12 +5,13 @@
   padding-bottom: 5rem;
 }
 
-.courseCard p {
+.courseCard p:nth-child(1) {
   font-weight: 500;
 }
 
-.courseCard_heading {
-  font-size: var(--font-size-28);
+.courseCard p:nth-child(1) {
+  font-size: var(--font-size-26);
+  font-family: var(--Polite-type-regular);
 }
 
 .courseCard button {

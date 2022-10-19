@@ -39,4 +39,9 @@
   .interview__img {
     margin: 0;
   }
+
+  .interview__wrapper {
+    padding: 5%;
+    padding-top: 2rem;
+  }
 }
