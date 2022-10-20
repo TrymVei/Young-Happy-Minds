@@ -1,0 +1,15 @@
+.bigStar {
+  position: relative;
+}
+
+.mediumStar {
+  position: relative;
+  left: 4rem;
+  bottom: 0.75rem;
+}
+
+.smallStar {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
