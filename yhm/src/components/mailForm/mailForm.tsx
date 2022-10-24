@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ButtonFunction } from '../button/button';
-import CoursePrice from '../coursePrice/coursePrice';
+
 import emailjs from 'emailjs-com';
 import style from './mailForm.module.css';
 
@@ -34,7 +34,7 @@ const MailForm = (props: { textColor?: string; margingTop?: string }) => {
       style={{ marginTop: props?.margingTop }}
       className={style.coursePrice__form}
     >
-      <h3 style={{ color: props?.textColor }}>
+      <h3 id="contact" style={{ color: props?.textColor }}>
         Kontakt oss for å bestille kurs
       </h3>
       <p style={{ color: props?.textColor }} className="bodyText">
