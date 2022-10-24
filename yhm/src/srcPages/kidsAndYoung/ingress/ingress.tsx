@@ -1,4 +1,5 @@
 import anime from 'animejs';
+import { useEffect } from 'react';
 
 import MediumStar from '../../../utils/stars/mediumStar';
 import SmallStar from '../../../utils/stars/smallStar';
@@ -34,6 +35,11 @@ const Ingress = () => {
 
     anime({});
   };
+
+  useEffect(() => {
+    animate();
+  }, []);
+
   return (
     <div className={style.ingress}>
       <div className={style.ingress__wrapper}>
