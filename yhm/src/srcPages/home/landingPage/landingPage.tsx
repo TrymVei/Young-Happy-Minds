@@ -1,3 +1,4 @@
+import ArrowRight from '../../../../public/images/arrows/arrowRight';
 import Button, { FakeButton } from '../../../components/button/button';
 import Underline from '../../../components/underline/underline';
 import style from './landingPage.module.css';
@@ -29,14 +30,24 @@ const LandingPage = () => {
                 big={true}
                 img={true}
                 href={'/young'}
+                hoverColor={'#0e645f'}
+                hoverBgColor={'#d1eaca'}
               ></Button>
               <FakeButton
                 bgColor="#0e645f"
                 color="white"
                 text="For bedrift"
                 big={true}
-                img={'/images/arrows/whiteArrowRight.svg'}
                 href={'/company'}
+                hoverColor={'#d1eaca'}
+                hoverOutline={'3px solid #d1eaca'}
+                children={
+                  <ArrowRight
+                    strokeColor={'red'}
+                    hoverColor={'blue'}
+                    toggleHover={true}
+                  />
+                }
               ></FakeButton>
             </div>
           </div>
