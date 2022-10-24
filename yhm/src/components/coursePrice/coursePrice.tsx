@@ -77,6 +77,7 @@ const SingleCourse = (course: Course) => {
             big={false}
             href={course.href}
             img={false}
+            hoverBgColor={'#FFD526'}
           />
         </div>
       </div>

@@ -53,6 +53,7 @@ const CourseCard = (props: {
             big={false}
             href={props.href}
             img={true}
+            hoverBgColor={'#ffd526'}
           />
         </div>
       </div>
@@ -82,6 +83,7 @@ const CourseCard = (props: {
               big={false}
               href={props.href}
               img={true}
+              hoverBgColor={'#ffd526'}
             />
           </div>
         </div>
