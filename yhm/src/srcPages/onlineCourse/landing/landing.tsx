@@ -19,7 +19,7 @@ const Landing = () => {
               src="/images/product-image-1.svg"
               alt="Bilde av kurs platformen"
             />
-            <h3 className="navbarLogo">
+            <h3>
               Har du lyst til å gå fra passasjer til sjåfør i ditt eget liv?
             </h3>
             <p>
