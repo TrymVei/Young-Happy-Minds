@@ -9,7 +9,10 @@ const Interview = (props: {
   return (
     <div id="section" className={style.interview}>
       <div className={style.interview__flex}>
-        <img className={style.interview__img} src={`/images/jan.png`} alt="" />
+        <img
+          className={style.interview__img}
+          src={`/images/interview/${props.name}.png`}
+        />
         <div className={style.interview__wrapper}>
           <div className={style.interview__rating_name}>
             <div>
