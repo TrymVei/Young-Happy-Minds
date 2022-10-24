@@ -10,7 +10,7 @@ const Landing = () => {
         <Sun />
       </div>
       <div className={style.landing}>
-        <p className="navbarLogo">Young Happy Minds onlinekurs:</p>
+        <h3>Young Happy Minds onlinekurs:</h3>
         <div className={style.landing__wrapper}>
           <div>
             <h1>Et interaktivt kurs for å bli mer robust og glad</h1>
@@ -19,9 +19,9 @@ const Landing = () => {
               src="/images/product-image-1.svg"
               alt="Bilde av kurs platformen"
             />
-            <p className="navbarLogo">
+            <h3 className="navbarLogo">
               Har du lyst til å gå fra passasjer til sjåfør i ditt eget liv?
-            </p>
+            </h3>
             <p>
               Invester i deg selv og lær hvordan du kan bli mer robust, mestre
               stress og oppleve mer livsglede i hverdagen.{' '}

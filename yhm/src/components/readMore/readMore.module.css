@@ -6,9 +6,6 @@
   color: var(--lightGreen-color);
 
   font-size: var(--font-size-24);
-
-  /* text-decoration: underline;
-  text-decoration-color: var(--yellow); */
   background-image: linear-gradient(var(--yellow), var(--yellow));
   background-size: 0% 0.1em;
   background-position-y: 100%;

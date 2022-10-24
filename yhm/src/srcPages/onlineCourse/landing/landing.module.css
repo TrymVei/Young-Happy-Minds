@@ -20,6 +20,13 @@
   color: var(--green-l1);
 }
 
+.landing h3 {
+  color: var(--green-l2);
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-26);
+  margin-bottom: 3rem;
+}
+
 .landing__image_mobile {
   display: none;
 }
