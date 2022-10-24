@@ -16,18 +16,16 @@ import WhoAreWe from './whoAreWe/whoAreWe';
 
 const Home = () => {
   return (
-    <>
-      <Layout>
-        <LandingPage />
-        <PositivePsychology />
-        <Courses />
-        <Figures />
-        <Science />
-        <Results />
-        <Companies />
-        <Jan />
-      </Layout>
-    </>
+    <Layout>
+      <LandingPage />
+      <PositivePsychology />
+      <Courses />
+      <Figures />
+      <Science />
+      <Results />
+      <Companies />
+      <Jan />
+    </Layout>
   );
 };
 

@@ -1,5 +1,4 @@
 import Interview from '../../../components/interview/interview';
-import style from './jan.module.css';
 
 const Jan = () => {
   const props = {
