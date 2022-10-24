@@ -41,14 +41,7 @@ const LandingPage = () => {
                 href={'/company'}
                 hoverColor={'#d1eaca'}
                 hoverOutline={'3px solid #d1eaca'}
-                children={
-                  <ArrowRight
-                    strokeColor={'red'}
-                    hoverColor={'blue'}
-                    toggleHover={true}
-                  />
-                }
-              ></FakeButton>
+              />
             </div>
           </div>
           <img

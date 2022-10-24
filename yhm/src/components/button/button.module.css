@@ -21,6 +21,10 @@
   top: 0.2rem;
 }
 
+.button svg {
+  margin-left: 0.5rem;
+}
+
 .buttonSmall {
   font-family: var(--DM-Sans-regular-font-family);
   font-size: var(--font-size-16);

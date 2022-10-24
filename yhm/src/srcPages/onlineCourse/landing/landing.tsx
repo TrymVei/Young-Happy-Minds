@@ -36,14 +36,18 @@ const Landing = () => {
                 href={
                   'https://kurs.younghappyminds.no/purchase/119420-Young-Happy-Minds-et-interaktivt-kurs-i'
                 }
+                hoverColor={'#0e645f'}
+                hoverBgColor={'#d1eaca'}
               />
               <FakeButton
                 color={'white'}
                 bgColor={'#0E645F'}
                 text={'Mer om kurset'}
                 big={true}
-                img={'/images/arrows/smallDownArrow.svg'}
                 href={'#about'}
+                hoverColor={'#d1eaca'}
+                hoverOutline={'3px solid #d1eaca'}
+                down={true}
               />
             </div>
           </div>

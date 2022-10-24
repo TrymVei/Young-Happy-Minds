@@ -93,7 +93,6 @@ export const FakeButton = (props: {
   href?: string;
   hoverColor?: string;
   hoverOutline?: string;
-  children?: React.ReactNode;
 }) => {
   const [toggleHover, setToggleHover] = useState(false);
 
@@ -117,7 +116,11 @@ export const FakeButton = (props: {
         {props.text}
       </a>
       {props.down ? (
-        <ArrowDown fillColor={'white'}></ArrowDown>
+        <ArrowDown
+          fillColor={'white'}
+          hoverColor={props.hoverColor}
+          toggleHover={toggleHover}
+        ></ArrowDown>
       ) : (
         <ArrowRight
           strokeColor={'white'}

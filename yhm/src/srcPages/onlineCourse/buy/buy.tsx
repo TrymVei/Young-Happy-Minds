@@ -13,6 +13,8 @@ const Buy = () => {
         href={
           'https://kurs.younghappyminds.no/purchase/119420-Young-Happy-Minds-et-interaktivt-kurs-i'
         }
+        hoverColor={'#0e645f'}
+        hoverBgColor={'#ffd526'}
       />
     </div>
   );
