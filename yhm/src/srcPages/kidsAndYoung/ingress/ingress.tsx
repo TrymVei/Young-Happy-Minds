@@ -1,8 +1,5 @@
 import anime from 'animejs';
 import { useEffect } from 'react';
-
-import MediumStar from '../../../utils/stars/mediumStar';
-import SmallStar from '../../../utils/stars/smallStar';
 import Stars from '../../../utils/stars/stars';
 import style from './ingress.module.css';
 const Ingress = () => {
@@ -44,8 +41,7 @@ const Ingress = () => {
     <div className={style.ingress}>
       <div className={style.ingress__wrapper}>
         <h1>Glede og robusthet for barn og unge</h1>
-        {/* <img onClick={animate} src="/images/stars.svg" alt="stjerner" /> */}
-        <div onClick={animate}>
+        <div>
           <Stars />
         </div>
       </div>
