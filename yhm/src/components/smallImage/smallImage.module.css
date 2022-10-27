@@ -1,0 +1,23 @@
+.smallImage img {
+  display: block;
+  margin: auto;
+}
+
+.smallImage p {
+  text-align: center;
+  margin: 0;
+  font-size: var(--courseCard-description-font-size);
+}
+
+@media (max-width: 900px) {
+  .smallImage {
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 650px) {
+  .smallImage img {
+    width: 105px;
+    height: 105px;
+  }
+}

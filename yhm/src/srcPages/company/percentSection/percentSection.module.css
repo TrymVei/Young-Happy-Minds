@@ -1,0 +1,65 @@
+.percentSection {
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+  background-color: var(--green-d2);
+  display: flex;
+}
+
+.percentSection h3 {
+  margin-top: 0;
+  color: var(--green-l2);
+}
+
+.percentSection p {
+  color: var(--white);
+}
+
+.percentSection__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: end;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1450px) {
+  .percentSection {
+    flex-direction: column;
+  }
+
+  .percentSection div:nth-child(1) {
+    order: 2;
+  }
+
+  .percentSection div:nth-last-child(1) img {
+    display: block;
+    margin: auto;
+  }
+
+  .percentSection div:nth-last-child(1) h3 {
+    display: block;
+  }
+
+  .percentSection div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .percentSection div:nth-last-child(1) img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .percentSection div:nth-last-child(1) img {
+    width: 335px;
+    height: auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  .percentSection {
+    justify-content: space-evenly;
+  }
+}

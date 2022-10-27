@@ -1,0 +1,56 @@
+.learnMore {
+  padding: var(--leftRight-padding);
+}
+
+.learnMore a {
+  text-decoration: none;
+  color: var(--courseCard-green-color);
+  font-size: var(--hyperlink-font-size);
+}
+
+.learnMore__green_box {
+  background-color: var(--superLight-green-color);
+  padding: 5rem;
+}
+
+.learnMore__green_box h2 {
+  margin-top: 0;
+}
+
+.learnMore__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learnMore__ourSources {
+  margin-top: var(--leftRight-padding);
+  background-color: var(--overall-bg-color);
+  padding: 5rem;
+}
+
+@media (max-width: 900px) {
+  .learnMore {
+    padding: 0;
+  }
+
+  .learnMore__ourSources {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .learnMore__wrapper {
+    flex-direction: column;
+  }
+
+  .learnMore__green_box {
+    padding: 5%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .learnMore {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

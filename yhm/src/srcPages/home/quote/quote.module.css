@@ -1,0 +1,34 @@
+.quote {
+  position: relative;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  padding-right: var(--leftRight-padding);
+  gap: 5rem;
+}
+
+.quote p:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+@media (max-width: 1360px) {
+  .quote {
+    flex-direction: column;
+    padding: 5%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .quote {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .quote {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+}

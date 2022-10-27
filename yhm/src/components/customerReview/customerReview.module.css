@@ -1,0 +1,13 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.review__wrapper {
+  display: flex;
+  gap: 3rem;
+}

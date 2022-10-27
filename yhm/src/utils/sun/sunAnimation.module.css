@@ -1,0 +1,16 @@
+.sunAnimation {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  overflow: hidden;
+}
+
+.sunAnimation div {
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .sunAnimation {
+    width: auto;
+  }
+}

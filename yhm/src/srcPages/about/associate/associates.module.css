@@ -1,0 +1,27 @@
+.associates {
+  margin-left: var(--leftRight-padding);
+  margin-right: var(--leftRight-padding);
+  background-color: var(--green-l1);
+  padding: 5rem;
+  padding-top: 7.5rem;
+}
+
+.associates h3 {
+  margin-top: 0;
+  margin-bottom: 3.75rem;
+}
+
+@media (max-width: 900px) {
+  .associates {
+    padding: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .associates {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

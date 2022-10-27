@@ -1,0 +1,49 @@
+.happyhacks {
+  background-color: var(--green-d2);
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+}
+
+.happyhacks__text {
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.happyhacks__text p {
+  color: var(--green-l2);
+}
+
+.happyhacks__text span {
+  color: var(--yellow);
+}
+
+.happyhacks__images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1370px) {
+  .happyhacks__images img:nth-child(2) {
+    order: 2;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .happyhacks__text {
+    margin-bottom: 1rem;
+  }
+
+  .happyhacks__images img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .happyhacks__images img:nth-last-child(2) {
+    width: 20.625rem;
+    height: auto;
+  }
+}

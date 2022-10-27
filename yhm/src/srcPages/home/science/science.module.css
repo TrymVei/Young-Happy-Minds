@@ -1,0 +1,47 @@
+.science {
+  padding-top: var(--padding-top-140);
+  padding-bottom: var(--padding-top-140);
+  padding-right: var(--leftRight-padding);
+  background-color: var(--green);
+}
+
+.science {
+  display: flex;
+  gap: 5rem;
+}
+
+.science__wrapper {
+  position: relative;
+}
+
+.science__wrapper h2,
+.science__wrapper p,
+.science__wrapper a {
+  margin-top: 0px;
+  color: var(--green-l2);
+}
+
+@media (max-width: 1150px) {
+  .science {
+    margin: 0;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .science img:nth-child(1) {
+    order: 0;
+  }
+}
+
+@media (min-width: 2000px) {
+  .science {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .science {
+    padding-bottom: 5rem;
+  }
+}

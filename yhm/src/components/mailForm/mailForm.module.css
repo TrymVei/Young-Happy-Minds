@@ -1,0 +1,13 @@
+.coursePrice__form h3 {
+  margin-top: 0;
+}
+
+.coursePrice__form__flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.coursePrice__form__flex input {
+  width: 10rem;
+}

@@ -1,0 +1,47 @@
+.interview {
+  padding-top: var(--section-margin-top);
+  padding-bottom: var(--section-margin-top);
+  background-color: var(--green);
+}
+
+.interview__img {
+  width: 334px;
+  height: 309px;
+}
+
+.interview__flex {
+  display: flex;
+  background-color: white;
+}
+
+.interview__wrapper {
+  padding: 3.125rem;
+}
+
+.interview__rating_name {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .interview__flex {
+    flex-direction: column;
+  }
+
+  .interview__img {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .interview__img {
+    margin: 0;
+  }
+
+  .interview__wrapper {
+    padding: 5%;
+    padding-top: 2rem;
+  }
+}

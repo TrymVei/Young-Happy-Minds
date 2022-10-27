@@ -1,0 +1,88 @@
+.positivePsychology {
+  display: flex;
+  background-color: var(--green-d2);
+  padding-top: var(--padding-top-140);
+  padding-bottom: var(--padding-top-140);
+  padding-right: var(--leftRight-padding);
+  gap: 7.5rem;
+}
+
+.positivePsychology__wrapper h2 {
+  color: var(--green-l3);
+}
+
+.positivePsychology__wrapper p,
+.positivePsychology__wrapper a {
+  color: white;
+}
+
+.circularText {
+  position: relative;
+  bottom: 5rem;
+  float: right;
+  padding-right: var(--leftRight-padding);
+}
+
+@media (max-width: 1200px) {
+  .positivePsychology {
+    flex-direction: column;
+  }
+
+  .mountain {
+    display: block;
+    margin: auto;
+  }
+
+  .positivePsychology__wrapper {
+    padding-left: var(--leftRight-padding);
+    padding-right: var(--leftRight-padding);
+  }
+}
+
+@media (max-width: 900px) {
+  .overflow {
+    overflow: hidden;
+  }
+
+  .positivePsychology {
+    padding: 0;
+    gap: 0;
+  }
+
+  .positivePsychology__wrapper h2 {
+    margin-top: 0;
+    color: var(--green-l3);
+  }
+
+  .circularText {
+    bottom: 2.5rem;
+    padding-right: 5%;
+    width: 75px;
+  }
+
+  .circularText img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mountain {
+    padding: 5%;
+  }
+
+  .positivePsychology__wrapper {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .mountain {
+    width: 90%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .positivePsychology {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

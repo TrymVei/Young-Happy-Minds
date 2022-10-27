@@ -1,0 +1,51 @@
+.ingress {
+  padding: var(--leftRight-padding);
+  padding-right: 0;
+  background-color: var(--green);
+}
+
+.ingress h1,
+.ingress #ingress {
+  padding-left: 5rem;
+}
+
+.ingress h1 {
+  width: 45rem;
+  color: var(--yellow);
+}
+
+.ingress #ingress {
+  width: 55rem;
+  color: var(--green-l2);
+}
+
+.ingress__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: var(--leftRight-padding);
+}
+
+@media (max-width: 1200px) {
+  .ingress {
+    padding-right: var(--leftRight-padding);
+  }
+
+  .ingress h1,
+  .ingress #ingress {
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .ingress {
+    padding: 5%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .ingress {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

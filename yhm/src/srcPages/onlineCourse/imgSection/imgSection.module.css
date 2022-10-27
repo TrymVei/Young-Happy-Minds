@@ -1,0 +1,30 @@
+.imgSection {
+  display: flex;
+  margin-top: calc(var(--section-margin-top) / 2);
+  gap: 5rem;
+}
+
+.imgSection img {
+  width: 444px;
+  height: 291px;
+}
+
+@media (max-width: 1250px) {
+  .imgSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .imgSection img {
+    display: block;
+    margin: auto;
+    order: -1;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgSection img {
+    width: 350px;
+    height: auto;
+  }
+}

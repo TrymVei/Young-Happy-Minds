@@ -1,0 +1,133 @@
+.courseCard {
+  width: min-content;
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.courseCard p:nth-child(1) {
+  font-weight: 500;
+}
+
+.courseCard p:nth-child(1) {
+  font-size: var(--font-size-26);
+  font-family: var(--Polite-type-regular);
+}
+
+.courseCard button {
+  background-color: var(--moreInfor-button-color);
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+  bottom: 3rem;
+}
+
+.courseCard button img {
+  position: relative;
+  top: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+.courseCard__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.corseCard__label {
+  color: var(--courseCard-green-color);
+  background-color: var(--label-color);
+
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 2rem;
+
+  position: relative;
+  top: 0.25rem;
+
+  margin-top: 0;
+  align-self: center;
+}
+
+.courseCard__container {
+  padding: 2.5rem;
+  padding-top: 1rem;
+}
+
+.courseCard__container ul {
+  margin: 0;
+  padding-left: 0.75rem;
+}
+
+.courseCard__container ul li {
+  margin: 0;
+}
+
+.courseCard__description {
+  margin-top: 0;
+}
+
+@media (max-width: 1350px) {
+  .courseCard {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  .courseCard__wrapper {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+  }
+
+  .courseCard__flex {
+    padding: 1rem;
+  }
+
+  .courseCard__container {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .courseCard__wrapper {
+    margin: 0.5rem;
+  }
+
+  .courseCard__image {
+    width: 142px;
+    height: 118px;
+  }
+
+  .courseCard__flex {
+    padding-top: 0;
+    display: none;
+  }
+
+  .courseCard__container {
+    padding: 0;
+    padding-left: 0.5rem;
+  }
+
+  .courseCard__container p {
+    margin-bottom: 0.2rem;
+  }
+
+  .courseCard button {
+    bottom: 1rem;
+    font-size: var(--font-size-12);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    position: static;
+  }
+
+  .courseCard button img {
+    width: auto;
+    height: auto;
+  }
+}

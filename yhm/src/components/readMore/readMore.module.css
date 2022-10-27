@@ -1,0 +1,27 @@
+.readMore p {
+  margin: 0;
+}
+
+.readMore a {
+  color: var(--lightGreen-color);
+
+  font-size: var(--font-size-24);
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.readMore a:hover,
+.readMore a:focus,
+.readMore a:active {
+  background-size: 100% 0.1em;
+}
+
+.readMore img {
+  position: relative;
+  margin-left: 0.5rem;
+  top: 0.2rem;
+}

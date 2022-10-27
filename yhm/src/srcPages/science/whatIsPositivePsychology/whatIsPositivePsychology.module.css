@@ -1,0 +1,67 @@
+.whatIsPositivePsychology {
+  padding-top: var(--leftRight-padding);
+  background-color: var(--green);
+  padding-bottom: calc(var(--leftRight-padding) * 2);
+}
+
+.whatIsPositivePsychology h1 {
+  color: var(--yellow);
+  font-weight: 400;
+}
+
+.whatIsPositivePsychology p {
+  color: var(--green-l2);
+}
+
+.whatIsPositivePsychology__wrapper {
+  padding-left: var(--leftRight-padding);
+  padding-right: 20rem;
+  margin-bottom: var(--margin-top-150);
+}
+
+.whatIsPositivePsychology__flex {
+  display: flex;
+  gap: 5rem;
+}
+
+.whatIsPositivePsychology__flex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whatIsPositivePsychology__flex p {
+  padding-right: 5rem;
+}
+
+@media (max-width: 1350px) {
+  .whatIsPositivePsychology__wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .whatIsPositivePsychology__flex {
+    flex-direction: column;
+  }
+
+  .whatIsPositivePsychology__flex img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .whatIsPositivePsychology__wrapper {
+    margin-bottom: 0;
+  }
+
+  .whatIsPositivePsychology__flex img {
+    width: 335px;
+    height: auto;
+  }
+
+  .whatIsPositivePsychology__flex p {
+    padding: 0;
+  }
+}

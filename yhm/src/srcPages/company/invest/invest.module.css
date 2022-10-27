@@ -1,0 +1,40 @@
+.invest {
+  padding-top: var(--leftRight-padding);
+  padding-bottom: var(--leftRight-padding);
+  position: relative;
+  background-color: var(--green);
+}
+
+.courses {
+  position: absolute;
+  bottom: 0;
+}
+
+.invest h1 {
+  color: var(--yellow);
+  font-weight: 400;
+  width: 50%;
+}
+
+.invest p {
+  width: 50%;
+  color: var(--green-l2);
+}
+
+@media (max-width: 1100px) {
+  .invest p,
+  .invest h1 {
+    width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .invest {
+    width: auto;
+    padding-top: 1rem;
+  }
+  .courses {
+    margin-top: 5rem;
+    position: static;
+  }
+}
