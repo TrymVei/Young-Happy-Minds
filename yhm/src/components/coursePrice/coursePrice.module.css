@@ -5,11 +5,12 @@
 
 .coursePrice h2 {
   color: var(--green-l3);
+  display: none;
 }
 
 .coursePrice__course {
   display: flex;
-  justify-content: space-between;
+  gap: 0.938rem;
   margin-bottom: 0.5rem;
   background-color: var(--green-l1);
 }
