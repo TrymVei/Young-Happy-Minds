@@ -11,7 +11,7 @@ const Interview = (props: {
       <div className={style.interview__flex}>
         <img
           className={style.interview__img}
-          src={`./images/interview/${props.name}.png`}
+          src={`./images/interview/${props.name}.jpg`}
         />
         <div className={style.interview__wrapper}>
           <div className={style.interview__rating_name}>
