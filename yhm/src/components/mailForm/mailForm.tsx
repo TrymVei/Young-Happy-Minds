@@ -12,7 +12,7 @@ const MailForm = (props: { textColor?: string; margingTop?: string }) => {
     //CREATE SERVICE AND CHANGE SERVICE CODE FOR IT TO WORK
     emailjs
       .send(
-        'service_m5bquz6',
+        'service_nojemye',
         'template_sk5al8h',
         {
           senderEmail: sender,

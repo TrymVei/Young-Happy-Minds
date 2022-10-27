@@ -234,6 +234,7 @@ h1 {
 .bigQuote {
   font-family: var(--jakarta-italic-font-family);
   font-size: var(--font-size-32);
+  line-height: var(--font-size-48);
 }
 
 .ingress {
@@ -336,6 +337,7 @@ ul li {
 
   .bigQuote {
     font-size: var(--font-size-18);
+    line-height: var(--font-size-28);
   }
 
   .ingress {
