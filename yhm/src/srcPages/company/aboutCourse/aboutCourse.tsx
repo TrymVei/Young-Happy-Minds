@@ -35,7 +35,7 @@ const AboutCourse = () => {
           </p>
         </div>
       </div>
-      <MailForm />
+      {/* <MailForm /> */}
     </div>
   );
 };
