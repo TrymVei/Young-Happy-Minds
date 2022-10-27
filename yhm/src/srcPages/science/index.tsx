@@ -14,7 +14,7 @@ const Science = () => {
       <Quote2 />
       <Perma />
       <Quote />
-      <LearnMore />
+      {/* <LearnMore /> */}
     </Layout>
   );
 };
