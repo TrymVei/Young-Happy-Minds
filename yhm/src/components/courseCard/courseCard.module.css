@@ -2,7 +2,7 @@
   width: min-content;
   background-color: #ffffff;
   position: relative;
-  padding-bottom: 5em;
+  padding-bottom: 5rem;
 }
 
 .courseCard p:nth-child(1) {
