@@ -13,9 +13,10 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
         <div className={style.footer__flex}>
           <div>
             <div>
-              <h3>kontakt</h3>
-              <p>Vi vil gjerne høre fra deg!</p>
-              <p>Ta kontakt på</p>
+              <h3>Kontakt</h3>
+              <a href="mailto:contact@younghappyminds.com">
+                contact@younghappyminds.com
+              </a>
             </div>
             <div>
               <h3>Sosiale medier</h3>
@@ -54,7 +55,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
           </div>
           <div className={style.footer__wrapper__logo}>
             <p>
-              <a href="#top">Til toppen</a>
+              <a href="#top">Tilbake til toppen</a>
               <img src="/images/arrows/upArrow.svg" alt="Pil opp" />
             </p>
             <img src="/images/logo.svg" alt="" />
