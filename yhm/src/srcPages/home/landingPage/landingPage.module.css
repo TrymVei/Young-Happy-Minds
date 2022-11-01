@@ -92,6 +92,8 @@
 @media (max-width: 600px) {
   .landing__wrapper__flex img {
     display: block;
+    width: 300px;
+    height: auto;
     margin: 0;
   }
 
