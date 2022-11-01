@@ -25,7 +25,6 @@ const PercentSection = () => {
       animation();
       setLoaded(true);
     }
-    console.log(position > animationStart && position < animationStart + 10);
   };
 
   useEffect(() => {

@@ -1,8 +1,6 @@
 import style from './associate.module.css';
 const Associate = (props: { name: string; text: string }) => {
   const nameUrl = props.name.replaceAll(' ', '-');
-  console.log(nameUrl);
-
   return (
     <div className={style.associate}>
       <img src={`/images/associate/${nameUrl}.png`} alt={props.name} />
