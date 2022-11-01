@@ -45,8 +45,8 @@ const LandingPage = () => {
             </div>
           </div>
           <img
-            className={style.platform}
-            src="/images/platform.svg"
+            className={style.img}
+            src="/images/platform.png"
             alt="Glad jente"
           />
         </div>

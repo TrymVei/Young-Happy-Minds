@@ -16,7 +16,6 @@ const Results = () => {
       animation();
       setLoaded(true);
     }
-    console.log(position > animationStart && position < animationStart + 10);
   };
 
   useEffect(() => {
@@ -63,10 +62,6 @@ const Results = () => {
       }
     }
   }, []);
-
-  useEffect(() => {
-    console.log(animationStart);
-  }, [animationStart]);
 
   return (
     <div id="section" className={style.results}>
