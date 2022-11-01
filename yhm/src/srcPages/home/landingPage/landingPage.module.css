@@ -3,7 +3,7 @@
   padding-left: var(--leftRight-padding);
 }
 
-.platform {
+.img {
   width: 729px;
   height: auto;
 }
@@ -68,7 +68,6 @@
   }
 
   .landing__wrapper__flex img {
-    width: auto;
     height: auto;
     order: 2;
     display: block;

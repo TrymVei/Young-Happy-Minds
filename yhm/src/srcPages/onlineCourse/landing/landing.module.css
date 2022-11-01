@@ -24,7 +24,7 @@
   color: var(--green-l2);
   margin-bottom: 0.5rem;
   font-size: var(--font-size-26);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .landing__image_mobile {
@@ -47,8 +47,9 @@
 }
 
 .button__wrapper {
+  margin-top: 6.25rem;
   display: flex;
-  justify-content: space-between;
+  gap: 1.875rem;
 }
 
 @media (max-width: 1250px) {
@@ -57,7 +58,7 @@
     gap: 4rem;
   }
 
-  .landing__wrapper div:nth-child(1) {
+  .landing__wrapper {
     padding-right: var(--leftRight-padding);
   }
 
@@ -65,6 +66,10 @@
     width: 70%;
     height: auto;
     align-self: flex-end;
+  }
+
+  .button__wrapper div {
+    padding: 0px;
   }
 
   .button__wrapper img {
@@ -80,7 +85,7 @@
     padding-left: 5%;
   }
 
-  .landing__wrapper div:nth-child(1) {
+  .landing__wrapper {
     padding-right: 5%;
   }
 }
