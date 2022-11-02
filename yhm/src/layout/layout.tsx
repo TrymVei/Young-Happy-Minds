@@ -5,6 +5,7 @@ import style from './layout.module.css';
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <div id="top">
+      <title>Young Happy Minds</title>
       <Navbar />
 
       <main>{props.children}</main>
