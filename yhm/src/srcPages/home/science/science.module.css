@@ -30,6 +30,10 @@
 
   .science img:nth-child(1) {
     order: 0;
+    display: block;
+    margin: auto;
+    width: 41.25rem;
+    height: 28.75rem;
   }
 }
 
@@ -43,5 +47,10 @@
 @media (max-width: 900px) {
   .science {
     padding-bottom: 5rem;
+  }
+
+  .science img:nth-child(1) {
+    width: 20.938rem;
+    height: 14.6rem;
   }
 }
