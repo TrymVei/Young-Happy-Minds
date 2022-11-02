@@ -24,7 +24,8 @@
 .courses__course {
   margin-top: 5rem;
   display: flex;
-  justify-content: space-between;
+  gap: 0.938rem;
+  justify-content: center;
 }
 
 @media (max-width: 1350px) {

@@ -7,6 +7,7 @@
 
 .courseCard p:nth-child(1) {
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .courseCard p:nth-child(1) {
@@ -53,7 +54,7 @@
 
 .courseCard__container {
   padding: 2.5rem;
-  padding-top: 1rem;
+  padding-top: 1.875rem;
 }
 
 .courseCard__container ul {
