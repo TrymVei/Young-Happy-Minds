@@ -14,6 +14,7 @@ const ArrowRight = (props: {
       >
         <path d="M0.999994 9L14.4714 9L0.999994 9Z" fill="#0D534F" />
         <path
+          id="test"
           d="M0.999994 9L14.4714 9"
           stroke={props.toggleHover ? props.hoverColor : props.strokeColor}
           stroke-width="2"

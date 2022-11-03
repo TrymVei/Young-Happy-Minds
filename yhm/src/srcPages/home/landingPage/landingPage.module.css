@@ -87,16 +87,15 @@
   .landingpage__wrapper h3 {
     font-size: var(--font-size-14);
   }
-}
-
-@media (max-width: 600px) {
   .landing__wrapper__flex img {
     display: block;
     width: 300px;
     height: auto;
     margin: 0;
   }
+}
 
+@media (max-width: 600px) {
   .landingpage__buttons img {
     display: none;
   }
