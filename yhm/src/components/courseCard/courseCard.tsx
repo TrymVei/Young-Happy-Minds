@@ -85,6 +85,7 @@ const CourseCard = (props: {
               href={props.href}
               img={true}
               hoverBgColor={'#ffd526'}
+              hoverColor={'#0D534F'}
             />
           </div>
         </div>

@@ -41,6 +41,10 @@
   .ingress {
     padding: 5%;
   }
+
+  .ingress__wrapper {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 2000px) {
