@@ -36,12 +36,20 @@ const Button = (props: {
           {props.text}
         </a>
         {props.big && props.img ? (
-          <img src="/images/arrows/arrow.svg" alt="arrow" />
+          <ArrowRight
+            strokeColor={'#0D534F'}
+            hoverColor={props.hoverColor}
+            toggleHover={toggleHover}
+          />
         ) : (
           <></>
         )}
         {!props.big && props.img ? (
-          <img src="/images/arrows/smallArrow.svg" alt="arrow" />
+          <ArrowRight
+            strokeColor={'#0D534F'}
+            hoverColor={props.hoverColor}
+            toggleHover={toggleHover}
+          />
         ) : (
           <></>
         )}
