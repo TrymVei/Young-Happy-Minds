@@ -27,7 +27,7 @@
 
 .button:hover > * svg,
 .buttonSmall:hover > * svg {
-  transform: scaleX(1.5);
+  transform: scaleX(1.3);
 }
 
 .button svg,
