@@ -38,7 +38,7 @@ const Button = (props: {
         {props.big && props.img ? (
           <ArrowRight
             strokeColor={'#0D534F'}
-            hoverColor={props.hoverColor}
+            hoverColor={'#0D534F'}
             toggleHover={toggleHover}
           />
         ) : (
@@ -47,7 +47,7 @@ const Button = (props: {
         {!props.big && props.img ? (
           <ArrowRight
             strokeColor={'#0D534F'}
-            hoverColor={props.hoverColor}
+            hoverColor={'#0D534F'}
             toggleHover={toggleHover}
           />
         ) : (
