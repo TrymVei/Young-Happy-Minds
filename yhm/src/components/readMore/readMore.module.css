@@ -17,6 +17,7 @@
 .readMore a:hover,
 .readMore a:focus,
 .readMore a:active {
+  cursor: pointer;
   background-size: 100% 0.1em;
 }
 
