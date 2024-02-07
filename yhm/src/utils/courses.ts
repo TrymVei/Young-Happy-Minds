@@ -36,7 +36,7 @@ export const YoungCourses = () => {
       "Ukentlige videoer og innhold som hjelper deg til å bli mer robust og få økt livsglede",
       'Ca. 40 lekne og effektive verktøy "Happy Hacks" til nedlasting til bruk både privat og profesjonelt',
       "100% digitalt o g dermed fleksibelt for deg og din kalender",
-      '6 x LIVE gruppe-coaching "Happy Hour" sammen med andre kursdeltakere',
+      'LIVE gruppe-coaching "Happy Hour" sammen med andre kursdeltakere',
       "Medlemskap i lukket FB-gruppe med inspirasjon, støtte og oppmuntring",
     ],
   };
