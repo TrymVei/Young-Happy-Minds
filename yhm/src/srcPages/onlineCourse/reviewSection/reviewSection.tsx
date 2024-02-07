@@ -1,6 +1,6 @@
-import CustomerReview from '../../../components/customerReview/customerReviev';
-import { Reviews } from '../../../utils/reviews';
-import style from './reviewSection.module.css';
+import CustomerReview from "../../../components/customerReview/customerReviev";
+import { Reviews } from "../../../utils/reviews";
+import style from "./reviewSection.module.css";
 
 const ReviewSection = () => {
   const reviews = Reviews();
@@ -48,7 +48,7 @@ const ReviewSection = () => {
           </li>
           <li>100% digitalt og dermed fleksibelt for deg og din kalender</li>
           <li>
-            6 x LIVE gruppe-coaching "Happy Hour" sammen med andre kursdeltakere
+            LIVE gruppe-coaching "Happy Hour" sammen med andre kursdeltakere
           </li>
           <li>
             Medlemskap i lukket FB-gruppe med inspirasjon, støtte og oppmuntring
