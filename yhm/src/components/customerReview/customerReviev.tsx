@@ -1,5 +1,5 @@
-import { Review } from '../../utils/types';
-import style from './customerReview.module.css';
+import { Review } from "../../utils/types";
+import style from "./customerReview.module.css";
 
 const CustomerReview = (props: { review: Review }) => {
   return (
@@ -9,7 +9,7 @@ const CustomerReview = (props: { review: Review }) => {
       ))}
       <div className={style.review__wrapper}>
         <p className="smallesText">
-          -{props.review.name} ({props.review.age} {props.review.date})
+          -{props.review.name} ({props.review.age})
         </p>
         <div>
           {Array.from(Array(props.review.stars), (e, i) => {
