@@ -1,6 +1,4 @@
-import anime from 'animejs';
-import { useEffect, useState } from 'react';
-import style from './companies.module.css';
+import style from "./companies.module.css";
 
 const Companies = () => {
   return (
@@ -27,9 +25,6 @@ const Companies = () => {
               <img src="/images/companies/companies-6.svg" alt="" />
             </div>
             <div className={style.slide}>
-              <img src="/images/companies/companies-7.svg" alt="" />
-            </div>
-            <div className={style.slide}>
               <img src="/images/companies/companies-1.svg" alt="" />
             </div>
             <div className={style.slide}>
@@ -46,9 +41,6 @@ const Companies = () => {
             </div>
             <div className={style.slide}>
               <img src="/images/companies/companies-6.svg" alt="" />
-            </div>
-            <div className={style.slide}>
-              <img src="/images/companies/companies-7.svg" alt="" />
             </div>
           </div>
         </div>

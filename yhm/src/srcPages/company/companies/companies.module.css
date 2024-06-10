@@ -13,8 +13,9 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 6));
   }
 }
 
@@ -28,7 +29,7 @@
 
 .slider::before,
 .slider::after {
-  content: '';
+  content: "";
   height: 100px;
   position: absolute;
   width: 200px;
@@ -49,7 +50,7 @@
 .slide__track {
   animation: scroll 10s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(250px * 12);
 }
 
 .slide {
