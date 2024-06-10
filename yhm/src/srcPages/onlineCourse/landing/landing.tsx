@@ -1,7 +1,7 @@
-import anime from 'animejs';
-import Sun from '../../../../public/images/Sun';
-import Button, { FakeButton } from '../../../components/button/button';
-import style from './landing.module.css';
+import anime from "animejs";
+import Sun from "../../../../public/images/Sun";
+import Button, { FakeButton } from "../../../components/button/button";
+import style from "./landing.module.css";
 
 const Landing = () => {
   return (
@@ -24,29 +24,29 @@ const Landing = () => {
             </h3>
             <p>
               Invester i deg selv og lær hvordan du kan bli mer robust, mestre
-              stress og oppleve mer livsglede i hverdagen.{' '}
+              stress og oppleve mer livsglede i hverdagen.{" "}
             </p>
             <div className={style.button__wrapper}>
               <Button
-                color={'#0D534F'}
-                bgColor={'white'}
-                text={'Kjøp kurs'}
+                color={"#0D534F"}
+                bgColor={"white"}
+                text={"Kjøp kurs"}
                 big={true}
                 img={true}
                 href={
-                  'https://kurs.younghappyminds.no/purchase/119420-Young-Happy-Minds-et-interaktivt-kurs-i'
+                  "https://younghappyminds.simplero.com/cart/119420-Young-Happy-Minds-et-interaktivt-kurs-i"
                 }
-                hoverColor={'#0e645f'}
-                hoverBgColor={'#d1eaca'}
+                hoverColor={"#0e645f"}
+                hoverBgColor={"#d1eaca"}
               />
               <FakeButton
-                color={'white'}
-                bgColor={'#0E645F'}
-                text={'Mer om kurset'}
+                color={"white"}
+                bgColor={"#0E645F"}
+                text={"Mer om kurset"}
                 big={true}
-                href={'#about'}
-                hoverColor={'#d1eaca'}
-                hoverOutline={'3px solid #d1eaca'}
+                href={"#about"}
+                hoverColor={"#d1eaca"}
+                hoverOutline={"3px solid #d1eaca"}
                 down={true}
               />
             </div>
