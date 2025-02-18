@@ -1,67 +1,45 @@
-import anime from 'animejs';
-import { useEffect, useState } from 'react';
-import Percent from '../../../components/percent/percent';
-import style from './results.module.css';
+import anime from "animejs";
+import { useEffect, useRef, useState } from "react";
+import Percent from "../../../components/percent/percent";
+import style from "./results.module.css";
 const Results = () => {
-  const [animationStart, setAnimationStart] = useState(3600);
   const [loaded, setLoaded] = useState(false);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    if (
-      position > animationStart &&
-      position < animationStart + 50 &&
-      !loaded
-    ) {
-      animation();
-      setLoaded(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const animationRef = useRef<HTMLDivElement | null>(null);
 
   const animation = () => {
     const tl = anime.timeline({
-      easing: 'linear',
+      easing: "linear",
       round: true,
       duration: 500,
     });
 
-    tl.add({
-      targets: '#percent1',
-      innerText: [0, 20],
-      offset: '-=500',
-    });
-    tl.add({
-      targets: '#percent2',
-      innerText: [0, 12],
-      offset: '-=500',
-    });
-    tl.add({
-      targets: '#percent3',
-      innerText: [0, 14],
-      offset: '-=500',
-    });
-    tl.add({
-      targets: '#percent4',
-      innerText: [0, 12],
-      offset: '-=500',
-    });
+    tl.add({ targets: "#percent1", innerText: [0, 20], offset: "-=500" });
+    tl.add({ targets: "#percent2", innerText: [0, 12], offset: "-=500" });
+    tl.add({ targets: "#percent3", innerText: [0, 14], offset: "-=500" });
+    tl.add({ targets: "#percent4", innerText: [0, 12], offset: "-=500" });
   };
 
   useEffect(() => {
-    if (window) {
-      if (window.innerWidth < 900) {
-        setAnimationStart(1400);
-      }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !loaded) {
+          animation();
+          setLoaded(true);
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    if (animationRef.current) {
+      observer.observe(animationRef.current);
     }
-  }, []);
+
+    return () => {
+      if (animationRef.current) {
+        observer.unobserve(animationRef.current);
+      }
+    };
+  }, [loaded]);
 
   return (
     <div id="section" className={style.results}>
@@ -80,38 +58,34 @@ const Results = () => {
             ikke betydelig endring hos kontrollgruppen.
           </p>
         </div>
-        <div id="percents" className={style.result__grid}>
+        <div ref={animationRef} id="percents" className={style.result__grid}>
           <Percent
             percent={20}
             text="økt livskvalitet etter programmet"
-            percentColor={'#D1EACA'}
-            textColor={'#F7FDF5'}
+            percentColor={"#D1EACA"}
+            textColor={"#F7FDF5"}
             id="1"
-            animationStart={animationStart}
           />
           <Percent
             percent={12}
             text="bedre emosjonelt velvære"
-            percentColor={'#D1EACA'}
-            textColor={'#F7FDF5'}
+            percentColor={"#D1EACA"}
+            textColor={"#F7FDF5"}
             id="2"
-            animationStart={animationStart}
           />
           <Percent
             percent={14}
             text="forbedring av selvfølelse"
-            percentColor={'#D1EACA'}
-            textColor={'#F7FDF5'}
+            percentColor={"#D1EACA"}
+            textColor={"#F7FDF5"}
             id="3"
-            animationStart={animationStart}
           />
           <Percent
             percent={12}
             text="forbedring av utholdenhet"
-            percentColor={'#D1EACA'}
-            textColor={'#F7FDF5'}
+            percentColor={"#D1EACA"}
+            textColor={"#F7FDF5"}
             id="4"
-            animationStart={animationStart}
           />
         </div>
         <div className={style.mobile}>

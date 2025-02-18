@@ -1,18 +1,15 @@
-import anime from 'animejs';
-import { useEffect, useState } from 'react';
-import style from './percent.module.css';
+import style from "./percent.module.css";
 const Percent = (props: {
   percent: number;
   text: string;
   percentColor: string;
   textColor: string;
   id: string;
-  animationStart: number;
 }) => {
   return (
     <div className={style.percent}>
       <h1
-        id={'percent' + props.id}
+        id={"percent" + props.id}
         className="bigGraphic"
         style={{ color: props.percentColor }}
       >
